@@ -1,4 +1,4 @@
-import os, torch, difflib
+import os, re, torch, difflib
 from scipy.io import loadmat
 from torch.utils.data import Dataset
 from pathlib import Path
@@ -55,6 +55,75 @@ DATA_DEFAULT_TYPE = {
     'taowu': 'task-REST',
 }
 DISEASE_DATA = ['adni', 'ppmi', 'abide', 'neurocon', 'taowu']
+
+CUSTOM_ROI_ROOT_DEFAULTS = {
+    'adni_our_2cls': {
+        'roi_root': '/mnt/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/ADNI(ALL)/Pretraining_OUTPUT',
+        'label_csv': '/mnt/dataset4/DATASETS/fmri_pretraining/fmri_dataset/data_csv/ADNI.csv',
+    },
+    'ppmi_our_2cls': {
+        'roi_root': '/mnt/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/ppmi_all',
+        'label_csv': '/mnt/dataset4/DATASETS/fmri_pretraining/fmri_dataset/data_csv/PPMI.csv',
+    },
+    'ppmi_our_3cls': {
+        'roi_root': '/mnt/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/ppmi_all',
+        'label_csv': '/mnt/dataset4/DATASETS/fmri_pretraining/fmri_dataset/data_csv/PPMI.csv',
+    },
+}
+
+CUSTOM_ROI_DATASET_CONFIG = {
+    'adni_our_2cls': {
+        'subject_column': 'Subject',
+        'label_column': 'Disease_label',
+        'label_map': {'cn': 0, 'ad': 1},
+        'label_names': ['CN', 'AD'],
+        'layout': 'label_dir',
+        'class_dirs': {'cn': 'cn', 'AD1': 'ad'},
+    },
+    'ppmi_our_2cls': {
+        'subject_column': 'Subject',
+        'label_column': 'Group',
+        'label_map': {'PD': 0, 'Prodromal': 1},
+        'label_names': ['PD', 'Prodromal'],
+        'layout': 'flat',
+    },
+    'ppmi_our_3cls': {
+        'subject_column': 'Subject',
+        'label_column': 'Group',
+        'label_map': {'Control': 0, 'PD': 1, 'Prodromal': 2},
+        'label_names': ['Control', 'PD', 'Prodromal'],
+        'layout': 'flat',
+    },
+}
+
+CUSTOM_ROI_ATLAS_DIR = {
+    'AAL_116': 'AAL',
+}
+
+
+def normalize_subject_id(subject, dname):
+    subject = str(subject).strip()
+    if subject.endswith('.0'):
+        subject = subject[:-2]
+    subject = subject.replace('-', '')
+    if dname == 'adni_our_2cls':
+        subject = subject.upper()
+    return subject
+
+
+def extract_subject_id_from_filename(fname, dname):
+    match = re.search(r'sub-([^_]+)', fname)
+    if match is None:
+        return None
+    return normalize_subject_id(match.group(1), dname)
+
+
+def get_custom_atlas_dir(atlas_name):
+    if atlas_name not in CUSTOM_ROI_ATLAS_DIR:
+        raise NotImplementedError(f'Custom ROI loader only supports {list(CUSTOM_ROI_ATLAS_DIR)} for now, got {atlas_name}')
+    return CUSTOM_ROI_ATLAS_DIR[atlas_name]
+
+
 class NeuroNetworkDataset(Dataset):
 
     def __init__(self, atlas_name='AAL_116',
@@ -381,7 +450,6 @@ def ttest_fc(fcs1, fcs2, thr=0.05):
     print(significant_fc.shape)
     return significant_fc, ps
 
-import re
 class Dataset_PPMI_ABIDE(Dataset):
     def __init__(self, atlas_name='AAL_116', # multi-atlas not available 
                  dname='ppmi',
@@ -537,6 +605,190 @@ class Dataset_PPMI_ABIDE(Dataset):
                 data.y = self.label_remap[data.y]
         return data
 
+
+class Dataset_ROI_NPY(Dataset):
+    def __init__(self, atlas_name='AAL_116',
+                 dname='adni_our_2cls',
+                 node_attr='FC', adj_type='FC',
+                 transform=None,
+                 fc_winsize=500,
+                 fc_winoverlap=0,
+                 fc_th=0.5,
+                 sc_th=0.1,
+                 roi_root=None,
+                 label_csv=None,
+                 preload=True,
+                 **kargs):
+        super().__init__()
+        assert dname in CUSTOM_ROI_DATASET_CONFIG, dname
+        config = CUSTOM_ROI_DATASET_CONFIG[dname]
+        defaults = CUSTOM_ROI_ROOT_DEFAULTS[dname]
+
+        self.dname = dname
+        self.node_attr = node_attr
+        self.adj_type = adj_type
+        self.transform = transform
+        self.fc_winsize = fc_winsize
+        self.fc_th = fc_th
+        self.sc_th = sc_th
+        self.atlas_name = atlas_name
+        self.node_num = ATLAS_ROI_NPY(atlas_name)
+        self.roi_root = Path(roi_root or defaults['roi_root'])
+        self.label_csv = Path(label_csv or defaults['label_csv'])
+        self.label_names = list(config['label_names'])
+        self.nclass_list = [len(self.label_names)]
+        self.dnames = [dname]
+        self.dname2tokenid = {dname: 0}
+        self.label_remap = None
+
+        atlas_dir = get_custom_atlas_dir(atlas_name)
+        csv_data = pd.read_csv(self.label_csv)
+        if config['subject_column'] not in csv_data.columns:
+            raise KeyError(f'{self.label_csv} missing required column {config["subject_column"]}')
+        if config['label_column'] not in csv_data.columns:
+            raise KeyError(f'{self.label_csv} missing required column {config["label_column"]}')
+
+        self.subj2label = {}
+        for _, row in csv_data.iterrows():
+            subject = normalize_subject_id(row[config['subject_column']], dname)
+            label = row[config['label_column']]
+            if pd.isna(subject) or pd.isna(label):
+                continue
+            if label not in config['label_map']:
+                continue
+            self.subj2label[subject] = config['label_map'][label]
+
+        self.subj2sex = {}
+        self.subj2age = {}
+        self.data_path = []
+        self.subject = []
+        self.labels = []
+        self.class_dir_label = []
+        missing_label = 0
+        mismatched_label = 0
+
+        if config['layout'] == 'label_dir':
+            for class_dir, expected_label in config['class_dirs'].items():
+                npy_root = self.roi_root / class_dir / atlas_dir
+                if not npy_root.exists():
+                    print(f'Warning: expected ROI dir missing: {npy_root}')
+                    continue
+                for npy_path in sorted(npy_root.glob('*.npy')):
+                    subject = extract_subject_id_from_filename(npy_path.name, dname)
+                    if subject is None or subject not in self.subj2label:
+                        missing_label += 1
+                        continue
+                    expected_idx = config['label_map'][expected_label]
+                    if self.subj2label[subject] != expected_idx:
+                        mismatched_label += 1
+                        continue
+                    self.data_path.append(str(npy_path))
+                    self.subject.append(subject)
+                    self.labels.append(expected_idx)
+                    self.class_dir_label.append(class_dir)
+        elif config['layout'] == 'flat':
+            npy_root = self.roi_root / atlas_dir
+            if not npy_root.exists():
+                raise FileNotFoundError(f'Expected ROI dir not found: {npy_root}')
+            for npy_path in sorted(npy_root.glob('*.npy')):
+                subject = extract_subject_id_from_filename(npy_path.name, dname)
+                if subject is None or subject not in self.subj2label:
+                    missing_label += 1
+                    continue
+                self.data_path.append(str(npy_path))
+                self.subject.append(subject)
+                self.labels.append(self.subj2label[subject])
+                self.class_dir_label.append(None)
+        else:
+            raise ValueError(f'Unknown layout {config["layout"]}')
+
+        self.subject = np.array(self.subject)
+        self.data_subj = np.unique(self.subject)
+        self.cached_data = [None for _ in range(len(self.data_path))]
+
+        print(
+            f'Loaded {dname}: {len(self.data_path)} samples from {len(self.data_subj)} subjects, '
+            f'atlas={atlas_name}, labels={self.label_names}, skipped_missing={missing_label}, skipped_mismatch={mismatched_label}'
+        )
+        if preload:
+            for _ in tqdm(self, desc=f'Preload {dname}'):
+                pass
+
+    def __len__(self):
+        return len(self.cached_data)
+
+    def _load_bold(self, index):
+        bold = np.load(self.data_path[index])
+        if bold.ndim != 2:
+            raise ValueError(f'Expected 2D ROI timeseries, got shape {bold.shape} from {self.data_path[index]}')
+        bold = torch.from_numpy(bold).float()
+        if bold.shape[0] == self.node_num and bold.shape[1] != self.node_num:
+            pass
+        elif bold.shape[1] == self.node_num and bold.shape[0] != self.node_num:
+            bold = bold.T
+        elif bold.shape[0] == self.node_num and bold.shape[1] == self.node_num:
+            # Ambiguous square matrix, keep the original orientation.
+            pass
+        else:
+            raise ValueError(
+                f'Cannot infer ROI axis for {self.data_path[index]} with shape {tuple(bold.shape)} '
+                f'and expected ROI count {self.node_num}'
+            )
+        return torch.nan_to_num(bold)
+
+    def __getitem__(self, index):
+        if self.cached_data[index] is None:
+            bold = self._load_bold(index)
+            fc = torch.corrcoef(bold)
+            fc = torch.nan_to_num(fc)
+            edge_index_fc = torch.stack(torch.where(fc > self.fc_th))
+            if self.adj_type != 'FC':
+                raise NotImplementedError(f'{self.dname} only supports adj_type=FC for now, got {self.adj_type}')
+            edge_index = edge_index_fc
+            if self.node_attr == 'FC':
+                x = fc
+            elif self.node_attr == 'BOLD':
+                x = bold[:, :self.fc_winsize]
+                if x.shape[1] < self.fc_winsize:
+                    x = torch.cat([x, torch.zeros(x.shape[0], self.fc_winsize-x.shape[1], dtype=x.dtype)], 1)
+            elif self.node_attr == 'ID':
+                x = torch.arange(self.node_num).float()[:, None]
+            else:
+                raise NotImplementedError(f'{self.dname} only supports node_attr in [FC, BOLD, ID] for now, got {self.node_attr}')
+            x = torch.nan_to_num(x)
+
+            data = {
+                'edge_index': edge_index,
+                'x': x,
+                'y': torch.tensor([[self.labels[index]]]).long(),
+                'sex': -1,
+                'age': torch.tensor([[-1]]).float(),
+                'edge_index_fc': edge_index_fc,
+                'edge_index_sc': edge_index_fc,
+            }
+            if self.transform is not None:
+                new_data = self.transform(Data.from_dict(data))
+                for key in new_data:
+                    data[key] = new_data[key]
+
+            adj_fc = torch.zeros(x.shape[0], x.shape[0]).bool()
+            adj_fc[edge_index_fc[0], edge_index_fc[1]] = True
+            adj_fc[torch.arange(self.node_num), torch.arange(self.node_num)] = True
+            data['adj_fc'] = adj_fc[None]
+            data['adj_sc'] = adj_fc[None]
+            self.cached_data[index] = Data.from_dict(data)
+
+        return self.cached_data[index]
+
+
+def ATLAS_ROI_NPY(atlas_name):
+    atlas_roi = {
+        'AAL_116': 116,
+    }
+    if atlas_name not in atlas_roi:
+        raise NotImplementedError(f'Custom ROI loader only supports {list(atlas_roi)} for now, got {atlas_name}')
+    return atlas_roi[atlas_name]
+
 DATASET_CLASS = {
     'adni': NeuroNetworkDataset,
     'oasis': NeuroNetworkDataset,
@@ -546,7 +798,10 @@ DATASET_CLASS = {
     'ppmi': Dataset_PPMI_ABIDE,
     'abide': Dataset_PPMI_ABIDE,
     'neurocon': Dataset_PPMI_ABIDE,
-    'taowu': Dataset_PPMI_ABIDE
+    'taowu': Dataset_PPMI_ABIDE,
+    'adni_our_2cls': Dataset_ROI_NPY,
+    'ppmi_our_2cls': Dataset_ROI_NPY,
+    'ppmi_our_3cls': Dataset_ROI_NPY,
 }
 
 def dataloader_generator(batch_size=4, num_workers=8, nfold=0, total_fold=5, dataset=None, testset='None', **kargs):
