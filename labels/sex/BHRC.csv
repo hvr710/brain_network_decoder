@@ -1,0 +1,908 @@
+Subject,session_id,study,study_site,wave,age,sex,race,ethnicity,bmi,handedness,participant_education,parent_1_education,parent_2_education,p_factor_mcelroy_harmonized_all_samples,internalizing_mcelroy_harmonized_all_samples,externalizing_mcelroy_harmonized_all_samples,attention_mcelroy_harmonized_all_samples,cubids_acquisition_group,Gender,education_group,handedness_code
+10001,1,BHRC,BHRC-1,1,10.68856947,Female,Other,Hispanic or Latino,34.35064077,Right,5th Grade,Complete secondary,Complete primary,1.367287862,1.539007082,-0.632578944,-0.728623296,559,0,0.0,1
+10001,2,BHRC,BHRC-1,1,10.68856947,Female,Other,Hispanic or Latino,34.35064077,Right,5th Grade,Complete secondary,Complete primary,1.367287862,1.539007082,-0.632578944,-0.728623296,592,0,0.0,1
+10612,1,BHRC,BHRC-1,1,8.65982204,Male,White,Hispanic or Latino,21.36678201,Right,2nd Grade,No/incomplete primary,,0.473238254,-0.878509012,-0.564223603,1.600221843,542,1,0.0,1
+10615,1,BHRC,BHRC-1,1,7.841204654,Male,Black,Hispanic or Latino,37.02639727,Right,2nd Grade,Complete secondary,Complete tertiary,1.540448569,0.349338708,2.371458397,-1.159616876,543,1,0.0,1
+10615,2,BHRC,BHRC-1,1,7.841204654,Male,Black,Hispanic or Latino,37.02639727,Right,2nd Grade,Complete secondary,Complete tertiary,1.540448569,0.349338708,2.371458397,-1.159616876,276,1,0.0,1
+10617,2,BHRC,BHRC-1,1,12.55578371,Male,White,Hispanic or Latino,21.06674327,Left,3rd Grade,Complete secondary,No/incomplete primary,,,,,191,1,0.0,0
+10618,1,BHRC,BHRC-1,1,7.698836413,Male,White,Hispanic or Latino,18.73278237,Left,1st Grade,Complete secondary,,-0.07448994,1.436686439,-0.850236739,-1.327944841,544,1,0.0,0
+10618,2,BHRC,BHRC-1,1,7.698836413,Male,White,Hispanic or Latino,18.73278237,Left,1st Grade,Complete secondary,,-0.07448994,1.436686439,-0.850236739,-1.327944841,532,1,0.0,0
+10620,1,BHRC,BHRC-1,1,7.047227926,Male,White,Hispanic or Latino,34.50509436,Right,Kindergarten,Complete primary,No/incomplete primary,1.205179966,0.091246339,-0.481477664,-2.176983696,595,1,,1
+10620,2,BHRC,BHRC-1,1,7.047227926,Male,White,Hispanic or Latino,34.50509436,Right,Kindergarten,Complete primary,No/incomplete primary,1.205179966,0.091246339,-0.481477664,-2.176983696,545,1,,1
+10621,1,BHRC,BHRC-1,1,12.87063655,Female,White,Hispanic or Latino,,Right,5th Grade,Complete secondary,,1.580975543,0.318795232,-0.830449667,0.939858289,546,0,0.0,1
+10622,1,BHRC,BHRC-1,1,7.474332649,Male,White,Hispanic or Latino,16.90284879,Right,1st Grade,No/incomplete primary,Complete primary,-1.042224955,-0.243204719,-0.535442407,-0.042363132,485,1,0.0,1
+10624,2,BHRC,BHRC-1,1,11.69609856,Female,White,Hispanic or Latino,26.57206592,Right,4th Grade,No/incomplete primary,Complete secondary,,,,,531,0,0.0,1
+10627,1,BHRC,BHRC-1,1,11.54825462,Female,White,Hispanic or Latino,21.52736466,Left,5th Grade,Complete tertiary,Complete secondary,0.53709894,1.768083149,0.313602878,0.728985893,459,0,0.0,0
+10627,2,BHRC,BHRC-1,1,11.54825462,Female,White,Hispanic or Latino,21.52736466,Left,5th Grade,Complete tertiary,Complete secondary,0.53709894,1.768083149,0.313602878,0.728985893,306,0,0.0,0
+10628,2,BHRC,BHRC-1,1,7.567419576,Male,White,Hispanic or Latino,17.99816345,,1st Grade,Complete secondary,No/incomplete primary,,,,,806,1,0.0,
+10631,1,BHRC,BHRC-1,1,8.161533196,Male,Other,Hispanic or Latino,21.2244898,Right,2nd Grade,Complete secondary,Complete secondary,-0.562041718,1.705469024,-0.799869646,-0.497403564,547,1,0.0,1
+10631,2,BHRC,BHRC-1,1,8.161533196,Male,Other,Hispanic or Latino,21.2244898,Right,2nd Grade,Complete secondary,Complete secondary,-0.562041718,1.705469024,-0.799869646,-0.497403564,529,1,0.0,1
+10632,1,BHRC,BHRC-1,1,9.664613279,Female,White,Hispanic or Latino,30.71248447,Right,4th Grade,No/incomplete primary,No/incomplete primary,0.082705596,1.758920106,1.830012146,-1.161466634,548,0,0.0,1
+10632,2,BHRC,BHRC-1,1,9.664613279,Female,White,Hispanic or Latino,30.71248447,Right,4th Grade,No/incomplete primary,No/incomplete primary,0.082705596,1.758920106,1.830012146,-1.161466634,246,0,0.0,1
+10634,1,BHRC,BHRC-1,1,10.11088296,Male,Other,Hispanic or Latino,22.53061224,Right,3rd Grade,Complete primary,Complete secondary,-1.209245211,-0.907525313,-0.459891767,0.116716043,469,1,0.0,1
+10634,2,BHRC,BHRC-1,1,10.11088296,Male,Other,Hispanic or Latino,22.53061224,Right,3rd Grade,Complete primary,Complete secondary,-1.209245211,-0.907525313,-0.459891767,0.116716043,308,1,0.0,1
+10637,1,BHRC,BHRC-1,1,13.35523614,Female,White,Hispanic or Latino,24.00548697,,5th Grade,No/incomplete primary,Complete secondary,1.846243009,-0.263057978,-1.073291008,0.812224997,549,0,0.0,
+10640,3,BHRC,BHRC-1,1,9.166324435,Male,White,Hispanic or Latino,18.42403628,Left,2nd Grade,Complete primary,No/incomplete primary,-0.144491077,1.282441887,-1.443848908,-0.188494003,528,1,0.0,0
+10643,1,BHRC,BHRC-1,1,7.871321013,Female,White,Hispanic or Latino,22.65625,Right,Kindergarten,No/incomplete primary,No/incomplete primary,1.147459731,0.147751769,-0.947373276,0.299842071,550,0,,1
+10643,2,BHRC,BHRC-1,1,7.871321013,Female,White,Hispanic or Latino,22.65625,Right,Kindergarten,No/incomplete primary,No/incomplete primary,1.147459731,0.147751769,-0.947373276,0.299842071,309,0,,1
+10644,1,BHRC,BHRC-1,1,12.15605749,Male,White,Hispanic or Latino,20.65754,Right,4th Grade,No/incomplete primary,No/incomplete primary,0.163759544,0.031686561,0.685959602,1.004599814,597,1,0.0,1
+10644,2,BHRC,BHRC-1,1,12.15605749,Male,White,Hispanic or Latino,20.65754,Right,4th Grade,No/incomplete primary,No/incomplete primary,0.163759544,0.031686561,0.685959602,1.004599814,245,1,0.0,1
+10646,1,BHRC,BHRC-1,1,8.287474333,Male,White,Hispanic or Latino,23.62444749,Right,1st Grade,No/incomplete primary,Complete secondary,-0.124841635,1.096126686,-0.407725849,-1.292799442,551,1,0.0,1
+10646,2,BHRC,BHRC-1,1,8.287474333,Male,White,Hispanic or Latino,23.62444749,Right,1st Grade,No/incomplete primary,Complete secondary,-0.124841635,1.096126686,-0.407725849,-1.292799442,850,1,0.0,1
+10648,1,BHRC,BHRC-1,1,8.728268309,Female,White,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,No/incomplete primary,0.812191128,0.410425659,-0.148695084,0.531061803,31,0,0.0,1
+10648,2,BHRC,BHRC-1,1,8.728268309,Female,White,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,No/incomplete primary,0.812191128,0.410425659,-0.148695084,0.531061803,122,0,0.0,1
+10649,1,BHRC,BHRC-1,1,11.81930185,Female,White,Hispanic or Latino,20.77562327,Right,5th Grade,No/incomplete primary,,-1.145384525,1.77266467,-0.486874138,-0.660182256,552,0,0.0,1
+10650,1,BHRC,BHRC-1,1,8.692676249,Female,Other,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,No/incomplete primary,0.183408986,-0.234041676,-0.14329861,-0.608389036,477,0,0.0,1
+10650,2,BHRC,BHRC-1,1,8.692676249,Female,Other,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,No/incomplete primary,0.183408986,-0.234041676,-0.14329861,-0.608389036,225,0,0.0,1
+10651,1,BHRC,BHRC-1,1,7.712525667,Female,Black,Hispanic or Latino,20.83044983,Right,1st Grade,No/incomplete primary,No/incomplete primary,1.276409193,-0.556275344,-0.10552329,1.10263698,553,0,0.0,1
+10651,2,BHRC,BHRC-1,1,7.712525667,Female,Black,Hispanic or Latino,20.83044983,Right,1st Grade,No/incomplete primary,No/incomplete primary,1.276409193,-0.556275344,-0.10552329,1.10263698,822,0,0.0,1
+10654,1,BHRC,BHRC-1,1,11.91786448,Male,White,Hispanic or Latino,23.42560554,Right,4th Grade,Complete tertiary,No/incomplete primary,-0.445373156,2.14834942,-0.873621461,1.204373662,18,1,0.0,1
+10654,2,BHRC,BHRC-1,1,11.91786448,Male,White,Hispanic or Latino,23.42560554,Right,4th Grade,Complete tertiary,No/incomplete primary,-0.445373156,2.14834942,-0.873621461,1.204373662,785,1,0.0,1
+10655,1,BHRC,BHRC-1,1,8.303901437,Female,White,Hispanic or Latino,24.91111111,Right,2nd Grade,Complete secondary,Complete secondary,0.554292202,0.190512634,-0.596602448,-0.388267851,554,0,0.0,1
+10655,2,BHRC,BHRC-1,1,8.303901437,Female,White,Hispanic or Latino,24.91111111,Right,2nd Grade,Complete secondary,Complete secondary,0.554292202,0.190512634,-0.596602448,-0.388267851,83,0,0.0,1
+10657,1,BHRC,BHRC-1,1,9.327857632,Female,White,Hispanic or Latino,21.27062971,Right,3rd Grade,No/incomplete primary,,1.643608139,-0.281384064,2.276120685,-2.646822192,525,0,0.0,1
+10659,1,BHRC,BHRC-1,1,13.30321697,Female,White,Hispanic or Latino,27.23922448,Right,4th Grade,No/incomplete primary,No/incomplete primary,-0.812572102,0.995333216,-0.652366016,0.503315435,615,0,0.0,1
+10659,2,BHRC,BHRC-1,1,13.30321697,Female,White,Hispanic or Latino,27.23922448,Right,4th Grade,No/incomplete primary,No/incomplete primary,-0.812572102,0.995333216,-0.652366016,0.503315435,224,0,0.0,1
+10662,1,BHRC,BHRC-1,1,7.93155373,Male,Black,Hispanic or Latino,21.38564714,Right,1st Grade,No/incomplete primary,No/incomplete primary,0.569029284,1.015186476,1.421678926,-0.399366398,555,1,0.0,1
+10662,2,BHRC,BHRC-1,1,7.93155373,Male,Black,Hispanic or Latino,21.38564714,Right,1st Grade,No/incomplete primary,No/incomplete primary,0.569029284,1.015186476,1.421678926,-0.399366398,741,1,0.0,1
+10665,1,BHRC,BHRC-1,1,12.03285421,Male,White,Hispanic or Latino,32.38236885,Left,3rd Grade,Complete secondary,,2.617483605,1.187757113,1.819219197,0.507014951,523,1,0.0,0
+10665,2,BHRC,BHRC-1,1,12.03285421,Male,White,Hispanic or Latino,32.38236885,Left,3rd Grade,Complete secondary,,2.617483605,1.187757113,1.819219197,0.507014951,810,1,0.0,0
+10667,1,BHRC,BHRC-1,1,10.37371663,Male,White,Hispanic or Latino,25.55102041,Right,3rd Grade,Complete secondary,,-0.508005752,-0.565438387,-0.166683332,0.451522215,556,1,0.0,1
+10667,2,BHRC,BHRC-1,1,10.37371663,Male,White,Hispanic or Latino,25.55102041,Right,3rd Grade,Complete secondary,,-0.508005752,-0.565438387,-0.166683332,0.451522215,244,1,0.0,1
+10671,1,BHRC,BHRC-1,1,11.45516769,Male,Other,Hispanic or Latino,21.63331531,Right,3rd Grade,No/incomplete primary,,1.049212521,1.506936433,0.193081619,1.233969788,476,1,0.0,1
+10671,2,BHRC,BHRC-1,1,11.45516769,Male,Other,Hispanic or Latino,21.63331531,Right,3rd Grade,No/incomplete primary,,1.049212521,1.506936433,0.193081619,1.233969788,541,1,0.0,1
+10675,1,BHRC,BHRC-1,1,9.065023956,Male,White,Hispanic or Latino,22.53061224,Left,2nd Grade,Complete secondary,Complete secondary,0.876051814,0.563143037,-0.709928408,-1.864374619,557,1,0.0,0
+10675,2,BHRC,BHRC-1,1,9.065023956,Male,White,Hispanic or Latino,22.53061224,Left,2nd Grade,Complete secondary,Complete secondary,0.876051814,0.563143037,-0.709928408,-1.864374619,47,1,0.0,0
+10676,1,BHRC,BHRC-1,1,8.158795346,Female,White,Hispanic or Latino,,Right,2nd Grade,Complete secondary,Complete primary,2.36572513,1.448903829,0.597817189,-0.44930986,540,0,0.0,1
+10680,1,BHRC,BHRC-1,1,10.63107461,Female,White,Hispanic or Latino,26.12861083,Right,4th Grade,Complete tertiary,Complete secondary,-0.510461933,0.488311521,-0.164884507,0.050124761,512,0,0.0,1
+10683,1,BHRC,BHRC-1,1,10.43394935,Male,White,Hispanic or Latino,,Right,3rd Grade,Complete secondary,No/incomplete primary,1.475359793,-0.550166649,-0.731514305,-1.109673414,562,1,0.0,1
+10683,2,BHRC,BHRC-1,1,10.43394935,Male,White,Hispanic or Latino,,Right,3rd Grade,Complete secondary,No/incomplete primary,1.475359793,-0.550166649,-0.731514305,-1.109673414,181,1,0.0,1
+10684,1,BHRC,BHRC-1,1,7.356605065,Female,White,Hispanic or Latino,19.9099723,Right,Kindergarten,No/incomplete primary,Complete secondary,-0.387652921,-0.785351411,-1.308937051,0.357184564,468,0,,1
+10684,2,BHRC,BHRC-1,1,7.356605065,Female,White,Hispanic or Latino,19.9099723,Right,Kindergarten,No/incomplete primary,Complete secondary,-0.387652921,-0.785351411,-1.308937051,0.357184564,565,0,,1
+10685,1,BHRC,BHRC-1,1,9.973990418,Female,Other,Hispanic or Latino,46.47531231,Right,2nd Grade,Complete secondary,Complete secondary,-0.155543888,1.936072265,-1.438452434,-0.884002956,538,0,0.0,1
+10685,2,BHRC,BHRC-1,1,9.973990418,Female,Other,Hispanic or Latino,46.47531231,Right,2nd Grade,Complete secondary,Complete secondary,-0.155543888,1.936072265,-1.438452434,-0.884002956,310,0,0.0,1
+10686,1,BHRC,BHRC-1,1,10.35455168,Female,White,Hispanic or Latino,24.76756592,Right,3rd Grade,No/incomplete primary,Complete secondary,1.224829408,1.52220817,-1.233386412,-2.151087087,576,0,0.0,1
+10687,1,BHRC,BHRC-1,1,8.161533196,Female,White,Hispanic or Latino,,,2nd Grade,No/incomplete primary,No/incomplete primary,-0.219404574,-0.74869924,1.085298697,-1.226208159,602,0,0.0,
+10693,1,BHRC,BHRC-1,1,9.347022587,Female,White,Hispanic or Latino,21.67125803,Right,2nd Grade,No/incomplete primary,,0.700434927,0.126371336,-0.555229479,-1.098574867,519,0,0.0,1
+10693,2,BHRC,BHRC-1,1,9.347022587,Female,White,Hispanic or Latino,21.67125803,Right,2nd Grade,No/incomplete primary,,0.700434927,0.126371336,-0.555229479,-1.098574867,689,0,0.0,1
+10694,1,BHRC,BHRC-1,1,6.863791923,Female,White,Hispanic or Latino,20.40816327,Right,1st Grade,Complete secondary,Complete tertiary,-0.961171007,1.038094082,-0.575016551,-0.761918938,578,0,0.0,1
+10695,1,BHRC,BHRC-1,1,6.819986311,Male,Black,Hispanic or Latino,20.86111966,Right,Kindergarten,Complete tertiary,Complete primary,0.981667564,-0.525731868,0.155306299,1.27466446,579,1,,1
+10695,2,BHRC,BHRC-1,1,6.819986311,Male,Black,Hispanic or Latino,20.86111966,Right,Kindergarten,Complete tertiary,Complete primary,0.981667564,-0.525731868,0.155306299,1.27466446,117,1,,1
+10698,1,BHRC,BHRC-1,1,8.046543463,Male,Black,Hispanic or Latino,17.99015276,Left,2nd Grade,No/incomplete primary,,0.510080958,0.445550656,-0.429311746,0.03347694,34,1,0.0,0
+10698,2,BHRC,BHRC-1,1,8.046543463,Male,Black,Hispanic or Latino,17.99015276,Left,2nd Grade,No/incomplete primary,,0.510080958,0.445550656,-0.429311746,0.03347694,641,1,0.0,0
+10700,1,BHRC,BHRC-1,1,11.6386037,Female,Black,Hispanic or Latino,28.56648199,Right,3rd Grade,No/incomplete primary,,0.614468618,2.116278771,0.576231292,0.338686986,580,0,0.0,1
+10700,2,BHRC,BHRC-1,1,11.6386037,Female,Black,Hispanic or Latino,28.56648199,Right,3rd Grade,No/incomplete primary,,0.614468618,2.116278771,0.576231292,0.338686986,516,0,0.0,1
+10701,1,BHRC,BHRC-1,1,11.9890486,Female,White,Hispanic or Latino,24.39105884,Left,6th Grade,No/incomplete primary,Complete secondary,0.384815765,0.146224595,0.25783931,-0.798914095,613,0,0.0,0
+10701,2,BHRC,BHRC-1,1,11.9890486,Female,White,Hispanic or Latino,24.39105884,Left,6th Grade,No/incomplete primary,Complete secondary,0.384815765,0.146224595,0.25783931,-0.798914095,688,0,0.0,0
+10703,1,BHRC,BHRC-1,1,8.966461328,Male,White,Hispanic or Latino,18.40134298,Right,1st Grade,No/incomplete primary,No/incomplete primary,0.928859689,1.367963619,-0.260222219,1.306110344,581,1,0.0,1
+10703,2,BHRC,BHRC-1,1,8.966461328,Male,White,Hispanic or Latino,18.40134298,Right,1st Grade,No/incomplete primary,No/incomplete primary,0.928859689,1.367963619,-0.260222219,1.306110344,71,1,0.0,1
+10710,1,BHRC,BHRC-1,1,8.169746749,Male,White,Hispanic or Latino,20.54988662,Right,2nd Grade,Complete secondary,Complete primary,0.905525977,-0.533367737,-0.736910779,0.46447052,439,1,0.0,1
+10710,2,BHRC,BHRC-1,1,8.169746749,Male,White,Hispanic or Latino,20.54988662,Right,2nd Grade,Complete secondary,Complete primary,0.905525977,-0.533367737,-0.736910779,0.46447052,235,1,0.0,1
+10712,1,BHRC,BHRC-1,1,9.316906229,Male,White,Hispanic or Latino,18.89807163,Right,2nd Grade,No/incomplete primary,No/incomplete primary,-0.859239527,0.227164805,-0.627182469,1.805544965,467,1,0.0,1
+10712,2,BHRC,BHRC-1,1,9.316906229,Male,White,Hispanic or Latino,18.89807163,Right,2nd Grade,No/incomplete primary,No/incomplete primary,-0.859239527,0.227164805,-0.627182469,1.805544965,649,1,0.0,1
+10713,1,BHRC,BHRC-1,1,11.04996578,Female,White,Hispanic or Latino,27.36686391,Right,4th Grade,No/incomplete primary,,-0.132210175,-1.448144831,-0.808863769,-0.904350292,435,0,0.0,1
+10718,1,BHRC,BHRC-1,1,12.30937714,Male,White,Hispanic or Latino,24.11150746,Right,5th Grade,Complete secondary,Complete secondary,0.987808015,-2.043742606,-0.280009292,-1.094875351,433,1,0.0,1
+10718,2,BHRC,BHRC-1,1,12.30937714,Male,White,Hispanic or Latino,24.11150746,Right,5th Grade,Complete secondary,Complete secondary,0.987808015,-2.043742606,-0.280009292,-1.094875351,236,1,0.0,1
+10730,1,BHRC,BHRC-1,1,10.03422313,Male,White,Hispanic or Latino,19.94805977,Right,3rd Grade,No/incomplete primary,No/incomplete primary,1.291146275,0.309632189,1.824615672,0.203654663,513,1,0.0,1
+10740,1,BHRC,BHRC-1,1,7.540041068,Male,White,Hispanic or Latino,18.85813149,Right,Kindergarten,No/incomplete primary,Complete primary,-0.538708005,1.781827713,-0.14329861,-1.015335764,464,1,,1
+10744,1,BHRC,BHRC-1,1,10.48323066,Male,Other,Hispanic or Latino,20.46296296,Right,4th Grade,Complete secondary,Complete tertiary,-0.203439402,-0.116449295,0.482692404,-0.83775901,453,1,0.0,1
+10744,2,BHRC,BHRC-1,1,10.48323066,Male,Other,Hispanic or Latino,20.46296296,Right,4th Grade,Complete secondary,Complete tertiary,-0.203439402,-0.116449295,0.482692404,-0.83775901,662,1,0.0,1
+10745,1,BHRC,BHRC-1,1,12.04654346,Male,White,Hispanic or Latino,,Right,3rd Grade,Complete primary,Complete primary,1.582203633,1.513045128,0.44311826,-0.920998113,582,1,0.0,1
+10746,1,BHRC,BHRC-1,1,13.26214921,Female,White,Hispanic or Latino,20.3125,Right,7th Grade,No/incomplete primary,No/incomplete primary,-1.608374501,-0.744117719,-0.314186962,-0.432662039,517,0,1.0,1
+10746,2,BHRC,BHRC-1,1,13.26214921,Female,White,Hispanic or Latino,20.3125,Right,7th Grade,No/incomplete primary,No/incomplete primary,-1.608374501,-0.744117719,-0.314186962,-0.432662039,223,0,1.0,1
+10747,1,BHRC,BHRC-1,1,12.1779603,Female,White,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,Complete secondary,0.388500036,0.159969159,-0.803467295,-0.256935043,483,0,0.0,1
+10749,1,BHRC,BHRC-1,1,11.07460643,Male,Black,Hispanic or Latino,21.96791386,Right,3rd Grade,Complete secondary,Complete primary,0.061828064,0.422643049,-0.9491721,-0.280981895,461,1,0.0,1
+10749,2,BHRC,BHRC-1,1,11.07460643,Male,Black,Hispanic or Latino,21.96791386,Right,3rd Grade,Complete secondary,Complete primary,0.061828064,0.422643049,-0.9491721,-0.280981895,773,1,0.0,1
+10751,1,BHRC,BHRC-1,1,12.13689254,Male,White,Hispanic or Latino,19.48738275,Right,3rd Grade,,Complete secondary,1.005001277,-0.640269902,1.045724553,0.397879237,434,1,0.0,1
+10753,1,BHRC,BHRC-1,1,10.17111567,Male,White,Hispanic or Latino,25.6752783,Right,4th Grade,Complete secondary,Complete primary,1.948174489,-1.1121666,2.364263098,0.764131292,583,1,0.0,1
+10754,1,BHRC,BHRC-1,1,10.80903491,Female,White,Hispanic or Latino,21.21831719,Right,3rd Grade,No/incomplete primary,,0.777804604,-0.192807984,-0.546235355,-1.052330921,584,0,0.0,1
+10754,2,BHRC,BHRC-1,1,10.80903491,Female,White,Hispanic or Latino,21.21831719,Right,3rd Grade,No/incomplete primary,,0.777804604,-0.192807984,-0.546235355,-1.052330921,120,0,0.0,1
+10761,1,BHRC,BHRC-1,1,12.23819302,Female,Black,Hispanic or Latino,28.3446712,Left,5th Grade,Complete primary,No/incomplete primary,1.757820521,1.717686414,-1.483423053,0.85291967,629,0,0.0,0
+10761,2,BHRC,BHRC-1,1,12.23819302,Female,Black,Hispanic or Latino,28.3446712,Left,5th Grade,Complete primary,No/incomplete primary,1.757820521,1.717686414,-1.483423053,0.85291967,311,0,0.0,0
+10762,1,BHRC,BHRC-1,1,10.56262834,Female,Black,Hispanic or Latino,,Right,3rd Grade,No/incomplete primary,No/incomplete primary,-0.355722577,0.699061503,-1.325126474,-1.133720266,609,0,0.0,1
+10762,2,BHRC,BHRC-1,1,10.56262834,Female,Black,Hispanic or Latino,,Right,3rd Grade,No/incomplete primary,No/incomplete primary,-0.355722577,0.699061503,-1.325126474,-1.133720266,725,0,0.0,1
+10763,1,BHRC,BHRC-1,1,13.47570157,Female,White,Hispanic or Latino,,Right,6th Grade,No/incomplete primary,No/incomplete primary,0.540783211,0.634920204,-1.271161731,-1.799633094,471,0,0.0,1
+10766,1,BHRC,BHRC-1,1,7.008898015,Male,White,Hispanic or Latino,17.91508924,Right,Kindergarten,Complete secondary,Complete secondary,-0.096595562,0.485257174,0.378360569,-0.939495692,604,1,,1
+10766,2,BHRC,BHRC-1,1,7.008898015,Male,White,Hispanic or Latino,17.91508924,Right,Kindergarten,Complete secondary,Complete secondary,-0.096595562,0.485257174,0.378360569,-0.939495692,172,1,,1
+10772,1,BHRC,BHRC-1,1,11.28268309,Female,White,Hispanic or Latino,28.05901615,Right,4th Grade,Complete primary,Complete secondary,1.319392347,0.300469147,0.714740798,0.185157084,452,0,0.0,1
+10772,2,BHRC,BHRC-1,1,11.28268309,Female,White,Hispanic or Latino,28.05901615,Right,4th Grade,Complete primary,Complete secondary,1.319392347,0.300469147,0.714740798,0.185157084,137,0,0.0,1
+10773,1,BHRC,BHRC-1,1,7.857631759,Male,Other,Hispanic or Latino,17.7154195,Right,1st Grade,Complete primary,,0.6292057,0.075974601,-0.533643582,1.496635403,610,1,0.0,1
+10773,2,BHRC,BHRC-1,1,7.857631759,Male,Other,Hispanic or Latino,17.7154195,Right,1st Grade,Complete primary,,0.6292057,0.075974601,-0.533643582,1.496635403,647,1,0.0,1
+10774,1,BHRC,BHRC-1,1,10.2532512,Male,White,Hispanic or Latino,21.3577956,Right,4th Grade,Complete secondary,Complete secondary,0.596047266,0.905229963,0.056370938,-0.04421289,463,1,0.0,1
+10779,1,BHRC,BHRC-1,1,7.556468172,Male,White,Hispanic or Latino,,Right,1st Grade,Complete secondary,Complete secondary,-1.382405918,-0.221824286,-0.389737602,-0.538098237,475,1,0.0,1
+10781,1,BHRC,BHRC-1,1,9.242984257,Male,Black,Hispanic or Latino,,Right,1st Grade,No/incomplete primary,No/incomplete primary,1.288690094,0.239382195,-0.560625953,1.095237948,598,1,0.0,1
+10782,1,BHRC,BHRC-1,1,11.71526352,Male,Black,Hispanic or Latino,25.85749508,Right,4th Grade,Complete secondary,No/incomplete primary,-1.382405918,-0.221824286,-0.389737602,-0.538098237,462,1,0.0,1
+10785,1,BHRC,BHRC-1,1,7.715263518,Female,White,Hispanic or Latino,21.12097304,Right,1st Grade,Complete secondary,Complete secondary,-0.69099118,0.227164805,-0.022777352,-0.920998113,599,0,0.0,1
+10785,2,BHRC,BHRC-1,1,7.715263518,Female,White,Hispanic or Latino,21.12097304,Right,1st Grade,Complete secondary,Complete secondary,-0.69099118,0.227164805,-0.022777352,-0.920998113,139,0,0.0,1
+10786,1,BHRC,BHRC-1,1,12.1779603,Female,White,Hispanic or Latino,,Right,5th Grade,No/incomplete primary,No/incomplete primary,0.63534615,-0.363851448,-1.348511196,0.656845337,438,0,0.0,1
+10786,2,BHRC,BHRC-1,1,12.1779603,Female,White,Hispanic or Latino,,Right,5th Grade,No/incomplete primary,No/incomplete primary,0.63534615,-0.363851448,-1.348511196,0.656845337,505,0,0.0,1
+10787,1,BHRC,BHRC-1,1,10.19301848,Female,White,Hispanic or Latino,19.57193817,Right,3rd Grade,Complete secondary,No/incomplete primary,-0.553445087,1.473338609,-0.80526612,1.295011797,586,0,0.0,1
+10787,2,BHRC,BHRC-1,1,10.19301848,Female,White,Hispanic or Latino,19.57193817,Right,3rd Grade,Complete secondary,No/incomplete primary,-0.553445087,1.473338609,-0.80526612,1.295011797,237,0,0.0,1
+10788,1,BHRC,BHRC-1,1,12.3340178,Male,White,Hispanic or Latino,21.43598616,Right,3rd Grade,No/incomplete primary,No/incomplete primary,0.624293339,-0.988465524,-1.339517072,0.331287954,587,1,0.0,1
+10788,2,BHRC,BHRC-1,1,12.3340178,Male,White,Hispanic or Latino,21.43598616,Right,3rd Grade,No/incomplete primary,No/incomplete primary,0.624293339,-0.988465524,-1.339517072,0.331287954,152,1,0.0,1
+10790,1,BHRC,BHRC-1,1,10.95140315,Female,White,Hispanic or Latino,33.05785124,Right,3rd Grade,Complete secondary,No/incomplete primary,1.280093464,1.161795158,0.360372321,-0.177395456,470,0,0.0,1
+10790,2,BHRC,BHRC-1,1,10.95140315,Female,White,Hispanic or Latino,33.05785124,Right,3rd Grade,Complete secondary,No/incomplete primary,1.280093464,1.161795158,0.360372321,-0.177395456,169,0,0.0,1
+10791,1,BHRC,BHRC-1,1,12.91991786,Female,White,Hispanic or Latino,,Right,6th Grade,Complete secondary,,1.664485671,-0.116449295,1.200423482,-2.615376308,473,0,0.0,1
+10791,2,BHRC,BHRC-1,1,12.91991786,Female,White,Hispanic or Latino,,Right,6th Grade,Complete secondary,,1.664485671,-0.116449295,1.200423482,-2.615376308,736,0,0.0,1
+10792,1,BHRC,BHRC-1,1,10.68856947,Male,White,Hispanic or Latino,,Right,4th Grade,No/incomplete primary,,2.428357727,1.412251658,0.826267933,-1.00978649,577,1,0.0,1
+10794,1,BHRC,BHRC-1,1,11.56468172,Male,White,Hispanic or Latino,,Right,4th Grade,No/incomplete primary,No/incomplete primary,0.513765228,-0.270693847,-0.157689208,0.745633714,445,1,0.0,1
+10794,2,BHRC,BHRC-1,1,11.56468172,Male,White,Hispanic or Latino,,Right,4th Grade,No/incomplete primary,No/incomplete primary,0.513765228,-0.270693847,-0.157689208,0.745633714,564,1,0.0,1
+10798,1,BHRC,BHRC-1,1,8.906228611,Male,Black,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,,1.218688958,0.421115875,0.684160777,-0.131151509,612,1,0.0,1
+10798,2,BHRC,BHRC-1,1,8.906228611,Male,Black,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,,1.218688958,0.421115875,0.684160777,-0.131151509,823,1,0.0,1
+10800,1,BHRC,BHRC-1,1,10.78986995,Male,Black,Hispanic or Latino,,Right,3rd Grade,No/incomplete primary,,0.108495488,1.739066847,-0.603797747,-0.425263008,465,1,0.0,1
+10806,1,BHRC,BHRC-1,1,9.798767967,Male,White,Hispanic or Latino,18.49649888,Right,1st Grade,No/incomplete primary,,1.054124881,0.502056085,1.209417605,1.230270272,478,1,0.0,1
+10808,1,BHRC,BHRC-1,1,8.380561259,Male,Other,Hispanic or Latino,22.83737024,Left,2nd Grade,Complete primary,Complete secondary,-0.113788824,-1.458835048,-0.821455543,0.140762895,31,1,0.0,0
+10808,2,BHRC,BHRC-1,1,8.380561259,Male,Other,Hispanic or Latino,22.83737024,Left,2nd Grade,Complete primary,Complete secondary,-0.113788824,-1.458835048,-0.821455543,0.140762895,233,1,0.0,0
+10814,1,BHRC,BHRC-1,1,10.75701574,Male,White,Hispanic or Latino,30.05681068,Right,4th Grade,Complete secondary,No/incomplete primary,1.815540756,1.096126686,-1.046308637,0.825173302,20,1,0.0,1
+10814,2,BHRC,BHRC-1,1,10.75701574,Male,White,Hispanic or Latino,30.05681068,Right,4th Grade,Complete secondary,No/incomplete primary,1.815540756,1.096126686,-1.046308637,0.825173302,51,1,0.0,1
+10819,1,BHRC,BHRC-1,1,10.29705681,Male,White,Hispanic or Latino,38.56749311,Right,4th Grade,Complete secondary,,0.486747246,1.653545116,-0.170280982,0.764131292,606,1,0.0,1
+10819,2,BHRC,BHRC-1,1,10.29705681,Male,White,Hispanic or Latino,38.56749311,Right,4th Grade,Complete secondary,,0.486747246,1.653545116,-0.170280982,0.764131292,238,1,0.0,1
+10820,1,BHRC,BHRC-1,1,13.63997262,Male,White,Hispanic or Latino,,Right,5th Grade,No/incomplete primary,No/incomplete primary,-0.116245004,-0.258476457,0.977369212,-0.12190272,472,1,0.0,1
+10821,1,BHRC,BHRC-1,1,9.127994524,Female,Other,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,,1.391849665,0.860941924,1.245394101,-0.750820391,563,0,0.0,1
+10824,1,BHRC,BHRC-1,1,6.669404517,Female,White,Hispanic or Latino,22.7189744,Right,1st Grade,Complete secondary,Complete secondary,-0.557129357,1.24731689,0.122927453,0.094518949,539,0,0.0,1
+10824,2,BHRC,BHRC-1,1,6.669404517,Female,White,Hispanic or Latino,22.7189744,Right,1st Grade,Complete secondary,Complete secondary,-0.557129357,1.24731689,0.122927453,0.094518949,484,0,0.0,1
+10825,1,BHRC,BHRC-1,1,12.62149213,Female,White,Hispanic or Latino,33.24787694,Right,5th Grade,No/incomplete primary,No/incomplete primary,-0.194842772,1.629110335,-1.413268887,-0.845158041,518,0,0.0,1
+10825,2,BHRC,BHRC-1,1,12.62149213,Female,White,Hispanic or Latino,33.24787694,Right,5th Grade,No/incomplete primary,No/incomplete primary,-0.194842772,1.629110335,-1.413268887,-0.845158041,312,0,0.0,1
+10826,1,BHRC,BHRC-1,1,11.77549624,Female,White,Hispanic or Latino,,Right,4th Grade,Complete secondary,,0.598503447,1.369490792,-0.639774243,-1.849576556,479,0,0.0,1
+10826,2,BHRC,BHRC-1,1,11.77549624,Female,White,Hispanic or Latino,,Right,4th Grade,Complete secondary,,0.598503447,1.369490792,-0.639774243,-1.849576556,740,0,0.0,1
+10827,2,BHRC,BHRC-1,1,8.837782341,Male,White,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,No/incomplete primary,,,,,834,1,0.0,1
+10829,1,BHRC,BHRC-1,1,7.184120465,Female,Black,Hispanic or Latino,21.01010101,Right,1st Grade,Complete secondary,Complete primary,-0.011857344,1.056420168,0.148111,1.137782379,440,0,0.0,1
+10829,2,BHRC,BHRC-1,1,7.184120465,Female,Black,Hispanic or Latino,21.01010101,Right,1st Grade,Complete secondary,Complete primary,-0.011857344,1.056420168,0.148111,1.137782379,848,0,0.0,1
+10830,1,BHRC,BHRC-1,1,12.81861739,Female,White,Hispanic or Latino,,Right,6th Grade,Complete secondary,,0.685697845,2.284267887,-2.0536505,1.459640246,537,0,0.0,1
+10830,2,BHRC,BHRC-1,1,12.81861739,Female,White,Hispanic or Latino,,Right,6th Grade,Complete secondary,,0.685697845,2.284267887,-2.0536505,1.459640246,407,0,0.0,1
+10832,1,BHRC,BHRC-1,1,13.68925394,Female,White,Hispanic or Latino,28.85245902,Right,6th Grade,No/incomplete primary,,0.958333852,0.941882134,-0.977953296,-1.342742904,18,0,0.0,1
+10832,2,BHRC,BHRC-1,1,13.68925394,Female,White,Hispanic or Latino,28.85245902,Right,6th Grade,No/incomplete primary,,0.958333852,0.941882134,-0.977953296,-1.342742904,705,0,0.0,1
+10835,2,BHRC,BHRC-1,1,11.67419576,Female,White,Hispanic or Latino,21.78649237,Right,4th Grade,No/incomplete primary,,,,,,793,0,0.0,1
+10841,1,BHRC,BHRC-1,1,11.77823409,Male,Other,Hispanic or Latino,,Right,3rd Grade,No/incomplete primary,Complete secondary,0.785173145,0.848724534,2.051267591,0.549559381,558,1,0.0,1
+10841,2,BHRC,BHRC-1,1,11.77823409,Male,Other,Hispanic or Latino,,Right,3rd Grade,No/incomplete primary,Complete secondary,0.785173145,0.848724534,2.051267591,0.549559381,106,1,0.0,1
+10845,1,BHRC,BHRC-1,1,13.09514031,Female,Other,Hispanic or Latino,27.94309769,Right,6th Grade,No/incomplete primary,,0.981667564,0.175240897,-0.80166847,-2.178833454,34,0,0.0,1
+10845,2,BHRC,BHRC-1,1,13.09514031,Female,Other,Hispanic or Latino,27.94309769,Right,6th Grade,No/incomplete primary,,0.981667564,0.175240897,-0.80166847,-2.178833454,90,0,0.0,1
+10849,1,BHRC,BHRC-1,1,7.51266256,Male,White,Hispanic or Latino,21.1944205,Right,3rd Grade,Complete secondary,Complete secondary,0.088846046,-0.605144905,0.684160777,-1.446329344,617,1,0.0,1
+10849,2,BHRC,BHRC-1,1,7.51266256,Male,White,Hispanic or Latino,21.1944205,Right,3rd Grade,Complete secondary,Complete secondary,0.088846046,-0.605144905,0.684160777,-1.446329344,230,1,0.0,1
+10853,2,BHRC,BHRC-1,1,8.542094456,Female,Other,Hispanic or Latino,17.70857697,Right,2nd Grade,No/incomplete primary,Complete secondary,,,,,794,0,0.0,1
+10856,1,BHRC,BHRC-1,1,9.226557153,Female,White,Hispanic or Latino,27.26627219,Right,1st Grade,No/incomplete primary,No/incomplete primary,2.234319487,-0.777715542,1.747266207,-0.874754167,560,0,0.0,1
+10860,1,BHRC,BHRC-1,1,8.640657084,Female,Other,Hispanic or Latino,,Right,2nd Grade,Complete primary,Complete primary,1.583431723,1.262588628,0.297413455,-1.192912518,456,0,0.0,1
+10860,2,BHRC,BHRC-1,1,8.640657084,Female,Other,Hispanic or Latino,,Right,2nd Grade,Complete primary,Complete primary,1.583431723,1.262588628,0.297413455,-1.192912518,795,0,0.0,1
+10867,1,BHRC,BHRC-1,1,8.032854209,Female,White,Hispanic or Latino,,Right,2nd Grade,Complete primary,Complete secondary,-0.946433925,-0.376068838,-0.58221185,0.625399453,451,0,0.0,1
+10869,1,BHRC,BHRC-1,1,9.848049281,Female,Black,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,,-0.135894446,1.945235307,-1.449245382,-0.195893034,639,0,0.0,1
+10869,2,BHRC,BHRC-1,1,9.848049281,Female,Black,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,,-0.135894446,1.945235307,-1.449245382,-0.195893034,796,0,0.0,1
+10873,1,BHRC,BHRC-1,1,13.23203285,Male,White,Hispanic or Latino,,Left,4th Grade,No/incomplete primary,,0.081477506,0.408898485,2.258132437,-1.44078007,614,1,0.0,0
+10875,1,BHRC,BHRC-1,1,10.39561944,Male,White,Hispanic or Latino,,Right,4th Grade,Complete tertiary,Complete tertiary,-0.538708005,0.833452796,-0.814260244,-0.462258165,608,1,0.0,1
+10881,1,BHRC,BHRC-1,1,9.60164271,Male,White,Hispanic or Latino,,Right,2nd Grade,Complete primary,Complete secondary,1.632555328,-0.391340576,0.326194651,0.913961679,460,1,0.0,1
+10884,1,BHRC,BHRC-1,1,8.454483231,Male,White,Hispanic or Latino,20.02046766,Right,1st Grade,Complete tertiary,No/incomplete primary,0.140425831,1.38476253,-0.69553781,0.364583596,444,1,0.0,1
+10890,1,BHRC,BHRC-1,1,8.769336071,Male,White,Hispanic or Latino,22.40740741,Right,2nd Grade,Complete tertiary,Complete tertiary,0.137969651,-0.365378621,-0.258423395,-0.059010953,561,1,0.0,1
+10890,2,BHRC,BHRC-1,1,8.769336071,Male,White,Hispanic or Latino,22.40740741,Right,2nd Grade,Complete tertiary,Complete tertiary,0.137969651,-0.365378621,-0.258423395,-0.059010953,674,1,0.0,1
+10891,1,BHRC,BHRC-1,1,9.916495551,Female,White,Hispanic or Latino,,Right,4th Grade,No/incomplete primary,No/incomplete primary,0.012704459,0.405844137,1.883976888,0.825173302,605,0,0.0,1
+10893,1,BHRC,BHRC-1,1,11.20602327,Male,White,Hispanic or Latino,27.01969421,Right,4th Grade,Complete secondary,Complete secondary,-0.349582127,-0.808259018,-0.29439989,1.400447995,594,1,0.0,1
+10903,1,BHRC,BHRC-1,1,9.67008898,Female,White,Hispanic or Latino,23.63179034,Right,3rd Grade,No/incomplete primary,No/incomplete primary,-0.729061974,-0.42951992,0.007802669,-0.896951261,536,0,0.0,1
+10903,2,BHRC,BHRC-1,1,9.67008898,Female,White,Hispanic or Latino,23.63179034,Right,3rd Grade,No/incomplete primary,No/incomplete primary,-0.729061974,-0.42951992,0.007802669,-0.896951261,151,0,0.0,1
+10917,1,BHRC,BHRC-1,1,10.86652977,Male,White,Hispanic or Latino,,Right,4th Grade,Complete secondary,Complete secondary,1.466763162,0.66546368,0.497083002,0.99905054,474,1,0.0,1
+10917,2,BHRC,BHRC-1,1,10.86652977,Male,White,Hispanic or Latino,,Right,4th Grade,Complete secondary,Complete secondary,1.466763162,0.66546368,0.497083002,0.99905054,693,1,0.0,1
+10921,1,BHRC,BHRC-1,1,11.81930185,Male,White,Hispanic or Latino,20.21604938,Right,5th Grade,Complete secondary,,0.612012438,-0.979302481,-0.479678839,-1.015335764,480,1,0.0,1
+10925,1,BHRC,BHRC-1,1,13.52772074,Male,White,Hispanic or Latino,33.89721074,Right,6th Grade,No/incomplete primary,,-0.48221586,1.604675555,-0.850236739,0.20550442,443,1,0.0,1
+10928,1,BHRC,BHRC-1,1,12.92539357,Female,White,Hispanic or Latino,21.78649237,Right,6th Grade,No/incomplete primary,No/incomplete primary,0.885876535,0.352393055,-0.492270613,1.332006954,520,0,0.0,1
+10928,2,BHRC,BHRC-1,1,12.92539357,Female,White,Hispanic or Latino,21.78649237,Right,6th Grade,No/incomplete primary,No/incomplete primary,0.885876535,0.352393055,-0.492270613,1.332006954,657,0,0.0,1
+10930,1,BHRC,BHRC-1,1,10.34633812,Male,Black,Hispanic or Latino,27.4691358,Right,2nd Grade,Complete secondary,,-0.349582127,0.216474589,-0.936580327,2.195843872,458,1,0.0,1
+10934,1,BHRC,BHRC-1,1,10.6036961,Male,Other,Hispanic or Latino,,Right,4th Grade,Complete secondary,,2.111510475,1.490137521,-0.923988554,0.693840494,624,1,0.0,1
+10936,1,BHRC,BHRC-1,1,10.38466804,Male,White,Hispanic or Latino,40.77160494,Left,4th Grade,Complete secondary,Complete secondary,0.047090982,-0.062998213,-0.938379152,-1.41488346,593,1,0.0,0
+10950,1,BHRC,BHRC-1,1,9.048596851,Female,White,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,No/incomplete primary,0.740961901,1.587876643,-0.080339744,-0.878453682,466,0,0.0,1
+10951,1,BHRC,BHRC-1,1,10.07802875,Female,Other,Hispanic or Latino,26.0261749,Right,3rd Grade,Complete secondary,Complete secondary,1.85852391,0.546344125,2.080048787,-0.606539278,514,0,0.0,1
+10960,1,BHRC,BHRC-1,1,8.550308008,Female,White,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,No/incomplete primary,0.806050677,0.970898436,-0.648768366,-1.198461791,526,0,0.0,1
+10961,1,BHRC,BHRC-1,1,11.77002053,Female,White,Hispanic or Latino,22.03856749,Right,5th Grade,Complete secondary,No/incomplete primary,-0.150631527,0.046958299,-0.456294118,1.245068335,522,0,0.0,1
+10961,2,BHRC,BHRC-1,1,11.77002053,Female,White,Hispanic or Latino,22.03856749,Right,5th Grade,Complete secondary,No/incomplete primary,-0.150631527,0.046958299,-0.456294118,1.245068335,358,0,0.0,1
+10963,1,BHRC,BHRC-1,1,11.10746064,Male,White,Hispanic or Latino,30.74984247,Right,2nd Grade,Complete primary,No/incomplete primary,-0.054840498,0.776947366,-1.147042823,1.973872929,450,1,0.0,1
+10963,2,BHRC,BHRC-1,1,11.10746064,Male,White,Hispanic or Latino,30.74984247,Right,2nd Grade,Complete primary,No/incomplete primary,-0.054840498,0.776947366,-1.147042823,1.973872929,33,1,0.0,1
+10969,1,BHRC,BHRC-1,1,13.45653662,Male,White,Hispanic or Latino,,Right,5th Grade,No/incomplete primary,No/incomplete primary,0.505168597,-0.296655801,0.802883211,-1.535117721,591,1,0.0,1
+10970,1,BHRC,BHRC-1,1,7.676933607,Male,White,Hispanic or Latino,27.66009594,,2nd Grade,Complete primary,Complete primary,-0.408530453,0.454713698,-0.245831621,0.373832385,447,1,0.0,
+10970,2,BHRC,BHRC-1,1,7.676933607,Male,White,Hispanic or Latino,27.66009594,,2nd Grade,Complete primary,Complete primary,-0.408530453,0.454713698,-0.245831621,0.373832385,234,1,0.0,
+10973,1,BHRC,BHRC-1,1,13.47296372,Male,White,Hispanic or Latino,21.62964876,Right,6th Grade,Complete secondary,No/incomplete primary,1.529395758,-0.087432994,0.167898072,0.048275003,521,1,0.0,1
+10973,2,BHRC,BHRC-1,1,13.47296372,Male,White,Hispanic or Latino,21.62964876,Right,6th Grade,Complete secondary,No/incomplete primary,1.529395758,-0.087432994,0.167898072,0.048275003,405,1,0.0,1
+10979,1,BHRC,BHRC-1,1,7.622176591,Female,White,Hispanic or Latino,21.16381831,Right,1st Grade,Complete secondary,,0.361482053,1.803208146,-0.834047316,-0.545497269,625,0,0.0,1
+10979,2,BHRC,BHRC-1,1,7.622176591,Female,White,Hispanic or Latino,21.16381831,Right,1st Grade,Complete secondary,,0.361482053,1.803208146,-0.834047316,-0.545497269,664,0,0.0,1
+10981,1,BHRC,BHRC-1,1,12.09034908,Male,Black,Hispanic or Latino,26.4915082,Right,4th Grade,No/incomplete primary,,0.300077547,0.612012598,0.691356076,-1.340893146,626,1,0.0,1
+10981,2,BHRC,BHRC-1,1,12.09034908,Male,Black,Hispanic or Latino,26.4915082,Right,4th Grade,No/incomplete primary,,0.300077547,0.612012598,0.691356076,-1.340893146,280,1,0.0,1
+10984,1,BHRC,BHRC-1,1,11.77549624,Female,White,Hispanic or Latino,28.88657648,Left,1st Grade,Complete secondary,,2.120107106,1.485556,-0.110919765,0.690140978,628,0,0.0,0
+10984,2,BHRC,BHRC-1,1,11.77549624,Female,White,Hispanic or Latino,28.88657648,Left,1st Grade,Complete secondary,,2.120107106,1.485556,-0.110919765,0.690140978,845,0,0.0,0
+10987,1,BHRC,BHRC-1,1,11.97809719,Male,White,Hispanic or Latino,27.67404003,Left,5th Grade,No/incomplete primary,Complete secondary,0.93868441,-0.767025326,-0.765691975,0.442273426,437,1,0.0,0
+10990,1,BHRC,BHRC-1,1,12.46817248,Male,White,Hispanic or Latino,22.49134948,Right,4th Grade,No/incomplete primary,No/incomplete primary,-0.048700047,0.053066994,0.33338995,0.876966522,630,1,0.0,1
+10990,2,BHRC,BHRC-1,1,12.46817248,Male,White,Hispanic or Latino,22.49134948,Right,4th Grade,No/incomplete primary,No/incomplete primary,-0.048700047,0.053066994,0.33338995,0.876966522,737,1,0.0,1
+11003,1,BHRC,BHRC-1,1,13.36618754,Male,Black,Hispanic or Latino,22.94811574,Right,5th Grade,No/incomplete primary,Complete secondary,1.465535072,0.411952832,-1.226191113,0.99905054,611,1,0.0,1
+11004,1,BHRC,BHRC-1,1,9.511293634,Male,Other,Hispanic or Latino,21.80070996,,3rd Grade,No/incomplete primary,Complete secondary,-0.198527042,1.04114843,-1.413268887,-0.896951261,631,1,0.0,
+11004,2,BHRC,BHRC-1,1,9.511293634,Male,Other,Hispanic or Latino,21.80070996,,3rd Grade,No/incomplete primary,Complete secondary,-0.198527042,1.04114843,-1.413268887,-0.896951261,607,1,0.0,
+11005,1,BHRC,BHRC-1,1,9.557837098,Female,White,Hispanic or Latino,25.25951557,Right,3rd Grade,No/incomplete primary,No/incomplete primary,1.739399169,0.599795207,-0.976154472,0.862168459,481,0,0.0,1
+11005,2,BHRC,BHRC-1,1,9.557837098,Female,White,Hispanic or Latino,25.25951557,Right,3rd Grade,No/incomplete primary,No/incomplete primary,1.739399169,0.599795207,-0.976154472,0.862168459,72,0,0.0,1
+11018,1,BHRC,BHRC-1,1,13.68925394,Female,Other,Hispanic or Latino,,Right,7th Grade,No/incomplete primary,No/incomplete primary,1.308339536,1.711577719,-1.089480431,-0.678679834,446,0,1.0,1
+11021,1,BHRC,BHRC-1,1,13.33333333,Female,White,Hispanic or Latino,28.28282828,Right,5th Grade,Complete secondary,Complete secondary,0.018844909,-0.977775307,-0.152292734,-1.394536124,535,0,0.0,1
+11030,1,BHRC,BHRC-1,1,7.422313484,Male,Other,Hispanic or Latino,,,Kindergarten,No/incomplete primary,No/incomplete primary,1.572378912,-0.30429167,-0.396932901,-2.471095195,515,1,,
+11030,2,BHRC,BHRC-1,1,7.422313484,Male,Other,Hispanic or Latino,,,Kindergarten,No/incomplete primary,No/incomplete primary,1.572378912,-0.30429167,-0.396932901,-2.471095195,698,1,,
+11038,1,BHRC,BHRC-1,1,13.72758385,Male,White,Hispanic or Latino,27.37966468,Right,6th Grade,Complete secondary,No/incomplete primary,1.536764299,0.341702839,-1.53558897,0.962055383,596,1,0.0,1
+11038,2,BHRC,BHRC-1,1,13.72758385,Male,White,Hispanic or Latino,27.37966468,Right,6th Grade,Complete secondary,No/incomplete primary,1.536764299,0.341702839,-1.53558897,0.962055383,91,1,0.0,1
+11039,1,BHRC,BHRC-1,1,7.950718686,Female,White,Hispanic or Latino,,Right,1st Grade,No/incomplete primary,No/incomplete primary,-0.047471957,-1.156454639,0.18228867,0.875116764,603,0,0.0,1
+11044,1,BHRC,BHRC-1,1,10.43942505,Female,Other,Hispanic or Latino,23.87511478,Right,3rd Grade,Complete secondary,No/incomplete primary,0.573941644,1.626055987,-0.65776249,0.371982627,457,0,0.0,1
+11054,1,BHRC,BHRC-1,1,13.50581793,Male,Black,Hispanic or Latino,20.56878575,Right,4th Grade,No/incomplete primary,No/incomplete primary,0.131829201,-0.42951992,-0.096529167,-1.179964213,436,1,0.0,1
+11058,1,BHRC,BHRC-1,1,7.468856947,Male,White,Hispanic or Latino,16.33038177,Right,Kindergarten,No/incomplete primary,No/incomplete primary,1.285005824,1.477920131,-0.760295501,-2.226927159,632,1,,1
+11058,2,BHRC,BHRC-1,1,7.468856947,Male,White,Hispanic or Latino,16.33038177,Right,Kindergarten,No/incomplete primary,No/incomplete primary,1.285005824,1.477920131,-0.760295501,-2.226927159,504,1,,1
+11063,2,BHRC,BHRC-1,1,8.413415469,Female,Other,Hispanic or Latino,17.23642631,Right,2nd Grade,No/incomplete primary,No/incomplete primary,,,,,159,0,0.0,1
+11065,2,BHRC,BHRC-1,1,7.488021903,Male,White,Hispanic or Latino,35.13930223,Right,1st Grade,Complete secondary,Complete primary,,,,,428,1,0.0,1
+11106,1,BHRC,BHRC-1,1,9.883641342,Female,Other,Hispanic or Latino,24.8357635,Right,3rd Grade,No/incomplete primary,No/incomplete primary,-0.315195603,-0.829639451,2.214960643,-1.161466634,616,0,0.0,1
+11115,1,BHRC,BHRC-1,1,9.932922656,Male,Black,Hispanic or Latino,21.79944511,Right,2nd Grade,No/incomplete primary,No/incomplete primary,-0.115016914,-0.463117743,-0.414921148,-0.323526326,601,1,0.0,1
+11115,2,BHRC,BHRC-1,1,9.932922656,Male,Black,Hispanic or Latino,21.79944511,Right,2nd Grade,No/incomplete primary,No/incomplete primary,-0.115016914,-0.463117743,-0.414921148,-0.323526326,180,1,0.0,1
+11120,1,BHRC,BHRC-1,1,8.221765914,Female,Black,Hispanic or Latino,20.0,Right,1st Grade,No/incomplete primary,Complete secondary,-0.242738286,0.243963717,-0.481477664,-0.203292066,432,0,0.0,1
+11122,1,BHRC,BHRC-1,1,10.94592745,Female,White,Hispanic or Latino,28.18869165,Right,4th Grade,No/incomplete primary,No/incomplete primary,-0.78432603,0.450132177,-0.668555439,0.6716434,20,0,0.0,1
+11122,2,BHRC,BHRC-1,1,10.94592745,Female,White,Hispanic or Latino,28.18869165,Right,4th Grade,No/incomplete primary,No/incomplete primary,-0.78432603,0.450132177,-0.668555439,0.6716434,650,0,0.0,1
+11133,1,BHRC,BHRC-1,1,11.22792608,Male,Black,Hispanic or Latino,18.71094925,Left,4th Grade,No/incomplete primary,No/incomplete primary,0.210426968,-1.648204597,1.477442494,-1.229907675,635,1,0.0,0
+11144,1,BHRC,BHRC-1,1,8.583162218,Male,White,Hispanic or Latino,23.97157787,Right,1st Grade,Complete secondary,Complete secondary,0.141653922,0.897594094,2.93988702,-0.456708892,30,1,0.0,1
+11144,2,BHRC,BHRC-1,1,8.583162218,Male,White,Hispanic or Latino,23.97157787,Right,1st Grade,Complete secondary,Complete secondary,0.141653922,0.897594094,2.93988702,-0.456708892,84,1,0.0,1
+11149,1,BHRC,BHRC-1,1,8.366872005,Male,White,Hispanic or Latino,,Right,2nd Grade,Complete secondary,Complete secondary,0.166215724,1.349637533,-1.647116105,-1.137419782,627,1,0.0,1
+11149,2,BHRC,BHRC-1,1,8.366872005,Male,White,Hispanic or Latino,,Right,2nd Grade,Complete secondary,Complete secondary,0.166215724,1.349637533,-1.647116105,-1.137419782,659,1,0.0,1
+11150,1,BHRC,BHRC-1,1,8.399726215,Male,White,Hispanic or Latino,20.89795918,Right,2nd Grade,No/incomplete primary,No/incomplete primary,-0.196070862,1.833751622,-1.413268887,-1.24285598,442,1,0.0,1
+11150,2,BHRC,BHRC-1,1,8.399726215,Male,White,Hispanic or Latino,20.89795918,Right,2nd Grade,No/incomplete primary,No/incomplete primary,-0.196070862,1.833751622,-1.413268887,-1.24285598,192,1,0.0,1
+11156,1,BHRC,BHRC-1,1,8.572210815,Female,White,Hispanic or Latino,29.7210791,Right,1st Grade,No/incomplete primary,No/incomplete primary,0.376219135,1.621474466,-0.959965049,-0.789665305,454,0,0.0,1
+11156,2,BHRC,BHRC-1,1,8.572210815,Female,White,Hispanic or Latino,29.7210791,Right,1st Grade,No/incomplete primary,No/incomplete primary,0.376219135,1.621474466,-0.959965049,-0.789665305,710,0,0.0,1
+11159,1,BHRC,BHRC-1,1,7.690622861,Male,White,Hispanic or Latino,24.91349481,Right,1st Grade,No/incomplete primary,No/incomplete primary,-1.174858688,-0.922797051,-0.474282365,0.982402719,455,1,0.0,1
+11159,2,BHRC,BHRC-1,1,7.690622861,Male,White,Hispanic or Latino,24.91349481,Right,1st Grade,No/incomplete primary,No/incomplete primary,-1.174858688,-0.922797051,-0.474282365,0.982402719,33,1,0.0,1
+11160,1,BHRC,BHRC-1,1,8.539356605,Female,Other,Hispanic or Latino,19.86668975,Right,2nd Grade,No/incomplete primary,No/incomplete primary,-0.673797919,-1.157981813,-1.179421669,-0.930246902,633,0,0.0,1
+11161,1,BHRC,BHRC-1,1,12.18617385,Male,White,Hispanic or Latino,18.44364997,Right,4th Grade,Complete primary,Complete primary,0.317270809,0.593686512,0.531260673,0.889914827,623,1,0.0,1
+11161,2,BHRC,BHRC-1,1,12.18617385,Male,White,Hispanic or Latino,18.44364997,Right,4th Grade,Complete primary,Complete primary,0.317270809,0.593686512,0.531260673,0.889914827,210,1,0.0,1
+11165,1,BHRC,BHRC-1,1,9.516769336,Male,White,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,No/incomplete primary,1.032019259,0.889958226,-0.846639089,-1.953162996,30,1,0.0,1
+11170,1,BHRC,BHRC-1,1,8.301163587,Male,Black,Hispanic or Latino,25.96530701,Right,1st Grade,Complete secondary,,0.309902268,1.375599488,-0.25302692,-1.614657309,482,1,0.0,1
+11170,2,BHRC,BHRC-1,1,8.301163587,Male,Black,Hispanic or Latino,25.96530701,Right,1st Grade,Complete secondary,,0.309902268,1.375599488,-0.25302692,-1.614657309,178,1,0.0,1
+11171,1,BHRC,BHRC-1,1,6.652977413,Male,White,Hispanic or Latino,29.06122449,Right,Kindergarten,No/incomplete primary,Complete primary,0.620609069,1.119034293,0.032986216,-1.620206582,621,1,,1
+11171,2,BHRC,BHRC-1,1,6.652977413,Male,White,Hispanic or Latino,29.06122449,Right,Kindergarten,No/incomplete primary,Complete primary,0.620609069,1.119034293,0.032986216,-1.620206582,211,1,,1
+11173,1,BHRC,BHRC-1,1,9.979466119,Male,Black,Hispanic or Latino,,Right,3rd Grade,No/incomplete primary,Complete secondary,0.500256237,-0.690666637,0.642787808,0.754882503,441,1,0.0,1
+11197,1,BHRC,BHRC-1,1,8.769336071,Male,Black,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,No/incomplete primary,1.607993526,1.244262543,-0.853834388,-0.001668459,449,1,0.0,1
+11207,1,BHRC,BHRC-1,1,9.385352498,Male,Other,Hispanic or Latino,22.34619533,Right,3rd Grade,No/incomplete primary,No/incomplete primary,2.681344291,0.062230037,1.367714184,0.486667614,600,1,0.0,1
+11207,2,BHRC,BHRC-1,1,9.385352498,Male,Other,Hispanic or Latino,22.34619533,Right,3rd Grade,No/incomplete primary,No/incomplete primary,2.681344291,0.062230037,1.367714184,0.486667614,240,1,0.0,1
+11210,1,BHRC,BHRC-1,1,11.00889802,Female,White,Hispanic or Latino,19.93079585,,3rd Grade,No/incomplete primary,Complete secondary,0.823243939,-0.359269926,-0.663158964,-1.864374619,620,0,0.0,
+11210,2,BHRC,BHRC-1,1,11.00889802,Female,White,Hispanic or Latino,19.93079585,,3rd Grade,No/incomplete primary,Complete secondary,0.823243939,-0.359269926,-0.663158964,-1.864374619,619,0,0.0,
+11227,2,BHRC,BHRC-1,1,9.103353867,Male,Black,Hispanic or Latino,,Left,2nd Grade,Complete secondary,Complete primary,,,,,254,1,0.0,0
+11239,1,BHRC,BHRC-1,1,11.17043121,Female,Other,Hispanic or Latino,18.18114218,Right,3rd Grade,Complete primary,Complete secondary,0.135513471,1.369490792,-1.003136843,-0.057161195,618,0,0.0,1
+11244,2,BHRC,BHRC-1,1,11.37303217,Female,White,Hispanic or Latino,24.41331472,Right,3rd Grade,Complete primary,No/incomplete primary,,,,,107,0,0.0,1
+11276,3,BHRC,BHRC-1,1,9.839835729,Female,Other,Hispanic or Latino,25.35154137,,3rd Grade,Complete primary,,,,,,642,0,0.0,
+11325,2,BHRC,BHRC-1,1,10.50513347,Female,Black,Hispanic or Latino,27.47562949,Right,3rd Grade,Complete secondary,Complete primary,,,,,136,0,0.0,1
+11329,2,BHRC,BHRC-1,1,13.59069131,Male,White,Hispanic or Latino,20.71585099,Right,7th Grade,Complete tertiary,Complete tertiary,,,,,239,1,1.0,1
+11455,2,BHRC,BHRC-1,1,11.98631075,Female,Black,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,,,,,,653,0,0.0,1
+11477,2,BHRC,BHRC-1,1,10.28610541,Female,White,Hispanic or Latino,,Right,3rd Grade,No/incomplete primary,No/incomplete primary,,,,,820,0,0.0,1
+11619,2,BHRC,BHRC-1,1,7.189596167,Female,White,Hispanic or Latino,17.53902663,Right,1st Grade,No/incomplete primary,Complete secondary,,,,,95,0,0.0,1
+11723,2,BHRC,BHRC-1,1,12.23271732,Male,White,Hispanic or Latino,27.80864198,Right,5th Grade,Complete secondary,Complete secondary,,,,,75,1,0.0,1
+11756,2,BHRC,BHRC-1,1,12.71457906,Male,White,Hispanic or Latino,18.16620425,Right,6th Grade,Complete primary,Complete secondary,,,,,229,1,0.0,1
+11830,2,BHRC,BHRC-1,1,8.438056126,Male,Other,Hispanic or Latino,,Right,1st Grade,No/incomplete primary,No/incomplete primary,,,,,501,1,0.0,1
+11843,2,BHRC,BHRC-1,1,10.80082136,Female,White,Hispanic or Latino,23.14255983,,2nd Grade,No/incomplete primary,No/incomplete primary,,,,,425,0,0.0,
+11914,2,BHRC,BHRC-1,1,11.07734428,Female,White,Hispanic or Latino,19.94805977,Right,5th Grade,Complete secondary,No/incomplete primary,,,,,193,0,0.0,1
+20004,1,BHRC,BHRC-2,1,9.839835729,Male,Black,Hispanic or Latino,16.69327914,Right,2nd Grade,Complete secondary,,1.14009119,-0.72426446,0.883830325,1.18032681,25,1,0.0,1
+20004,2,BHRC,BHRC-2,1,9.839835729,Male,Black,Hispanic or Latino,16.69327914,Right,2nd Grade,Complete secondary,,1.14009119,-0.72426446,0.883830325,1.18032681,590,1,0.0,1
+20006,1,BHRC,BHRC-2,1,7.58110883,Female,Other,Hispanic or Latino,24.22145329,Right,1st Grade,No/incomplete primary,No/incomplete primary,1.254303571,-0.330253625,-1.042710988,1.113735527,220,0,0.0,1
+20006,2,BHRC,BHRC-2,1,7.58110883,Female,Other,Hispanic or Latino,24.22145329,Right,1st Grade,No/incomplete primary,No/incomplete primary,1.254303571,-0.330253625,-1.042710988,1.113735527,12,0,0.0,1
+20008,1,BHRC,BHRC-2,1,9.596167009,Male,White,Hispanic or Latino,,Right,3rd Grade,Complete primary,Complete secondary,-0.27958099,-1.365677447,-0.706330758,-1.185513486,326,1,0.0,1
+20008,2,BHRC,BHRC-2,1,9.596167009,Male,White,Hispanic or Latino,,Right,3rd Grade,Complete primary,Complete secondary,-0.27958099,-1.365677447,-0.706330758,-1.185513486,268,1,0.0,1
+20010,3,BHRC,BHRC-2,1,12.14784394,Female,White,Hispanic or Latino,24.27480369,Right,6th Grade,Complete secondary,Complete primary,-1.608374501,-0.744117719,-0.314186962,-0.432662039,269,0,0.0,1
+20013,1,BHRC,BHRC-2,1,10.29158111,Male,White,Hispanic or Latino,20.0,Right,3rd Grade,Complete secondary,,1.049212521,1.719213588,-1.413268887,-0.001668459,14,1,0.0,1
+20013,2,BHRC,BHRC-2,1,10.29158111,Male,White,Hispanic or Latino,20.0,Right,3rd Grade,Complete secondary,,1.049212521,1.719213588,-1.413268887,-0.001668459,116,1,0.0,1
+20014,1,BHRC,BHRC-2,1,12.68172485,Male,Other,Hispanic or Latino,19.04507334,Right,5th Grade,Complete secondary,Complete secondary,-1.044681135,-0.403557966,-0.533643582,0.71418783,3,1,0.0,1
+20014,2,BHRC,BHRC-2,1,12.68172485,Male,Other,Hispanic or Latino,19.04507334,Right,5th Grade,Complete secondary,Complete secondary,-1.044681135,-0.403557966,-0.533643582,0.71418783,524,1,0.0,1
+20016,2,BHRC,BHRC-2,1,13.5633128,Female,Other,Hispanic or Latino,17.41907389,Right,6th Grade,No/incomplete primary,No/incomplete primary,,,,,846,0,0.0,1
+20018,2,BHRC,BHRC-2,1,8.134154689,Male,Black,Hispanic or Latino,,,2nd Grade,No/incomplete primary,No/incomplete primary,,,,,656,1,0.0,
+20025,1,BHRC,BHRC-2,1,9.741273101,Male,Other,Hispanic or Latino,20.61744774,Right,4th Grade,No/incomplete primary,Complete secondary,0.853946192,-1.949057831,1.975716951,0.501465677,262,1,0.0,1
+20032,1,BHRC,BHRC-2,1,8.558521561,Male,Other,Hispanic or Latino,,Left,2nd Grade,Complete primary,,-0.106420283,-1.461889395,1.632141423,-1.305747747,645,1,0.0,0
+20032,2,BHRC,BHRC-2,1,8.558521561,Male,Other,Hispanic or Latino,,Left,2nd Grade,Complete primary,,-0.106420283,-1.461889395,1.632141423,-1.305747747,208,1,0.0,0
+20035,1,BHRC,BHRC-2,1,8.574948665,Male,White,Hispanic or Latino,29.73704434,Right,2nd Grade,No/incomplete primary,No/incomplete primary,-0.068349489,-0.788405759,0.203874567,1.18032681,378,1,0.0,1
+20035,2,BHRC,BHRC-2,1,8.574948665,Male,White,Hispanic or Latino,29.73704434,Right,2nd Grade,No/incomplete primary,No/incomplete primary,-0.068349489,-0.788405759,0.203874567,1.18032681,275,1,0.0,1
+20040,1,BHRC,BHRC-2,1,7.348391513,Male,White,Hispanic or Latino,23.51020408,Right,1st Grade,Complete tertiary,Complete secondary,0.998860826,0.269925671,0.655379581,-1.105973899,341,1,0.0,1
+20041,1,BHRC,BHRC-2,1,9.054072553,Male,White,Hispanic or Latino,21.35865595,Right,3rd Grade,No/incomplete primary,No/incomplete primary,-0.087998931,-0.423411225,1.087097522,1.19697463,5,1,0.0,1
+20041,2,BHRC,BHRC-2,1,9.054072553,Male,White,Hispanic or Latino,21.35865595,Right,3rd Grade,No/incomplete primary,No/incomplete primary,-0.087998931,-0.423411225,1.087097522,1.19697463,73,1,0.0,1
+20043,1,BHRC,BHRC-2,1,12.62970568,Male,Other,Hispanic or Latino,,Right,6th Grade,Complete primary,Complete secondary,-0.122385454,-0.458536222,-1.458239506,1.22287124,775,1,0.0,1
+20043,2,BHRC,BHRC-2,1,12.62970568,Male,Other,Hispanic or Latino,,Right,6th Grade,Complete primary,Complete secondary,-0.122385454,-0.458536222,-1.458239506,1.22287124,331,1,0.0,1
+20046,1,BHRC,BHRC-2,1,8.440793977,Male,Other,Hispanic or Latino,,Right,1st Grade,No/incomplete primary,No/incomplete primary,0.302533727,1.149577768,-0.245831621,-0.606539278,334,1,0.0,1
+20047,1,BHRC,BHRC-2,1,11.43052704,Male,Other,Hispanic or Latino,18.28571429,Right,4th Grade,Complete primary,No/incomplete primary,1.359919321,0.257708281,-0.837644966,0.157410716,817,1,0.0,1
+20047,2,BHRC,BHRC-2,1,11.43052704,Male,Other,Hispanic or Latino,18.28571429,Right,4th Grade,Complete primary,No/incomplete primary,1.359919321,0.257708281,-0.837644966,0.157410716,729,1,0.0,1
+20048,1,BHRC,BHRC-2,1,10.39835729,Male,Other,Hispanic or Latino,24.65590962,Right,3rd Grade,No/incomplete primary,No/incomplete primary,0.600959627,-1.373313316,0.050974463,-1.507371353,14,1,0.0,1
+20048,2,BHRC,BHRC-2,1,10.39835729,Male,Other,Hispanic or Latino,24.65590962,Right,3rd Grade,No/incomplete primary,No/incomplete primary,0.600959627,-1.373313316,0.050974463,-1.507371353,241,1,0.0,1
+20050,1,BHRC,BHRC-2,1,11.4715948,Male,White,Hispanic or Latino,19.605192,Right,4th Grade,Complete secondary,,-0.606252962,-1.19310681,0.725533746,-0.972791333,266,1,0.0,1
+20054,1,BHRC,BHRC-2,1,10.68309377,Female,Other,Hispanic or Latino,19.66163695,Right,3rd Grade,No/incomplete primary,Complete secondary,-1.459775596,0.592159339,-0.36275523,-0.50110308,115,0,0.0,1
+20054,2,BHRC,BHRC-2,1,10.68309377,Female,Other,Hispanic or Latino,19.66163695,Right,3rd Grade,No/incomplete primary,Complete secondary,-1.459775596,0.592159339,-0.36275523,-0.50110308,815,0,0.0,1
+20062,1,BHRC,BHRC-2,1,11.64681725,Male,Black,Hispanic or Latino,,Right,5th Grade,Complete tertiary,,-0.916959763,-1.040389432,-0.596602448,1.600221843,340,1,0.0,1
+20065,1,BHRC,BHRC-2,1,8.421629021,Male,Other,Hispanic or Latino,24.8015873,Right,1st Grade,Complete primary,,-0.749939506,0.268398497,-0.688342511,1.716756588,6,1,0.0,1
+20065,2,BHRC,BHRC-2,1,8.421629021,Male,Other,Hispanic or Latino,24.8015873,Right,1st Grade,Complete primary,,-0.749939506,0.268398497,-0.688342511,1.716756588,663,1,0.0,1
+20067,1,BHRC,BHRC-2,1,8.914442163,Male,White,Hispanic or Latino,20.28650791,,2nd Grade,Complete secondary,,-0.375372019,0.167605028,-0.272813993,0.11116677,780,1,0.0,
+20067,2,BHRC,BHRC-2,1,8.914442163,Male,White,Hispanic or Latino,20.28650791,,2nd Grade,Complete secondary,,-0.375372019,0.167605028,-0.272813993,0.11116677,205,1,0.0,
+20071,1,BHRC,BHRC-2,1,7.79192334,Female,White,Hispanic or Latino,21.69314066,Right,2nd Grade,Complete secondary,Complete secondary,-1.608374501,-0.744117719,-0.314186962,-0.432662039,730,0,0.0,1
+20071,2,BHRC,BHRC-2,1,7.79192334,Female,White,Hispanic or Latino,21.69314066,Right,2nd Grade,Complete secondary,Complete secondary,-1.608374501,-0.744117719,-0.314186962,-0.432662039,695,0,0.0,1
+20072,1,BHRC,BHRC-2,1,7.904175222,Male,White,Hispanic or Latino,19.91836735,Right,2nd Grade,Complete primary,Complete primary,0.651311322,-1.307644844,-0.553430654,0.310940618,184,1,0.0,1
+20072,2,BHRC,BHRC-2,1,7.904175222,Male,White,Hispanic or Latino,19.91836735,Right,2nd Grade,Complete primary,Complete primary,0.651311322,-1.307644844,-0.553430654,0.310940618,88,1,0.0,1
+20073,1,BHRC,BHRC-2,1,6.806297057,Male,White,Hispanic or Latino,25.34435262,Right,1st Grade,No/incomplete primary,,-0.117473094,-0.953340527,-0.429311746,-1.296498958,640,1,0.0,1
+20073,2,BHRC,BHRC-2,1,6.806297057,Male,White,Hispanic or Latino,25.34435262,Right,1st Grade,No/incomplete primary,,-0.117473094,-0.953340527,-0.429311746,-1.296498958,735,1,0.0,1
+20076,2,BHRC,BHRC-2,1,8.670773443,Male,White,Hispanic or Latino,24.91349481,Right,3rd Grade,Complete primary,Complete primary,0.336920251,0.657827811,-1.156036947,0.562507686,368,1,0.0,1
+20080,1,BHRC,BHRC-2,1,7.394934976,Male,White,Hispanic or Latino,24.11150746,Right,Kindergarten,Complete secondary,Complete secondary,-0.08185848,0.425697396,-0.512057685,0.902863132,777,1,,1
+20080,2,BHRC,BHRC-2,1,7.394934976,Male,White,Hispanic or Latino,24.11150746,Right,Kindergarten,Complete secondary,Complete secondary,-0.08185848,0.425697396,-0.512057685,0.902863132,390,1,,1
+20082,1,BHRC,BHRC-2,1,7.247091034,Female,Black,Hispanic or Latino,37.22299169,Right,1st Grade,Complete primary,Complete primary,0.269375294,-1.684856767,-0.21884925,0.616150664,188,0,0.0,1
+20082,2,BHRC,BHRC-2,1,7.247091034,Female,Black,Hispanic or Latino,37.22299169,Right,1st Grade,Complete primary,Complete primary,0.269375294,-1.684856767,-0.21884925,0.616150664,50,0,0.0,1
+20083,1,BHRC,BHRC-2,1,6.770704997,Male,White,Hispanic or Latino,,Right,Kindergarten,Complete secondary,,0.852718102,1.49777339,-0.188269229,0.501465677,5,1,,1
+20085,1,BHRC,BHRC-2,1,10.36824093,Male,White,Hispanic or Latino,19.11699326,Right,4th Grade,No/incomplete primary,,,,,,362,1,0.0,1
+20088,1,BHRC,BHRC-2,1,6.614647502,Male,White,Hispanic or Latino,18.20664543,Right,Kindergarten,Complete secondary,Complete secondary,-0.350810217,0.867050619,0.797486737,0.327588439,3,1,,1
+20089,1,BHRC,BHRC-2,1,8.706365503,Female,White,Hispanic or Latino,21.92612582,Right,2nd Grade,Complete secondary,Complete primary,1.485184514,0.506637607,-0.740508429,0.989801751,329,0,0.0,1
+20091,1,BHRC,BHRC-2,1,6.899383984,Male,White,Hispanic or Latino,24.14772727,Right,1st Grade,Complete primary,Complete primary,0.780260784,-0.156155814,-0.625383645,-0.913599082,17,1,0.0,1
+20091,2,BHRC,BHRC-2,1,6.899383984,Male,White,Hispanic or Latino,24.14772727,Right,1st Grade,Complete primary,Complete primary,0.780260784,-0.156155814,-0.625383645,-0.913599082,655,1,0.0,1
+20092,2,BHRC,BHRC-2,1,6.98973306,Female,Black,Hispanic or Latino,18.81892431,Right,Kindergarten,Complete secondary,Complete primary,0.594819176,-0.148519945,0.545651271,-1.59615973,533,0,,1
+20095,1,BHRC,BHRC-2,1,9.434633812,Male,Other,Hispanic or Latino,23.8497766,Right,3rd Grade,Complete primary,Complete secondary,-1.209245211,-0.907525313,-0.459891767,0.116716043,677,1,0.0,1
+20095,2,BHRC,BHRC-2,1,9.434633812,Male,Other,Hispanic or Latino,23.8497766,Right,3rd Grade,Complete primary,Complete secondary,-1.209245211,-0.907525313,-0.459891767,0.116716043,232,1,0.0,1
+20096,1,BHRC,BHRC-2,1,8.700889802,Male,Other,Hispanic or Latino,17.50561501,Right,3rd Grade,Complete secondary,Complete secondary,-0.930468754,-1.034280737,-0.591205974,1.862887458,142,1,0.0,1
+20096,2,BHRC,BHRC-2,1,8.700889802,Male,Other,Hispanic or Latino,17.50561501,Right,3rd Grade,Complete secondary,Complete secondary,-0.930468754,-1.034280737,-0.591205974,1.862887458,2,1,0.0,1
+20097,1,BHRC,BHRC-2,1,9.445585216,Male,White,Hispanic or Latino,21.70512943,Right,2nd Grade,Complete primary,Complete primary,0.076565145,0.55245282,-0.047960898,-1.437080555,672,1,0.0,1
+20097,2,BHRC,BHRC-2,1,9.445585216,Male,White,Hispanic or Latino,21.70512943,Right,2nd Grade,Complete primary,Complete primary,0.076565145,0.55245282,-0.047960898,-1.437080555,798,1,0.0,1
+20099,1,BHRC,BHRC-2,1,9.232032854,Female,White,Hispanic or Latino,20.2812331,Right,3rd Grade,No/incomplete primary,,-0.267300089,-1.017481825,-1.373694743,0.262846914,265,0,0.0,1
+20105,1,BHRC,BHRC-2,1,9.193702943,Female,Black,Hispanic or Latino,28.22838647,Right,3rd Grade,Complete primary,,0.02375727,-0.854074231,-0.920390904,-1.054180679,27,0,0.0,1
+20105,2,BHRC,BHRC-2,1,9.193702943,Female,Black,Hispanic or Latino,28.22838647,Right,3rd Grade,Complete primary,,0.02375727,-0.854074231,-0.920390904,-1.054180679,367,0,0.0,1
+20119,1,BHRC,BHRC-2,1,12.23271732,Male,Other,Hispanic or Latino,,Right,7th Grade,Complete secondary,No/incomplete primary,1.102020396,-0.116449295,-0.907799131,0.329438197,130,1,1.0,1
+20122,1,BHRC,BHRC-2,1,12.54757016,Female,White,Hispanic or Latino,22.40587695,Right,5th Grade,Complete tertiary,,0.257094393,0.243963717,-1.094876906,0.934309015,247,0,0.0,1
+20130,1,BHRC,BHRC-2,1,9.998631075,Male,White,Hispanic or Latino,21.87242282,Right,4th Grade,Complete primary,,-0.408530453,0.454713698,-0.245831621,0.373832385,37,1,0.0,1
+20130,2,BHRC,BHRC-2,1,9.998631075,Male,White,Hispanic or Latino,21.87242282,Right,4th Grade,Complete primary,,-0.408530453,0.454713698,-0.245831621,0.373832385,508,1,0.0,1
+20136,1,BHRC,BHRC-2,1,10.27789185,Male,Other,Hispanic or Latino,,Right,3rd Grade,No/incomplete primary,Complete secondary,-0.360634938,-0.177536247,-0.285405766,-0.713825233,372,1,0.0,1
+20139,1,BHRC,BHRC-2,1,7.225188227,Female,White,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,No/incomplete primary,-1.608374501,-0.744117719,-0.314186962,-0.432662039,686,0,0.0,1
+20141,1,BHRC,BHRC-2,1,10.81724846,Male,Other,Hispanic or Latino,20.58531746,Right,3rd Grade,Complete secondary,No/incomplete primary,1.566238462,-0.505878609,-0.391536426,0.94725732,279,1,0.0,1
+20146,1,BHRC,BHRC-2,1,8.977412731,Male,Other,Hispanic or Latino,34.9851271,Right,1st Grade,Complete primary,No/incomplete primary,1.197811425,-0.209606896,-0.992343894,0.26654643,74,1,0.0,1
+20146,2,BHRC,BHRC-2,1,8.977412731,Male,Other,Hispanic or Latino,34.9851271,Right,1st Grade,Complete primary,No/incomplete primary,1.197811425,-0.209606896,-0.992343894,0.26654643,216,1,0.0,1
+20149,1,BHRC,BHRC-2,1,7.712525667,Male,Other,Hispanic or Latino,21.12917824,Right,1st Grade,Complete primary,,0.966930483,1.713104893,0.997156284,-0.711975476,185,1,0.0,1
+20149,2,BHRC,BHRC-2,1,7.712525667,Male,Other,Hispanic or Latino,21.12917824,Right,1st Grade,Complete primary,,0.966930483,1.713104893,0.997156284,-0.711975476,227,1,0.0,1
+20150,1,BHRC,BHRC-2,1,7.846680356,Male,White,Hispanic or Latino,17.70397729,Right,2nd Grade,Complete tertiary,,0.33200789,-1.248085066,-0.272813993,0.566207202,671,1,0.0,1
+20150,2,BHRC,BHRC-2,1,7.846680356,Male,White,Hispanic or Latino,17.70397729,Right,2nd Grade,Complete tertiary,,0.33200789,-1.248085066,-0.272813993,0.566207202,778,1,0.0,1
+20151,1,BHRC,BHRC-2,1,11.3045859,Male,White,Hispanic or Latino,20.28650791,Right,5th Grade,,Complete primary,1.465535072,-0.415775356,1.407288328,-0.317977053,333,1,0.0,1
+20157,1,BHRC,BHRC-2,1,12.58316222,Male,White,Hispanic or Latino,,Right,6th Grade,Complete primary,No/incomplete primary,0.206742698,-0.415775356,-0.163085683,-1.228057917,713,1,0.0,1
+20157,2,BHRC,BHRC-2,1,12.58316222,Male,White,Hispanic or Latino,,Right,6th Grade,Complete primary,No/incomplete primary,0.206742698,-0.415775356,-0.163085683,-1.228057917,2,1,0.0,1
+20160,1,BHRC,BHRC-2,1,8.613278576,Male,Other,Hispanic or Latino,28.06642387,Right,6th Grade,No/incomplete primary,No/incomplete primary,0.906754067,1.456539698,-0.238636322,-1.847726798,284,1,0.0,1
+20160,2,BHRC,BHRC-2,1,8.613278576,Male,Other,Hispanic or Latino,28.06642387,Right,6th Grade,No/incomplete primary,No/incomplete primary,0.906754067,1.456539698,-0.238636322,-1.847726798,242,1,0.0,1
+20161,1,BHRC,BHRC-2,1,8.306639288,Male,Black,Hispanic or Latino,,Right,1st Grade,Complete primary,,0.675873124,-0.478389481,0.457508858,-1.612807551,779,1,0.0,1
+20162,1,BHRC,BHRC-2,1,10.26146475,Male,Other,Hispanic or Latino,23.67125363,Right,4th Grade,No/incomplete primary,Complete secondary,0.117092119,1.38476253,-0.988746245,-1.142969056,354,1,0.0,1
+20163,1,BHRC,BHRC-2,1,8.45174538,Female,White,Hispanic or Latino,26.17519452,Right,2nd Grade,No/incomplete primary,No/incomplete primary,0.097442677,-0.513514478,-0.974355647,-0.027565069,332,0,0.0,1
+20163,2,BHRC,BHRC-2,1,8.45174538,Female,White,Hispanic or Latino,26.17519452,Right,2nd Grade,No/incomplete primary,No/incomplete primary,0.097442677,-0.513514478,-0.974355647,-0.027565069,805,0,0.0,1
+20168,1,BHRC,BHRC-2,1,12.63791923,Female,White,Hispanic or Latino,16.97465376,Right,6th Grade,Complete secondary,Complete secondary,0.927631599,0.007251781,-0.754899027,-1.912468323,305,0,0.0,1
+20168,2,BHRC,BHRC-2,1,12.63791923,Female,White,Hispanic or Latino,16.97465376,Right,6th Grade,Complete secondary,Complete secondary,0.927631599,0.007251781,-0.754899027,-1.912468323,731,0,0.0,1
+20170,1,BHRC,BHRC-2,1,11.06639288,Male,White,Hispanic or Latino,27.08415907,Right,5th Grade,Complete primary,Complete primary,-0.811344012,0.468458262,-0.654164841,-0.260634559,589,1,0.0,1
+20170,2,BHRC,BHRC-2,1,11.06639288,Male,White,Hispanic or Latino,27.08415907,Right,5th Grade,Complete primary,Complete primary,-0.811344012,0.468458262,-0.654164841,-0.260634559,728,1,0.0,1
+20171,1,BHRC,BHRC-2,1,9.798767967,Male,White,Hispanic or Latino,20.2812331,Right,4th Grade,Complete secondary,,1.394305845,0.231746326,-0.65776249,-1.451878617,131,1,0.0,1
+20172,1,BHRC,BHRC-2,1,9.880903491,Female,Other,Hispanic or Latino,30.11937557,Right,4th Grade,Complete primary,Complete primary,-0.571866439,0.34628436,-0.794473171,-0.447460102,101,0,0.0,1
+20172,2,BHRC,BHRC-2,1,9.880903491,Female,Other,Hispanic or Latino,30.11937557,Right,4th Grade,Complete primary,Complete primary,-0.571866439,0.34628436,-0.794473171,-0.447460102,676,0,0.0,1
+20174,3,BHRC,BHRC-2,1,9.815195072,Female,White,Hispanic or Latino,,,3rd Grade,Complete secondary,,,,,,574,0,0.0,
+20178,1,BHRC,BHRC-2,1,8.722792608,Male,White,Hispanic or Latino,,,2nd Grade,No/incomplete primary,No/incomplete primary,0.858858552,-1.109112252,0.268632259,1.348654775,3,1,0.0,
+20178,2,BHRC,BHRC-2,1,8.722792608,Male,White,Hispanic or Latino,,,2nd Grade,No/incomplete primary,No/incomplete primary,0.858858552,-1.109112252,0.268632259,1.348654775,274,1,0.0,
+20182,1,BHRC,BHRC-2,1,8.788501027,Male,White,Hispanic or Latino,24.01753104,Right,2nd Grade,Complete secondary,,-0.087998931,1.784882061,-0.506661211,-0.14779933,114,1,0.0,1
+20182,2,BHRC,BHRC-2,1,8.788501027,Male,White,Hispanic or Latino,24.01753104,Right,2nd Grade,Complete secondary,,-0.087998931,1.784882061,-0.506661211,-0.14779933,427,1,0.0,1
+20184,2,BHRC,BHRC-2,1,12.19164956,Male,Other,Hispanic or Latino,23.45679012,,5th Grade,Complete secondary,,,,,,109,1,0.0,
+20191,1,BHRC,BHRC-2,1,9.081451061,Male,White,Hispanic or Latino,,Right,3rd Grade,Complete secondary,Complete primary,0.144110102,1.342001664,1.096091646,-1.487024017,206,1,0.0,1
+20193,1,BHRC,BHRC-2,1,10.02874743,Male,White,Hispanic or Latino,19.59183673,Right,4th Grade,No/incomplete primary,Complete primary,-1.459775596,0.592159339,-0.36275523,-0.50110308,6,1,0.0,1
+20195,1,BHRC,BHRC-2,1,6.746064339,Female,Other,Hispanic or Latino,16.66591595,Right,Kindergarten,Complete primary,Complete primary,0.160075273,1.713104893,-1.021125091,-1.235456948,781,0,,1
+20195,2,BHRC,BHRC-2,1,6.746064339,Female,Other,Hispanic or Latino,16.66591595,Right,Kindergarten,Complete primary,Complete primary,0.160075273,1.713104893,-1.021125091,-1.235456948,782,0,,1
+20198,1,BHRC,BHRC-2,1,8.484599589,Male,White,Hispanic or Latino,23.52941176,Right,2nd Grade,Complete primary,Complete primary,-0.084314661,1.545115777,-1.481624228,-1.32054581,783,1,0.0,1
+20198,2,BHRC,BHRC-2,1,8.484599589,Male,White,Hispanic or Latino,23.52941176,Right,2nd Grade,Complete primary,Complete primary,-0.084314661,1.545115777,-1.481624228,-1.32054581,807,1,0.0,1
+20204,1,BHRC,BHRC-2,1,8.183436003,Male,White,Hispanic or Latino,19.33372992,Right,1st Grade,Complete secondary,No/incomplete primary,0.790085505,0.987697347,-0.634377768,-2.01050549,373,1,0.0,1
+20208,1,BHRC,BHRC-2,1,9.880903491,Female,Other,Hispanic or Latino,16.90102758,Right,4th Grade,No/incomplete primary,No/incomplete primary,0.286568556,-1.258775283,-0.77108845,-1.59615973,784,0,0.0,1
+20210,1,BHRC,BHRC-2,1,7.780971937,Male,White,Hispanic or Latino,18.7890625,Right,2nd Grade,No/incomplete primary,No/incomplete primary,0.578854005,0.382936531,2.947082319,-0.40676543,722,1,0.0,1
+20212,1,BHRC,BHRC-2,1,6.746064339,Male,White,Hispanic or Latino,,Right,Kindergarten,Complete primary,Complete secondary,1.109388937,-0.018710173,-0.393335251,-2.040101615,283,1,,1
+20213,2,BHRC,BHRC-2,1,6.877481177,Female,White,Hispanic or Latino,,Right,1st Grade,No/incomplete primary,No/incomplete primary,,,,,26,0,0.0,1
+20214,1,BHRC,BHRC-2,1,7.635865845,Female,White,Hispanic or Latino,21.50446956,Right,1st Grade,Complete tertiary,Complete tertiary,-0.041331506,0.184403939,-0.477880015,-0.991288912,776,0,0.0,1
+20214,2,BHRC,BHRC-2,1,7.635865845,Female,White,Hispanic or Latino,21.50446956,Right,1st Grade,Complete tertiary,Complete tertiary,-0.041331506,0.184403939,-0.477880015,-0.991288912,351,0,0.0,1
+20215,1,BHRC,BHRC-2,1,8.386036961,Female,Other,Hispanic or Latino,24.03456657,Right,1st Grade,Complete secondary,Complete secondary,1.056581062,2.203327676,-1.702879673,-2.0364021,81,0,0.0,1
+20215,2,BHRC,BHRC-2,1,8.386036961,Female,Other,Hispanic or Latino,24.03456657,Right,1st Grade,Complete secondary,Complete secondary,1.056581062,2.203327676,-1.702879673,-2.0364021,787,0,0.0,1
+20221,1,BHRC,BHRC-2,1,8.703627652,Female,White,Hispanic or Latino,,Right,2nd Grade,Complete secondary,Complete secondary,1.607993526,1.244262543,-0.853834388,-0.001668459,374,0,0.0,1
+20222,1,BHRC,BHRC-2,1,10.51060917,Male,Other,Hispanic or Latino,20.08006198,Right,3rd Grade,Complete secondary,Complete primary,0.668504583,-0.762443804,-1.373694743,1.470738793,789,1,0.0,1
+20228,1,BHRC,BHRC-2,1,8.821355236,Female,Black,Hispanic or Latino,18.03599942,,2nd Grade,Complete primary,No/incomplete primary,0.415518019,0.123316988,-1.16862872,-1.697896412,304,0,0.0,
+20228,2,BHRC,BHRC-2,1,8.821355236,Female,Black,Hispanic or Latino,18.03599942,,2nd Grade,Complete primary,No/incomplete primary,0.415518019,0.123316988,-1.16862872,-1.697896412,790,0,0.0,
+20230,1,BHRC,BHRC-2,1,10.99520876,Male,Asian,Hispanic or Latino,20.47826661,Right,5th Grade,Complete secondary,,-0.503093392,1.108344076,-0.835846141,-0.5528963,153,1,0.0,1
+20230,2,BHRC,BHRC-2,1,10.99520876,Male,Asian,Hispanic or Latino,20.47826661,Right,5th Grade,Complete secondary,,-0.503093392,1.108344076,-0.835846141,-0.5528963,811,1,0.0,1
+20231,1,BHRC,BHRC-2,1,9.062286105,Female,White,Hispanic or Latino,26.92743764,Right,4th Grade,Complete secondary,Complete primary,0.002879738,1.838333143,0.966576264,0.048275003,89,0,0.0,1
+20231,2,BHRC,BHRC-2,1,9.062286105,Female,White,Hispanic or Latino,26.92743764,Right,4th Grade,Complete secondary,Complete primary,0.002879738,1.838333143,0.966576264,0.048275003,802,0,0.0,1
+20232,1,BHRC,BHRC-2,1,6.904859685,Male,White,Hispanic or Latino,,Right,Kindergarten,Complete secondary,No/incomplete primary,-0.041331506,-0.864764448,-0.873621461,0.083420402,339,1,,1
+20237,1,BHRC,BHRC-2,1,13.68104038,Male,White,Hispanic or Latino,,Right,6th Grade,No/incomplete primary,Complete secondary,-1.19696431,-0.913634008,2.553139697,-0.632435888,281,1,0.0,1
+20245,1,BHRC,BHRC-2,1,7.3045859,Female,Other,Hispanic or Latino,31.58861341,Right,Kindergarten,Complete secondary,No/incomplete primary,-0.966083367,1.227463631,-0.571418902,-0.758219422,791,0,,1
+20245,2,BHRC,BHRC-2,1,7.3045859,Female,Other,Hispanic or Latino,31.58861341,Right,Kindergarten,Complete secondary,No/incomplete primary,-0.966083367,1.227463631,-0.571418902,-0.758219422,733,0,,1
+20253,1,BHRC,BHRC-2,1,13.14989733,Female,White,Hispanic or Latino,26.09781478,Right,7th Grade,No/incomplete primary,No/incomplete primary,1.024650718,1.670344027,0.140915701,-2.056749436,3,0,1.0,1
+20255,1,BHRC,BHRC-2,1,8.996577687,Male,Other,Hispanic or Latino,21.92837466,Right,2nd Grade,Complete secondary,Complete primary,-0.060980948,1.125142988,-0.530045932,-0.972791333,648,1,0.0,1
+20255,2,BHRC,BHRC-2,1,8.996577687,Male,Other,Hispanic or Latino,21.92837466,Right,2nd Grade,Complete secondary,Complete primary,-0.060980948,1.125142988,-0.530045932,-0.972791333,99,1,0.0,1
+20263,1,BHRC,BHRC-2,1,10.6091718,Female,White,Hispanic or Latino,24.43518667,Right,3rd Grade,Complete primary,,1.616590157,1.238153847,1.24899175,-1.840327767,175,0,0.0,1
+20263,2,BHRC,BHRC-2,1,10.6091718,Female,White,Hispanic or Latino,24.43518667,Right,3rd Grade,Complete primary,,1.616590157,1.238153847,1.24899175,-1.840327767,792,0,0.0,1
+20266,1,BHRC,BHRC-2,1,10.49144422,Male,Other,Hispanic or Latino,25.95155709,Right,4th Grade,Complete primary,No/incomplete primary,-0.311511333,2.548468951,-0.963562698,1.369002111,720,1,0.0,1
+20270,2,BHRC,BHRC-2,1,7.47980835,Male,White,Hispanic or Latino,18.55677322,Right,Kindergarten,Complete secondary,Complete primary,-0.670113648,1.994104868,-0.735111955,0.581005265,123,1,,1
+20271,1,BHRC,BHRC-2,1,8.741957563,Female,White,Hispanic or Latino,,Right,2nd Grade,Complete secondary,Complete secondary,-0.873976608,-0.241677545,-0.61998717,-0.201442308,186,0,0.0,1
+20274,1,BHRC,BHRC-2,1,8.446269678,Female,White,Hispanic or Latino,17.94181725,Right,2nd Grade,Complete secondary,Complete tertiary,0.055687613,0.990751695,-0.18467158,-0.486305017,228,0,0.0,1
+20277,1,BHRC,BHRC-2,1,7.488021903,Male,Other,Hispanic or Latino,,Right,1st Grade,No/incomplete primary,,-1.370125017,-0.058416692,-0.395134076,-0.543647511,797,1,0.0,1
+20279,1,BHRC,BHRC-2,1,8.043805613,Male,White,Hispanic or Latino,18.30576947,Left,1st Grade,Complete secondary,Complete secondary,-0.354494487,0.673099549,-0.289003415,0.331287954,162,1,0.0,0
+20279,2,BHRC,BHRC-2,1,8.043805613,Male,White,Hispanic or Latino,18.30576947,Left,1st Grade,Complete secondary,Complete secondary,-0.354494487,0.673099549,-0.289003415,0.331287954,168,1,0.0,0
+20284,1,BHRC,BHRC-2,1,10.24503765,Female,Other,Hispanic or Latino,19.28374656,Right,4th Grade,Complete secondary,Complete primary,0.695522566,1.917746179,-0.321382261,-1.929116144,383,0,0.0,1
+20284,2,BHRC,BHRC-2,1,10.24503765,Female,Other,Hispanic or Latino,19.28374656,Right,4th Grade,Complete secondary,Complete primary,0.695522566,1.917746179,-0.321382261,-1.929116144,143,0,0.0,1
+20286,1,BHRC,BHRC-2,1,8.76386037,Female,Other,Hispanic or Latino,,Right,3rd Grade,No/incomplete primary,No/incomplete primary,1.820453117,1.093072338,0.131921577,-1.376038545,5,0,0.0,1
+20290,1,BHRC,BHRC-2,1,10.52977413,Male,White,Hispanic or Latino,21.06674327,Right,4th Grade,Complete secondary,Complete secondary,2.036596978,-0.082851472,0.108536855,0.727136135,749,1,0.0,1
+20290,2,BHRC,BHRC-2,1,10.52977413,Male,White,Hispanic or Latino,21.06674327,Right,4th Grade,Complete secondary,Complete secondary,2.036596978,-0.082851472,0.108536855,0.727136135,313,1,0.0,1
+20291,1,BHRC,BHRC-2,1,9.013004791,Male,White,Hispanic or Latino,36.01108033,,3rd Grade,Complete secondary,Complete secondary,-1.608374501,-0.744117719,-0.314186962,-0.432662039,80,1,0.0,
+20292,1,BHRC,BHRC-2,1,8.295687885,Female,White,Hispanic or Latino,,Left,2nd Grade,Complete secondary,Complete primary,0.335692161,1.534425561,-1.771235013,-1.287250168,325,0,0.0,0
+20293,1,BHRC,BHRC-2,1,11.14579055,Female,Other,Hispanic or Latino,22.89593523,Right,4th Grade,Complete secondary,Complete secondary,-0.849414806,-1.072460082,0.101341556,-0.826660463,215,0,0.0,1
+20293,2,BHRC,BHRC-2,1,11.14579055,Female,Other,Hispanic or Latino,22.89593523,Right,4th Grade,Complete secondary,Complete secondary,-0.849414806,-1.072460082,0.101341556,-0.826660463,588,0,0.0,1
+20294,1,BHRC,BHRC-2,1,8.038329911,Male,White,Hispanic or Latino,,Right,1st Grade,Complete secondary,Complete primary,1.534308119,-0.551693823,0.426928837,0.963905141,788,1,0.0,1
+20295,1,BHRC,BHRC-2,1,9.418206708,Male,Other,Hispanic or Latino,18.25310979,,3rd Grade,Complete primary,No/incomplete primary,1.119213658,-0.395922097,-0.393335251,1.193275115,148,1,0.0,
+20295,2,BHRC,BHRC-2,1,9.418206708,Male,Other,Hispanic or Latino,18.25310979,,3rd Grade,Complete primary,No/incomplete primary,1.119213658,-0.395922097,-0.393335251,1.193275115,1,1,0.0,
+20296,1,BHRC,BHRC-2,1,14.33538672,Male,Other,Hispanic or Latino,18.46722068,Right,4th Grade,No/incomplete primary,Complete primary,-0.205895583,1.508463606,-1.407872413,-0.040513374,571,1,0.0,1
+20296,2,BHRC,BHRC-2,1,14.33538672,Male,Other,Hispanic or Latino,18.46722068,Right,4th Grade,No/incomplete primary,Complete primary,-0.205895583,1.508463606,-1.407872413,-0.040513374,154,1,0.0,1
+20298,1,BHRC,BHRC-2,1,9.990417522,Female,White,Hispanic or Latino,21.11483308,Right,4th Grade,Complete secondary,Complete secondary,0.029897721,0.340175665,-0.925787379,-1.401935155,699,0,0.0,1
+20301,1,BHRC,BHRC-2,1,9.930184805,Male,Other,Hispanic or Latino,28.05555556,Right,3rd Grade,Complete secondary,No/incomplete primary,1.615362067,-0.927378572,-0.861029687,0.923210468,389,1,0.0,1
+20302,1,BHRC,BHRC-2,1,8.689938398,Male,White,Hispanic or Latino,26.36164934,,2nd Grade,No/incomplete primary,No/incomplete primary,-0.132210175,0.772365845,0.412538239,-1.287250168,808,1,0.0,
+20302,2,BHRC,BHRC-2,1,8.689938398,Male,White,Hispanic or Latino,26.36164934,,2nd Grade,No/incomplete primary,No/incomplete primary,-0.132210175,0.772365845,0.412538239,-1.287250168,330,1,0.0,
+20303,1,BHRC,BHRC-2,1,7.953456537,Female,White,Hispanic or Latino,32.94251288,Right,1st Grade,No/incomplete primary,No/incomplete primary,0.052003343,0.237855022,-0.941976801,-0.482605502,404,0,0.0,1
+20306,1,BHRC,BHRC-2,1,7.107460643,Female,Other,Hispanic or Latino,29.322224,Right,1st Grade,Complete primary,Complete secondary,1.75659243,0.812072363,1.103286945,-2.659770497,661,0,0.0,1
+20306,2,BHRC,BHRC-2,1,7.107460643,Female,Other,Hispanic or Latino,29.322224,Right,1st Grade,Complete primary,Complete secondary,1.75659243,0.812072363,1.103286945,-2.659770497,828,0,0.0,1
+20308,1,BHRC,BHRC-2,1,7.189596167,Male,White,Hispanic or Latino,20.17714852,Right,1st Grade,Complete secondary,Complete secondary,-0.041331506,-0.234041676,-0.873621461,-0.188494003,774,1,0.0,1
+20311,1,BHRC,BHRC-2,1,11.71800137,Male,Other,Hispanic or Latino,20.71569381,Right,4th Grade,No/incomplete primary,,1.762732881,-0.472280786,2.166392375,-0.097855868,282,1,0.0,1
+20311,2,BHRC,BHRC-2,1,11.71800137,Male,Other,Hispanic or Latino,20.71569381,Right,4th Grade,No/incomplete primary,,1.762732881,-0.472280786,2.166392375,-0.097855868,16,1,0.0,1
+20312,1,BHRC,BHRC-2,1,13.46748802,Male,White,Hispanic or Latino,,Right,7th Grade,Complete primary,,-0.366775388,1.655072289,-0.280009292,-0.737872086,337,1,1.0,1
+20320,1,BHRC,BHRC-2,1,10.30527036,Female,White,Hispanic or Latino,23.14725512,Right,3rd Grade,Complete tertiary,Complete secondary,1.024650718,1.670344027,0.140915701,-2.056749436,17,0,0.0,1
+20321,1,BHRC,BHRC-2,1,10.66940452,Female,White,Hispanic or Latino,,Right,3rd Grade,No/incomplete primary,No/incomplete primary,-0.465022598,-0.16684603,-1.271161731,0.00758033,507,0,0.0,1
+20322,1,BHRC,BHRC-2,1,9.347022587,Female,Other,Hispanic or Latino,22.2136785,Right,3rd Grade,No/incomplete primary,No/incomplete primary,0.965702393,-0.707465548,0.288419331,-0.711975476,110,0,0.0,1
+20322,2,BHRC,BHRC-2,1,9.347022587,Female,Other,Hispanic or Latino,22.2136785,Right,3rd Grade,No/incomplete primary,No/incomplete primary,0.965702393,-0.707465548,0.288419331,-0.711975476,506,0,0.0,1
+20323,1,BHRC,BHRC-2,1,8.607802875,Female,Other,Hispanic or Latino,,Right,1st Grade,Complete primary,No/incomplete primary,-0.371687749,-0.229460155,-0.857432038,-1.124471477,360,0,0.0,1
+20324,1,BHRC,BHRC-2,1,12.1670089,Male,Other,Hispanic or Latino,,Right,4th Grade,Complete secondary,Complete primary,-0.508005752,-1.243503545,0.254241661,1.524381771,375,1,0.0,1
+20326,1,BHRC,BHRC-2,1,8.229979466,Female,White,Hispanic or Latino,36.88509165,Right,2nd Grade,Complete primary,Complete secondary,1.185530524,0.659354985,-0.463489417,-2.13073975,214,0,0.0,1
+20326,2,BHRC,BHRC-2,1,8.229979466,Female,White,Hispanic or Latino,36.88509165,Right,2nd Grade,Complete primary,Complete secondary,1.185530524,0.659354985,-0.463489417,-2.13073975,198,0,0.0,1
+20329,1,BHRC,BHRC-2,1,11.65776865,Female,Black,Hispanic or Latino,33.75641372,Right,6th Grade,Complete secondary,Complete secondary,1.513430587,0.121789814,-1.512204249,0.975003688,125,0,0.0,1
+20329,2,BHRC,BHRC-2,1,11.65776865,Female,Black,Hispanic or Latino,33.75641372,Right,6th Grade,Complete secondary,Complete secondary,1.513430587,0.121789814,-1.512204249,0.975003688,380,0,0.0,1
+20331,1,BHRC,BHRC-2,1,10.84736482,Female,White,Hispanic or Latino,18.1640625,Right,4th Grade,Complete tertiary,Complete secondary,0.22393596,0.557034342,0.074359185,-1.24285598,361,0,0.0,1
+20331,2,BHRC,BHRC-2,1,10.84736482,Female,White,Hispanic or Latino,18.1640625,Right,4th Grade,Complete tertiary,Complete secondary,0.22393596,0.557034342,0.074359185,-1.24285598,217,0,0.0,1
+20332,1,BHRC,BHRC-2,1,9.442847365,Male,White,Hispanic or Latino,22.22906193,Left,3rd Grade,Complete tertiary,Complete secondary,0.239901131,1.175539722,-0.191866879,-0.662032013,363,1,0.0,0
+20332,2,BHRC,BHRC-2,1,9.442847365,Male,White,Hispanic or Latino,22.22906193,Left,3rd Grade,Complete tertiary,Complete secondary,0.239901131,1.175539722,-0.191866879,-0.662032013,4,1,0.0,0
+20336,1,BHRC,BHRC-2,1,10.275154,Male,Black,Hispanic or Latino,20.91412742,Left,4th Grade,No/incomplete primary,No/incomplete primary,1.476587883,-0.444791658,-1.235185236,0.993501266,19,1,0.0,0
+20336,2,BHRC,BHRC-2,1,10.275154,Male,Black,Hispanic or Latino,20.91412742,Left,4th Grade,No/incomplete primary,No/incomplete primary,1.476587883,-0.444791658,-1.235185236,0.993501266,573,1,0.0,0
+20338,1,BHRC,BHRC-2,1,10.05065024,Male,Black,Hispanic or Latino,22.49795918,Right,4th Grade,No/incomplete primary,Complete primary,0.393412396,-0.681503594,-1.76224089,0.832572333,843,1,0.0,1
+20338,2,BHRC,BHRC-2,1,10.05065024,Male,Black,Hispanic or Latino,22.49795918,Right,4th Grade,No/incomplete primary,Complete primary,0.393412396,-0.681503594,-1.76224089,0.832572333,129,1,0.0,1
+20340,1,BHRC,BHRC-2,1,11.6605065,Male,Black,Hispanic or Latino,,Right,5th Grade,Complete secondary,,0.561660743,0.491365869,0.718338447,-0.721224265,678,1,0.0,1
+20343,1,BHRC,BHRC-2,1,9.549623546,Female,White,Hispanic or Latino,33.26214068,Right,3rd Grade,No/incomplete primary,No/incomplete primary,0.160075273,1.958979871,-0.812461419,-0.366070757,530,0,0.0,1
+20343,2,BHRC,BHRC-2,1,9.549623546,Female,White,Hispanic or Latino,33.26214068,Right,3rd Grade,No/incomplete primary,No/incomplete primary,0.160075273,1.958979871,-0.812461419,-0.366070757,160,0,0.0,1
+20350,1,BHRC,BHRC-2,1,9.883641342,Female,Other,Hispanic or Latino,19.46740129,Right,4th Grade,Complete secondary,Complete primary,-0.040103416,-0.864764448,-0.128908012,-0.993138669,803,0,0.0,1
+20355,1,BHRC,BHRC-2,1,8.262833676,Female,White,Hispanic or Latino,24.70688466,Right,2nd Grade,Complete secondary,Complete secondary,-0.611165323,0.508164781,-0.085736218,-0.970941575,9,0,0.0,1
+20360,1,BHRC,BHRC-2,1,7.438740589,Male,White,Hispanic or Latino,24.65590962,Right,1st Grade,Complete secondary,,-0.365547298,0.741822369,-0.281808116,-0.684229108,397,1,0.0,1
+20361,1,BHRC,BHRC-2,1,7.066392882,Female,Other,Hispanic or Latino,20.504934,Right,Kindergarten,Complete secondary,Complete tertiary,1.34518224,1.684088591,-0.612791871,-1.585061183,422,0,,1
+20361,2,BHRC,BHRC-2,1,7.066392882,Female,Other,Hispanic or Latino,20.504934,Right,Kindergarten,Complete secondary,Complete tertiary,1.34518224,1.684088591,-0.612791871,-1.585061183,273,0,,1
+20365,1,BHRC,BHRC-2,1,9.552361396,Male,Other,Hispanic or Latino,17.30103806,Right,2nd Grade,Complete secondary,No/incomplete primary,0.296393277,-0.403557966,-0.934781502,0.59395357,751,1,0.0,1
+20365,2,BHRC,BHRC-2,1,9.552361396,Male,Other,Hispanic or Latino,17.30103806,Right,2nd Grade,Complete secondary,No/incomplete primary,0.296393277,-0.403557966,-0.934781502,0.59395357,696,1,0.0,1
+20366,1,BHRC,BHRC-2,1,11.20876112,Female,White,Hispanic or Latino,17.30103806,,5th Grade,No/incomplete primary,No/incomplete primary,0.187093256,1.934545091,-1.040912163,-0.610238794,7,0,0.0,
+20366,2,BHRC,BHRC-2,1,11.20876112,Female,White,Hispanic or Latino,17.30103806,,5th Grade,No/incomplete primary,No/incomplete primary,0.187093256,1.934545091,-1.040912163,-0.610238794,218,0,0.0,
+20369,1,BHRC,BHRC-2,1,8.911704312,Male,Black,Hispanic or Latino,22.73442192,Right,3rd Grade,Complete secondary,No/incomplete primary,2.245372299,-1.471052438,0.802883211,0.640197516,388,1,0.0,1
+20369,2,BHRC,BHRC-2,1,8.911704312,Male,Black,Hispanic or Latino,22.73442192,Right,3rd Grade,Complete secondary,No/incomplete primary,2.245372299,-1.471052438,0.802883211,0.640197516,622,1,0.0,1
+20372,1,BHRC,BHRC-2,1,9.174537988,Male,White,Hispanic or Latino,18.507766,Right,3rd Grade,Complete secondary,No/incomplete primary,0.868683273,-0.238623198,-0.168482157,-0.991288912,103,1,0.0,1
+20372,2,BHRC,BHRC-2,1,9.174537988,Male,White,Hispanic or Latino,18.507766,Right,3rd Grade,Complete secondary,No/incomplete primary,0.868683273,-0.238623198,-0.168482157,-0.991288912,646,1,0.0,1
+20373,1,BHRC,BHRC-2,1,10.6091718,Female,Other,Hispanic or Latino,37.6184125,Right,3rd Grade,No/incomplete primary,No/incomplete primary,1.868348631,-0.466172091,-1.580559589,0.80112645,534,0,0.0,1
+20376,1,BHRC,BHRC-2,1,8.936344969,Male,Other,Hispanic or Latino,,Left,2nd Grade,Complete secondary,,0.926403509,-0.168373204,-1.591352538,-0.338324389,35,1,0.0,0
+20377,1,BHRC,BHRC-2,1,12.65160849,Male,White,Hispanic or Latino,27.41445369,Right,6th Grade,No/incomplete primary,,-0.435548435,-1.281682889,-0.224245724,1.19697463,170,1,0.0,1
+20378,1,BHRC,BHRC-2,1,13.07871321,Male,Other,Hispanic or Latino,37.02639727,Right,5th Grade,Complete secondary,Complete primary,1.357463141,-0.333307972,-0.62358482,-0.236587707,42,1,0.0,1
+20378,2,BHRC,BHRC-2,1,13.07871321,Male,Other,Hispanic or Latino,37.02639727,Right,5th Grade,Complete secondary,Complete primary,1.357463141,-0.333307972,-0.62358482,-0.236587707,48,1,0.0,1
+20380,1,BHRC,BHRC-2,1,9.084188912,Female,Other,Hispanic or Latino,37.23224827,Right,3rd Grade,Complete primary,Complete secondary,0.2313045,0.436387613,-1.075089833,1.76670005,707,0,0.0,1
+20381,1,BHRC,BHRC-2,1,10.75427789,Female,Other,Hispanic or Latino,25.25765713,Right,3rd Grade,Complete primary,No/incomplete primary,1.815540756,1.096126686,-1.046308637,0.825173302,190,0,0.0,1
+20382,1,BHRC,BHRC-2,1,9.823408624,Male,Other,Hispanic or Latino,20.90764962,Right,3rd Grade,Complete secondary,Complete secondary,0.22270787,-0.450900353,-1.069693359,-0.125602236,113,1,0.0,1
+20382,2,BHRC,BHRC-2,1,9.823408624,Male,Other,Hispanic or Latino,20.90764962,Right,3rd Grade,Complete secondary,Complete secondary,0.22270787,-0.450900353,-1.069693359,-0.125602236,98,1,0.0,1
+20383,1,BHRC,BHRC-2,1,11.01437372,Female,White,Hispanic or Latino,34.7107438,Right,3rd Grade,Complete secondary,Complete primary,-0.101507922,1.513045128,-0.495868262,-1.307597505,320,0,0.0,1
+20384,3,BHRC,BHRC-2,1,10.89117043,Male,Other,Hispanic or Latino,24.72452001,Right,4th Grade,No/incomplete primary,No/incomplete primary,0.463413533,-1.06787856,-0.870023811,-1.472225954,511,1,0.0,1
+20386,1,BHRC,BHRC-2,1,11.65776865,Female,White,Hispanic or Latino,22.60487528,Right,5th Grade,No/incomplete primary,No/incomplete primary,-1.382405918,-0.221824286,-0.389737602,-0.538098237,37,0,0.0,1
+20386,2,BHRC,BHRC-2,1,11.65776865,Female,White,Hispanic or Latino,22.60487528,Right,5th Grade,No/incomplete primary,No/incomplete primary,-1.382405918,-0.221824286,-0.389737602,-0.538098237,112,0,0.0,1
+20388,1,BHRC,BHRC-2,1,11.01711157,Male,White,Hispanic or Latino,24.09638554,Right,3rd Grade,Complete secondary,Complete secondary,1.249391211,-1.012900304,1.409087153,1.117435043,149,1,0.0,1
+20388,2,BHRC,BHRC-2,1,11.01711157,Male,White,Hispanic or Latino,24.09638554,Right,3rd Grade,Complete secondary,Complete secondary,1.249391211,-1.012900304,1.409087153,1.117435043,23,1,0.0,1
+20391,1,BHRC,BHRC-2,1,7.707049966,Male,White,Hispanic or Latino,,Right,2nd Grade,Complete secondary,Complete primary,0.075337055,-0.342471015,-0.958166224,-1.435230797,382,1,0.0,1
+20395,1,BHRC,BHRC-2,1,10.55715264,Male,White,Hispanic or Latino,22.03840116,Right,4th Grade,No/incomplete primary,No/incomplete primary,-0.921872123,0.650191942,0.423331188,-0.784116032,364,1,0.0,1
+20396,1,BHRC,BHRC-2,1,10.65023956,Female,Other,Hispanic or Latino,22.265625,Right,3rd Grade,Complete secondary,No/incomplete primary,0.146566282,1.338947317,-0.80166847,-1.118922204,510,0,0.0,1
+20400,1,BHRC,BHRC-2,1,12.80766598,Male,Black,Hispanic or Latino,,Left,5th Grade,Complete secondary,Complete secondary,1.380796853,-0.863237274,0.946789191,-2.319415051,167,1,0.0,0
+20400,2,BHRC,BHRC-2,1,12.80766598,Male,Black,Hispanic or Latino,,Left,5th Grade,Complete secondary,Complete secondary,1.380796853,-0.863237274,0.946789191,-2.319415051,400,1,0.0,0
+20406,1,BHRC,BHRC-2,1,11.26078029,Male,White,Hispanic or Latino,19.08081285,Right,3rd Grade,Complete secondary,Complete primary,1.136406919,0.666990854,-0.938379152,-0.845158041,670,1,0.0,1
+20409,1,BHRC,BHRC-2,1,9.713894593,Male,White,Hispanic or Latino,19.53125,Right,2nd Grade,Complete secondary,Complete secondary,0.336920251,-0.172954725,-0.148695084,-1.300198473,381,1,0.0,1
+20409,2,BHRC,BHRC-2,1,9.713894593,Male,White,Hispanic or Latino,19.53125,Right,2nd Grade,Complete secondary,Complete secondary,0.336920251,-0.172954725,-0.148695084,-1.300198473,634,1,0.0,1
+20414,1,BHRC,BHRC-2,1,8.936344969,Male,White,Hispanic or Latino,,Right,3rd Grade,Complete secondary,Complete secondary,-0.930468754,-1.034280737,-0.591205974,1.862887458,21,1,0.0,1
+20417,1,BHRC,BHRC-2,1,10.84188912,Male,Other,Hispanic or Latino,33.95061728,Right,3rd Grade,No/incomplete primary,Complete tertiary,-0.58414734,0.715860415,0.146312175,-0.987589396,377,1,0.0,1
+20417,2,BHRC,BHRC-2,1,10.84188912,Male,Other,Hispanic or Latino,33.95061728,Right,3rd Grade,No/incomplete primary,Complete tertiary,-0.58414734,0.715860415,0.146312175,-0.987589396,202,1,0.0,1
+20420,1,BHRC,BHRC-2,1,10.36824093,Male,White,Hispanic or Latino,,Right,4th Grade,Complete secondary,Complete secondary,-0.313967513,0.292833278,0.59062189,-1.161466634,299,1,0.0,1
+20422,1,BHRC,BHRC-2,1,13.47570157,Male,White,Hispanic or Latino,,Right,6th Grade,No/incomplete primary,,0.648855141,0.327958275,1.623147299,-1.697896412,681,1,0.0,1
+20429,1,BHRC,BHRC-2,1,9.420944559,Male,White,Hispanic or Latino,,Right,3rd Grade,Complete primary,Complete primary,-0.041331506,-0.234041676,-0.873621461,-0.991288912,35,1,0.0,1
+20430,1,BHRC,BHRC-2,1,10.18206708,Male,Other,Hispanic or Latino,24.1671624,Right,4th Grade,Complete secondary,Complete secondary,0.3307798,1.433632091,-0.391536426,-1.344592662,424,1,0.0,1
+20430,2,BHRC,BHRC-2,1,10.18206708,Male,Other,Hispanic or Latino,24.1671624,Right,4th Grade,Complete secondary,Complete secondary,0.3307798,1.433632091,-0.391536426,-1.344592662,264,1,0.0,1
+20431,1,BHRC,BHRC-2,1,11.57289528,Male,White,Hispanic or Latino,21.88512814,Right,5th Grade,Complete primary,Complete secondary,-0.773273218,1.56649621,-0.675750738,0.66239461,10,1,0.0,1
+20437,1,BHRC,BHRC-2,1,9.538672142,Female,Black,Hispanic or Latino,22.89281998,Right,3rd Grade,Complete primary,,0.110951669,-0.345525362,0.739924344,1.043444729,403,0,0.0,1
+20442,1,BHRC,BHRC-2,1,10.10540726,Male,White,Hispanic or Latino,17.83590963,Right,4th Grade,Complete secondary,No/incomplete primary,-0.214492213,1.984941826,1.822816847,-0.229188675,714,1,0.0,1
+20442,2,BHRC,BHRC-2,1,10.10540726,Male,White,Hispanic or Latino,17.83590963,Right,4th Grade,Complete secondary,No/incomplete primary,-0.214492213,1.984941826,1.822816847,-0.229188675,272,1,0.0,1
+20445,1,BHRC,BHRC-2,1,10.06433949,Female,White,Hispanic or Latino,21.77843524,Right,4th Grade,Complete primary,Complete primary,1.23956649,1.636746204,-1.02832039,-0.14779933,100,0,0.0,1
+20446,1,BHRC,BHRC-2,1,8.572210815,Male,White,Hispanic or Latino,24.96494648,Left,2nd Grade,No/incomplete primary,No/incomplete primary,0.775348424,0.350865881,-0.062351496,-0.562145089,509,1,0.0,0
+20446,2,BHRC,BHRC-2,1,8.572210815,Male,White,Hispanic or Latino,24.96494648,Left,2nd Grade,No/incomplete primary,No/incomplete primary,0.775348424,0.350865881,-0.062351496,-0.562145089,347,1,0.0,0
+20451,1,BHRC,BHRC-2,1,8.646132786,Male,White,Hispanic or Latino,20.50953373,Right,2nd Grade,No/incomplete primary,Complete primary,-0.167824789,-0.318036234,0.299212279,-0.926547387,723,1,0.0,1
+20453,1,BHRC,BHRC-2,1,9.021218344,Female,Other,Hispanic or Latino,25.60553633,Right,1st Grade,Complete secondary,Complete secondary,0.304989908,-1.390112228,-0.249429271,-0.190343761,717,0,0.0,1
+20453,2,BHRC,BHRC-2,1,9.021218344,Female,Other,Hispanic or Latino,25.60553633,Right,1st Grade,Complete secondary,Complete secondary,0.304989908,-1.390112228,-0.249429271,-0.190343761,486,0,0.0,1
+20456,2,BHRC,BHRC-2,1,8.914442163,Male,White,Hispanic or Latino,19.72613234,Right,3rd Grade,Complete tertiary,Complete secondary,0.160075273,1.047257125,0.691356076,-1.235456948,314,1,0.0,1
+20460,1,BHRC,BHRC-2,1,9.399041752,Male,White,Hispanic or Latino,,Right,3rd Grade,Complete secondary,Complete secondary,1.175705803,-0.318036234,0.707545499,1.159979473,203,1,0.0,1
+20461,1,BHRC,BHRC-2,1,11.63312799,Female,White,Hispanic or Latino,22.40587695,Right,3rd Grade,Complete primary,No/incomplete primary,0.039722442,1.115979945,-1.560772517,-1.122621719,487,0,0.0,1
+20461,2,BHRC,BHRC-2,1,11.63312799,Female,White,Hispanic or Latino,22.40587695,Right,3rd Grade,Complete primary,No/incomplete primary,0.039722442,1.115979945,-1.560772517,-1.122621719,682,0,0.0,1
+20466,1,BHRC,BHRC-2,1,8.134154689,Male,White,Hispanic or Latino,,Right,1st Grade,Complete secondary,Complete tertiary,1.434832819,-0.472280786,-0.693738985,1.015698361,7,1,0.0,1
+20466,2,BHRC,BHRC-2,1,8.134154689,Male,White,Hispanic or Latino,,Right,1st Grade,Complete secondary,Complete tertiary,1.434832819,-0.472280786,-0.693738985,1.015698361,638,1,0.0,1
+20467,1,BHRC,BHRC-2,1,11.1211499,Male,White,Hispanic or Latino,,Right,4th Grade,Complete tertiary,Complete tertiary,0.499028147,0.295887625,-0.420317622,-1.557314815,213,1,0.0,1
+20467,2,BHRC,BHRC-2,1,11.1211499,Male,White,Hispanic or Latino,,Right,4th Grade,Complete tertiary,Complete tertiary,0.499028147,0.295887625,-0.420317622,-1.557314815,128,1,0.0,1
+20469,1,BHRC,BHRC-2,1,6.882956879,Female,White,Hispanic or Latino,29.666548,Right,1st Grade,Complete tertiary,No/incomplete primary,,,,,132,0,0.0,1
+20474,1,BHRC,BHRC-2,1,9.125256674,Female,White,Hispanic or Latino,53.27783559,Right,3rd Grade,Complete tertiary,Complete primary,1.023422628,1.919273353,-1.675897301,-0.425263008,40,0,0.0,1
+20474,2,BHRC,BHRC-2,1,9.125256674,Female,White,Hispanic or Latino,53.27783559,Right,3rd Grade,Complete tertiary,Complete primary,1.023422628,1.919273353,-1.675897301,-0.425263008,260,0,0.0,1
+20480,1,BHRC,BHRC-2,1,9.67008898,Male,Other,Hispanic or Latino,20.66350145,Right,2nd Grade,Complete secondary,No/incomplete primary,0.699206836,0.298941973,-1.400677114,-1.64795295,488,1,0.0,1
+20482,1,BHRC,BHRC-2,1,10.4421629,Male,White,Hispanic or Latino,22.75830678,Right,4th Grade,Complete secondary,No/incomplete primary,1.404130566,1.322148405,-1.17222637,0.129664348,669,1,0.0,1
+20482,2,BHRC,BHRC-2,1,10.4421629,Male,White,Hispanic or Latino,22.75830678,Right,4th Grade,Complete secondary,No/incomplete primary,1.404130566,1.322148405,-1.17222637,0.129664348,197,1,0.0,1
+20487,1,BHRC,BHRC-2,1,8.514715948,Male,Black,Hispanic or Latino,,Right,1st Grade,Complete primary,Complete secondary,-0.369231569,2.195691807,-0.923988554,1.141481895,357,1,0.0,1
+20487,2,BHRC,BHRC-2,1,8.514715948,Male,Black,Hispanic or Latino,,Right,1st Grade,Complete primary,Complete secondary,-0.369231569,2.195691807,-0.923988554,1.141481895,489,1,0.0,1
+20489,1,BHRC,BHRC-2,1,10.29705681,Female,White,Hispanic or Latino,30.65543293,,4th Grade,No/incomplete primary,,2.025544167,0.894539747,-0.078540919,0.730835651,692,0,0.0,
+20489,2,BHRC,BHRC-2,1,10.29705681,Female,White,Hispanic or Latino,30.65543293,,4th Grade,No/incomplete primary,,2.025544167,0.894539747,-0.078540919,0.730835651,399,0,0.0,
+20491,1,BHRC,BHRC-2,1,11.05270363,Male,Other,Hispanic or Latino,22.83950617,Right,4th Grade,Complete primary,No/incomplete primary,-0.445373156,1.363382097,-1.280155855,-0.010917249,6,1,0.0,1
+20492,1,BHRC,BHRC-2,1,11.51266256,Female,White,Hispanic or Latino,,Right,4th Grade,Complete secondary,Complete secondary,1.45079799,-1.292373106,-0.709928408,1.008299329,177,0,0.0,1
+20502,1,BHRC,BHRC-2,1,11.10746064,Female,Other,Hispanic or Latino,19.77769867,,5th Grade,No/incomplete primary,,0.258322483,-0.127139512,-0.208056301,-1.276151621,174,0,0.0,
+20503,1,BHRC,BHRC-2,1,8.637919233,Male,White,Hispanic or Latino,22.02432251,Right,1st Grade,No/incomplete primary,,-0.543620366,1.088490817,-0.810662594,0.481118341,431,1,0.0,1
+20503,2,BHRC,BHRC-2,1,8.637919233,Male,White,Hispanic or Latino,22.02432251,Right,1st Grade,No/incomplete primary,,-0.543620366,1.088490817,-0.810662594,0.481118341,718,1,0.0,1
+20504,1,BHRC,BHRC-2,1,13.0513347,Female,White,Hispanic or Latino,24.79570582,Right,5th Grade,No/incomplete primary,No/incomplete primary,-0.1788776,0.011833302,-1.424061836,-1.253954527,490,0,0.0,1
+20505,1,BHRC,BHRC-2,1,12.80219028,Female,Other,Hispanic or Latino,27.51338489,Left,6th Grade,Complete secondary,Complete secondary,0.049547162,2.549996124,0.088749783,-1.416733218,668,0,0.0,0
+20505,2,BHRC,BHRC-2,1,12.80219028,Female,Other,Hispanic or Latino,27.51338489,Left,6th Grade,Complete secondary,Complete secondary,0.049547162,2.549996124,0.088749783,-1.416733218,491,0,0.0,0
+20512,1,BHRC,BHRC-2,1,7.641341547,Male,Other,Hispanic or Latino,17.99307958,Right,2nd Grade,Complete primary,No/incomplete primary,-1.106085641,0.190512634,-0.504862386,-0.680529592,398,1,0.0,1
+20512,2,BHRC,BHRC-2,1,7.641341547,Male,Other,Hispanic or Latino,17.99307958,Right,2nd Grade,Complete primary,No/incomplete primary,-1.106085641,0.190512634,-0.504862386,-0.680529592,28,1,0.0,1
+20514,2,BHRC,BHRC-2,1,10.36550308,Female,White,Hispanic or Latino,27.40765728,Right,3rd Grade,No/incomplete primary,No/incomplete primary,-0.407302362,-0.264585152,-1.299942928,-0.047912406,1,0,0.0,1
+20519,1,BHRC,BHRC-2,1,8.780287474,Male,Other,Hispanic or Latino,,,3rd Grade,Complete primary,,-0.002032623,0.521909345,-0.900603832,-0.430812282,204,1,0.0,
+20521,1,BHRC,BHRC-2,1,9.686516085,Male,Other,Hispanic or Latino,,Right,3rd Grade,No/incomplete primary,No/incomplete primary,0.982895654,0.079028948,-0.80526612,0.050124761,300,1,0.0,1
+20525,1,BHRC,BHRC-2,1,11.86310746,Male,Black,Hispanic or Latino,19.47077787,,4th Grade,Complete secondary,No/incomplete primary,0.13060111,0.544816951,-0.999539194,-1.477775227,124,1,0.0,
+20525,2,BHRC,BHRC-2,1,11.86310746,Male,Black,Hispanic or Latino,19.47077787,,4th Grade,Complete secondary,No/incomplete primary,0.13060111,0.544816951,-0.999539194,-1.477775227,4,1,0.0,
+20526,1,BHRC,BHRC-2,1,9.524982888,Female,White,Hispanic or Latino,21.45357371,Right,2nd Grade,Complete primary,,0.080249416,0.613539771,-0.961763874,-1.438930312,253,0,0.0,1
+20528,1,BHRC,BHRC-2,1,9.300479124,Female,White,Hispanic or Latino,,Right,2nd Grade,Complete secondary,Complete secondary,0.650083232,-0.171427551,-1.359304144,-0.464107923,156,0,0.0,1
+20528,2,BHRC,BHRC-2,1,9.300479124,Female,White,Hispanic or Latino,,Right,2nd Grade,Complete secondary,Complete secondary,0.650083232,-0.171427551,-1.359304144,-0.464107923,271,0,0.0,1
+20529,1,BHRC,BHRC-2,1,10.14921287,Female,Other,Hispanic or Latino,19.04507334,,4th Grade,No/incomplete primary,No/incomplete primary,-0.009401163,-1.518394825,0.025790917,-1.374188788,207,0,0.0,
+20529,2,BHRC,BHRC-2,1,10.14921287,Female,Other,Hispanic or Latino,19.04507334,,4th Grade,No/incomplete primary,No/incomplete primary,-0.009401163,-1.518394825,0.025790917,-1.374188788,24,0,0.0,
+20530,1,BHRC,BHRC-2,1,10.08898015,Male,Other,Hispanic or Latino,18.9370029,Right,2nd Grade,No/incomplete primary,,0.194461797,0.857887576,-1.61113961,-1.215109612,667,1,0.0,1
+20530,2,BHRC,BHRC-2,1,10.08898015,Male,Other,Hispanic or Latino,18.9370029,Right,2nd Grade,No/incomplete primary,,0.194461797,0.857887576,-1.61113961,-1.215109612,231,1,0.0,1
+20532,2,BHRC,BHRC-2,1,10.40657084,Female,Other,Hispanic or Latino,18.98659072,,4th Grade,Complete primary,Complete primary,,,,,492,0,0.0,
+20534,1,BHRC,BHRC-2,1,7.86036961,Male,Other,Hispanic or Latino,20.49873204,Right,2nd Grade,Complete secondary,Complete secondary,0.776576514,0.766257149,-0.62358482,-1.050481163,637,1,0.0,1
+20535,1,BHRC,BHRC-2,1,12.28473648,Female,Other,Hispanic or Latino,23.48625401,Right,4th Grade,No/incomplete primary,No/incomplete primary,2.150809359,-1.906296965,0.898220923,-2.99272691,8,0,0.0,1
+20539,1,BHRC,BHRC-2,1,10.40109514,Male,White,Hispanic or Latino,,,3rd Grade,Complete secondary,Complete primary,0.340604521,-0.565438387,-0.816059069,-1.638704161,493,1,0.0,
+20541,1,BHRC,BHRC-2,1,9.013004791,Female,Other,Hispanic or Latino,25.07619305,Right,3rd Grade,Complete primary,,1.090967585,-0.696775332,0.495284178,-1.34644242,324,0,0.0,1
+20541,2,BHRC,BHRC-2,1,9.013004791,Female,Other,Hispanic or Latino,25.07619305,Right,3rd Grade,Complete primary,,1.090967585,-0.696775332,0.495284178,-1.34644242,171,0,0.0,1
+20544,1,BHRC,BHRC-2,1,10.02600958,Male,Black,Hispanic or Latino,14.87290427,Left,3rd Grade,Complete secondary,,1.054124881,0.100409381,-1.069693359,-1.154067603,67,1,0.0,0
+20544,2,BHRC,BHRC-2,1,10.02600958,Male,Black,Hispanic or Latino,14.87290427,Left,3rd Grade,Complete secondary,,1.054124881,0.100409381,-1.069693359,-1.154067603,494,1,0.0,0
+20548,1,BHRC,BHRC-2,1,11.06639288,Female,Other,Hispanic or Latino,21.21831719,Right,4th Grade,No/incomplete primary,No/incomplete primary,0.524818039,-1.252666588,-0.571418902,-0.689778381,744,0,0.0,1
+20550,1,BHRC,BHRC-2,1,11.27994524,Male,Other,Hispanic or Latino,16.70620468,Right,4th Grade,No/incomplete primary,,-1.608374501,-0.744117719,-0.314186962,-0.432662039,323,1,0.0,1
+20550,2,BHRC,BHRC-2,1,11.27994524,Male,Other,Hispanic or Latino,16.70620468,Right,4th Grade,No/incomplete primary,,-1.608374501,-0.744117719,-0.314186962,-0.432662039,495,1,0.0,1
+20556,2,BHRC,BHRC-2,1,10.15468857,Male,White,Hispanic or Latino,22.99262444,Right,4th Grade,Complete secondary,No/incomplete primary,,,,,255,1,0.0,1
+20567,1,BHRC,BHRC-2,1,7.742642026,Female,White,Hispanic or Latino,,Right,1st Grade,Complete secondary,Complete primary,0.887104625,0.036268083,-0.718922532,-0.649083708,496,0,0.0,1
+20567,2,BHRC,BHRC-2,1,7.742642026,Female,White,Hispanic or Latino,,Right,1st Grade,Complete secondary,Complete primary,0.887104625,0.036268083,-0.718922532,-0.649083708,497,0,0.0,1
+20568,1,BHRC,BHRC-2,1,10.14647502,Female,Other,Hispanic or Latino,,Right,4th Grade,Complete primary,Complete primary,-1.475740768,-0.797568801,-0.357358756,0.962055383,498,0,0.0,1
+20571,1,BHRC,BHRC-2,1,12.38603696,Male,White,Hispanic or Latino,25.2493372,,4th Grade,Complete primary,No/incomplete primary,0.893245076,0.421115875,0.36756762,-1.161466634,499,1,0.0,
+20573,1,BHRC,BHRC-2,1,11.1430527,Male,White,Hispanic or Latino,,Right,4th Grade,No/incomplete primary,No/incomplete primary,-0.27958099,-1.365677447,-0.452696468,0.024228151,346,1,0.0,1
+20577,1,BHRC,BHRC-2,1,10.88843258,Female,White,Hispanic or Latino,,Left,4th Grade,Complete tertiary,Complete tertiary,-0.085542751,-0.482971003,-0.841242615,-1.318696052,15,0,0.0,0
+20577,2,BHRC,BHRC-2,1,10.88843258,Female,White,Hispanic or Latino,,Left,4th Grade,Complete tertiary,Complete tertiary,-0.085542751,-0.482971003,-0.841242615,-1.318696052,176,0,0.0,0
+20579,1,BHRC,BHRC-2,1,10.48596851,Male,Other,Hispanic or Latino,,Right,3rd Grade,No/incomplete primary,No/incomplete primary,0.162531454,-1.619188295,-1.589553713,1.006449571,38,1,0.0,1
+20579,2,BHRC,BHRC-2,1,10.48596851,Male,Other,Hispanic or Latino,,Right,3rd Grade,No/incomplete primary,No/incomplete primary,0.162531454,-1.619188295,-1.589553713,1.006449571,97,1,0.0,1
+20580,2,BHRC,BHRC-2,1,9.264887064,Female,White,Hispanic or Latino,,,3rd Grade,Complete primary,Complete primary,,,,,500,0,0.0,
+20581,1,BHRC,BHRC-2,1,7.23340178,Male,White,Hispanic or Latino,,Right,1st Grade,Complete primary,Complete primary,1.34518224,-0.227932981,1.740070908,-0.227338918,66,1,0.0,1
+20581,2,BHRC,BHRC-2,1,7.23340178,Male,White,Hispanic or Latino,,Right,1st Grade,Complete primary,Complete primary,1.34518224,-0.227932981,1.740070908,-0.227338918,118,1,0.0,1
+20583,1,BHRC,BHRC-2,1,9.987679671,Male,Other,Hispanic or Latino,21.55102041,Right,4th Grade,Complete secondary,Complete secondary,-1.475740768,-0.797568801,-0.357358756,0.962055383,62,1,0.0,1
+20584,1,BHRC,BHRC-2,1,10.08898015,Male,Other,Hispanic or Latino,,Right,3rd Grade,Complete secondary,Complete secondary,1.644836229,0.65324629,1.328140039,-0.023865554,502,1,0.0,1
+20587,1,BHRC,BHRC-2,1,10.72689938,Male,White,Hispanic or Latino,25.17418858,Right,3rd Grade,Complete secondary,,1.464306982,0.955626698,-0.32497991,1.000900298,199,1,0.0,1
+20587,2,BHRC,BHRC-2,1,10.72689938,Male,White,Hispanic or Latino,25.17418858,Right,3rd Grade,Complete secondary,,1.464306982,0.955626698,-0.32497991,1.000900298,673,1,0.0,1
+20588,1,BHRC,BHRC-2,1,8.736481862,Male,Other,Hispanic or Latino,,Right,2nd Grade,Complete secondary,Complete primary,0.403237117,0.132480031,-0.499465912,0.508864709,503,1,0.0,1
+20590,1,BHRC,BHRC-2,1,11.04996578,Male,White,Hispanic or Latino,22.60850631,Left,4th Grade,Complete primary,Complete primary,1.379568763,-1.034280737,0.653580756,-2.343461903,144,1,0.0,0
+20590,2,BHRC,BHRC-2,1,11.04996578,Male,White,Hispanic or Latino,22.60850631,Left,4th Grade,Complete primary,Complete primary,1.379568763,-1.034280737,0.653580756,-2.343461903,376,1,0.0,0
+20594,1,BHRC,BHRC-2,1,13.45653662,Female,White,Hispanic or Latino,24.24391847,Right,6th Grade,Complete secondary,Complete primary,0.099898857,-0.119503643,-0.976154472,-1.150368087,21,0,0.0,1
+20597,1,BHRC,BHRC-2,1,8.993839836,Male,White,Hispanic or Latino,,,3rd Grade,No/incomplete primary,No/incomplete primary,0.161303363,-0.544057954,-1.022923915,-1.118922204,721,1,0.0,
+20602,1,BHRC,BHRC-2,1,7.140314853,Male,Other,Hispanic or Latino,,Right,1st Grade,Complete primary,No/incomplete primary,-0.021682065,-0.592927515,-0.560625953,0.854769427,732,1,0.0,1
+20604,1,BHRC,BHRC-2,1,8.260095825,Male,Other,Hispanic or Latino,22.38631428,,2nd Grade,Complete primary,,0.459729263,-0.626525338,-0.384341127,-0.312427779,394,1,0.0,
+20605,1,BHRC,BHRC-2,1,9.371663244,Male,White,Hispanic or Latino,25.93943698,Right,2nd Grade,Complete primary,Complete secondary,0.447448362,-1.486324176,0.198478093,-0.30317899,743,1,0.0,1
+20605,2,BHRC,BHRC-2,1,9.371663244,Male,White,Hispanic or Latino,25.93943698,Right,2nd Grade,Complete primary,Complete secondary,0.447448362,-1.486324176,0.198478093,-0.30317899,145,1,0.0,1
+20611,1,BHRC,BHRC-2,1,6.800821355,Male,Other,Hispanic or Latino,,Right,1st Grade,Complete primary,Complete secondary,-0.250106827,-0.168373204,-0.727916656,-1.205860823,786,1,0.0,1
+20611,2,BHRC,BHRC-2,1,6.800821355,Male,Other,Hispanic or Latino,,Right,1st Grade,Complete primary,Complete secondary,-0.250106827,-0.168373204,-0.727916656,-1.205860823,746,1,0.0,1
+20613,1,BHRC,BHRC-2,1,7.06091718,Male,White,Hispanic or Latino,21.3713843,Right,1st Grade,Complete primary,Complete primary,0.204286518,-1.162563335,2.409233717,-1.248405253,267,1,0.0,1
+20614,1,BHRC,BHRC-2,1,8.298425736,Male,White,Hispanic or Latino,18.55677322,Right,2nd Grade,Complete secondary,Complete primary,0.593591086,-0.818949234,0.058169762,-1.844027283,750,1,0.0,1
+20614,2,BHRC,BHRC-2,1,8.298425736,Male,White,Hispanic or Latino,18.55677322,Right,2nd Grade,Complete secondary,Complete primary,0.593591086,-0.818949234,0.058169762,-1.844027283,415,1,0.0,1
+20615,1,BHRC,BHRC-2,1,12.58863792,Male,Black,Hispanic or Latino,34.08979592,,5th Grade,No/incomplete primary,,-0.232913565,0.286724583,-0.387938777,-0.741571601,402,1,0.0,
+20615,2,BHRC,BHRC-2,1,12.58863792,Male,Black,Hispanic or Latino,34.08979592,,5th Grade,No/incomplete primary,,-0.232913565,0.286724583,-0.387938777,-0.741571601,759,1,0.0,
+20616,1,BHRC,BHRC-2,1,8.673511294,Male,White,Hispanic or Latino,24.72518293,Right,2nd Grade,Complete secondary,,-1.112226092,-0.951813353,0.569035993,-0.676830076,40,1,0.0,1
+20620,2,BHRC,BHRC-2,1,10.70499658,Male,White,Hispanic or Latino,,,4th Grade,,Complete secondary,,,,,219,1,0.0,
+20621,1,BHRC,BHRC-2,1,7.066392882,Male,White,Hispanic or Latino,19.78969754,Right,1st Grade,Complete secondary,Complete secondary,0.077793235,-0.321090582,-0.049759723,-1.437080555,752,1,0.0,1
+20624,1,BHRC,BHRC-2,1,10.36550308,Male,White,Hispanic or Latino,18.39741049,Right,3rd Grade,Complete primary,Complete primary,1.720977817,-0.020237347,-0.101925641,0.86956749,748,1,0.0,1
+20624,2,BHRC,BHRC-2,1,10.36550308,Male,White,Hispanic or Latino,18.39741049,Right,3rd Grade,Complete primary,Complete primary,1.720977817,-0.020237347,-0.101925641,0.86956749,350,1,0.0,1
+20625,1,BHRC,BHRC-2,1,6.844626968,Male,White,Hispanic or Latino,16.73929217,Right,1st Grade,Complete secondary,Complete secondary,0.254638213,-0.037036259,-0.204458652,-1.272452106,393,1,0.0,1
+20625,2,BHRC,BHRC-2,1,6.844626968,Male,White,Hispanic or Latino,16.73929217,Right,1st Grade,Complete secondary,Complete secondary,0.254638213,-0.037036259,-0.204458652,-1.272452106,636,1,0.0,1
+20626,2,BHRC,BHRC-2,1,8.599589322,Male,White,Hispanic or Latino,22.31327843,Right,2nd Grade,Complete primary,Complete primary,,,,,11,1,0.0,1
+20627,1,BHRC,BHRC-2,1,9.782340862,Female,White,Hispanic or Latino,35.05563176,Right,3rd Grade,Complete secondary,Complete secondary,-0.056068588,0.195094156,-0.272813993,-0.976490849,165,0,0.0,1
+20628,1,BHRC,BHRC-2,1,9.897330595,Female,White,Hispanic or Latino,20.60935535,Right,3rd Grade,No/incomplete primary,,0.974299023,-0.307346018,-0.992343894,1.278363976,745,0,0.0,1
+20632,3,BHRC,BHRC-2,1,8.462696783,Male,White,Hispanic or Latino,19.94756236,Right,2nd Grade,No/incomplete primary,No/incomplete primary,0.142882012,-0.342471015,-1.008533317,-1.19106276,724,1,0.0,1
+20636,3,BHRC,BHRC-2,1,7.055441478,Male,Other,Hispanic or Latino,25.35154137,Right,Kindergarten,Complete tertiary,No/incomplete primary,0.787629325,-0.854074231,-0.632578944,0.549559381,64,1,,1
+20639,1,BHRC,BHRC-2,1,8.495550992,Male,Other,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,,1.486412604,-1.329025277,-0.742307254,0.989801751,134,1,0.0,1
+20639,2,BHRC,BHRC-2,1,8.495550992,Male,Other,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,,1.486412604,-1.329025277,-0.742307254,0.989801751,742,1,0.0,1
+20640,1,BHRC,BHRC-2,1,11.11841205,Male,White,Hispanic or Latino,17.38495252,Right,5th Grade,Complete secondary,No/incomplete primary,0.287796646,1.096126686,-0.819656718,0.23140103,366,1,0.0,1
+20640,2,BHRC,BHRC-2,1,11.11841205,Male,White,Hispanic or Latino,17.38495252,Right,5th Grade,Complete secondary,No/incomplete primary,0.287796646,1.096126686,-0.819656718,0.23140103,44,1,0.0,1
+20643,1,BHRC,BHRC-2,1,8.676249144,Female,White,Hispanic or Latino,21.09619051,Left,2nd Grade,Complete primary,,1.708696916,0.292833278,0.608610137,0.876966522,684,0,0.0,0
+20643,2,BHRC,BHRC-2,1,8.676249144,Female,White,Hispanic or Latino,21.09619051,Left,2nd Grade,Complete primary,,1.708696916,0.292833278,0.608610137,0.876966522,837,0,0.0,0
+20647,1,BHRC,BHRC-2,1,8.676249144,Female,Other,Hispanic or Latino,22.72353715,,1st Grade,No/incomplete primary,No/incomplete primary,-1.106085641,0.190512634,-0.504862386,-0.680529592,32,0,0.0,
+20647,2,BHRC,BHRC-2,1,8.676249144,Female,Other,Hispanic or Latino,22.72353715,,1st Grade,No/incomplete primary,No/incomplete primary,-1.106085641,0.190512634,-0.504862386,-0.680529592,835,0,0.0,
+20648,1,BHRC,BHRC-2,1,9.49486653,Male,White,Hispanic or Latino,21.00433819,Right,4th Grade,Complete secondary,Complete secondary,0.511309048,0.050012647,0.137318052,-0.353122452,570,1,0.0,1
+20648,2,BHRC,BHRC-2,1,9.49486653,Male,White,Hispanic or Latino,21.00433819,Right,4th Grade,Complete secondary,Complete secondary,0.511309048,0.050012647,0.137318052,-0.353122452,836,1,0.0,1
+20652,1,BHRC,BHRC-2,1,11.1266256,Female,Other,Hispanic or Latino,33.89897552,Right,3rd Grade,Complete primary,No/incomplete primary,1.619046337,-1.270992673,1.180636409,-1.649802708,8,0,0.0,1
+20652,2,BHRC,BHRC-2,1,11.1266256,Female,Other,Hispanic or Latino,33.89897552,Right,3rd Grade,Complete primary,No/incomplete primary,1.619046337,-1.270992673,1.180636409,-1.649802708,711,0,0.0,1
+20653,1,BHRC,BHRC-2,1,9.240246407,Male,Other,Hispanic or Latino,24.15654942,Right,4th Grade,Complete secondary,Complete secondary,-1.608374501,-0.744117719,-0.314186962,-0.432662039,256,1,0.0,1
+20653,2,BHRC,BHRC-2,1,9.240246407,Male,Other,Hispanic or Latino,24.15654942,Right,4th Grade,Complete secondary,Complete secondary,-1.608374501,-0.744117719,-0.314186962,-0.432662039,417,1,0.0,1
+20654,1,BHRC,BHRC-2,1,8.06844627,Female,Black,Hispanic or Latino,17.94584201,Right,1st Grade,Complete tertiary,Complete secondary,-0.673797919,-1.157981813,-1.179421669,-0.930246902,301,0,0.0,1
+20654,2,BHRC,BHRC-2,1,8.06844627,Female,Black,Hispanic or Latino,17.94584201,Right,1st Grade,Complete tertiary,Complete secondary,-0.673797919,-1.157981813,-1.179421669,-0.930246902,406,0,0.0,1
+20655,1,BHRC,BHRC-2,1,8.599589322,Male,Black,Hispanic or Latino,22.03856749,Right,3rd Grade,Complete secondary,No/incomplete primary,-0.559585537,0.135534378,1.761656805,1.30056107,307,1,0.0,1
+20655,2,BHRC,BHRC-2,1,8.599589322,Male,Black,Hispanic or Latino,22.03856749,Right,3rd Grade,Complete secondary,No/incomplete primary,-0.559585537,0.135534378,1.761656805,1.30056107,739,1,0.0,1
+20662,1,BHRC,BHRC-2,1,9.420944559,Male,Other,Hispanic or Latino,25.74839302,Right,4th Grade,No/incomplete primary,,0.347973062,0.45929522,-1.165031071,-1.361240483,841,1,0.0,1
+20665,1,BHRC,BHRC-2,1,7.841204654,Male,Other,Hispanic or Latino,20.01549587,Right,1st Grade,Complete primary,No/incomplete primary,-0.846958626,-0.666231856,-0.634377768,-0.227338918,65,1,0.0,1
+20665,2,BHRC,BHRC-2,1,7.841204654,Male,Other,Hispanic or Latino,20.01549587,Right,1st Grade,Complete primary,No/incomplete primary,-0.846958626,-0.666231856,-0.634377768,-0.227338918,133,1,0.0,1
+20667,1,BHRC,BHRC-2,1,13.97125257,Female,Other,Hispanic or Latino,28.98114344,Right,6th Grade,Complete secondary,,1.377112583,0.312686537,-1.985295159,-0.25138577,7,0,0.0,1
+20671,1,BHRC,BHRC-2,1,8.933607118,Male,White,Hispanic or Latino,19.81767737,Right,2nd Grade,Complete tertiary,Complete secondary,-0.849414806,-1.072460082,0.101341556,-0.826660463,322,1,0.0,1
+20672,1,BHRC,BHRC-2,1,10.91581109,Male,Other,Hispanic or Latino,20.69160998,Right,5th Grade,Complete secondary,Complete primary,-0.135894446,0.537181082,-0.467087066,0.949107078,61,1,0.0,1
+20672,2,BHRC,BHRC-2,1,10.91581109,Male,Other,Hispanic or Latino,20.69160998,Right,5th Grade,Complete secondary,Complete primary,-0.135894446,0.537181082,-0.467087066,0.949107078,825,1,0.0,1
+20674,2,BHRC,BHRC-2,1,13.46748802,Female,Other,Hispanic or Latino,,Right,5th Grade,Complete primary,No/incomplete primary,,,,,833,0,0.0,1
+20675,1,BHRC,BHRC-2,1,12.77754962,Male,White,Hispanic or Latino,,Left,7th Grade,Complete secondary,,-0.528883284,-0.551693823,0.099542732,1.541029591,683,1,1.0,0
+20678,1,BHRC,BHRC-2,1,8.788501027,Female,White,Hispanic or Latino,22.49405116,,3rd Grade,No/incomplete primary,No/incomplete primary,0.487975336,0.269925671,-0.891609708,-1.757088663,251,0,0.0,
+20678,2,BHRC,BHRC-2,1,8.788501027,Female,White,Hispanic or Latino,22.49405116,,3rd Grade,No/incomplete primary,No/incomplete primary,0.487975336,0.269925671,-0.891609708,-1.757088663,127,0,0.0,
+20683,1,BHRC,BHRC-2,1,8.019164956,Female,White,Hispanic or Latino,,Right,1st Grade,,Complete secondary,-0.543620366,0.124844162,-1.233386412,-1.011636248,302,0,0.0,1
+20688,1,BHRC,BHRC-2,1,9.626283368,Female,White,Hispanic or Latino,17.84651993,,3rd Grade,Complete secondary,Complete secondary,-0.272212449,0.137061552,-0.99054507,0.732685409,303,0,0.0,
+20688,2,BHRC,BHRC-2,1,9.626283368,Female,White,Hispanic or Latino,17.84651993,,3rd Grade,Complete secondary,Complete secondary,-0.272212449,0.137061552,-0.99054507,0.732685409,12,0,0.0,
+20689,1,BHRC,BHRC-2,1,8.643394935,Male,White,Hispanic or Latino,21.13885586,Right,2nd Grade,Complete primary,Complete primary,1.533080028,0.754039759,-1.28555233,0.963905141,76,1,0.0,1
+20689,2,BHRC,BHRC-2,1,8.643394935,Male,White,Hispanic or Latino,21.13885586,Right,2nd Grade,Complete primary,Complete primary,1.533080028,0.754039759,-1.28555233,0.963905141,414,1,0.0,1
+20693,1,BHRC,BHRC-2,1,8.958247775,Male,Other,Hispanic or Latino,,Right,3rd Grade,Complete secondary,Complete primary,0.880964174,0.03932243,-1.553577218,-0.297629716,298,1,0.0,1
+20698,1,BHRC,BHRC-2,1,8.334017796,Male,White,Hispanic or Latino,22.98190175,Right,2nd Grade,Complete secondary,No/incomplete primary,1.405358656,1.488610347,-1.179421669,0.12781459,328,1,0.0,1
+20698,2,BHRC,BHRC-2,1,8.334017796,Male,White,Hispanic or Latino,22.98190175,Right,2nd Grade,Complete secondary,No/incomplete primary,1.405358656,1.488610347,-1.179421669,0.12781459,421,1,0.0,1
+20699,1,BHRC,BHRC-2,1,10.35455168,Female,Other,Hispanic or Latino,24.44523555,Right,3rd Grade,Complete secondary,No/incomplete primary,0.210426968,-1.648204597,-1.008533317,-0.634285646,690,0,0.0,1
+20699,2,BHRC,BHRC-2,1,10.35455168,Female,Other,Hispanic or Latino,24.44523555,Right,3rd Grade,Complete secondary,No/incomplete primary,0.210426968,-1.648204597,-1.008533317,-0.634285646,832,0,0.0,1
+20700,1,BHRC,BHRC-2,1,11.53182752,Female,White,Hispanic or Latino,40.45825989,Left,5th Grade,Complete secondary,No/incomplete primary,0.279200015,-0.093541689,-0.092931517,-1.296498958,327,0,0.0,0
+20706,1,BHRC,BHRC-2,1,13.9247091,Male,Other,Hispanic or Latino,23.62494341,Right,7th Grade,Complete secondary,Complete primary,0.468325894,-0.205025375,-0.925787379,-1.444479586,345,1,1.0,1
+20706,2,BHRC,BHRC-2,1,13.9247091,Male,Other,Hispanic or Latino,23.62494341,Right,7th Grade,Complete secondary,Complete primary,0.468325894,-0.205025375,-0.925787379,-1.444479586,187,1,1.0,1
+20714,1,BHRC,BHRC-2,1,7.244353183,Male,White,Hispanic or Latino,19.83471074,Right,1st Grade,Complete primary,No/incomplete primary,0.965702393,-0.389813402,0.631994859,-1.228057917,569,1,0.0,1
+20714,2,BHRC,BHRC-2,1,7.244353183,Male,White,Hispanic or Latino,19.83471074,Right,1st Grade,Complete primary,No/incomplete primary,0.965702393,-0.389813402,0.631994859,-1.228057917,691,1,0.0,1
+20717,1,BHRC,BHRC-2,1,6.800821355,Female,White,Hispanic or Latino,,Right,1st Grade,No/incomplete primary,No/incomplete primary,-0.435548435,-0.044672128,-1.28555233,0.394179722,13,0,0.0,1
+20719,1,BHRC,BHRC-2,1,9.138945927,Male,White,Hispanic or Latino,22.90657439,Right,3rd Grade,Complete secondary,Complete primary,0.453588812,-0.224878634,0.858646778,-1.729342296,338,1,0.0,1
+20719,2,BHRC,BHRC-2,1,9.138945927,Male,White,Hispanic or Latino,22.90657439,Right,3rd Grade,Complete secondary,Complete primary,0.453588812,-0.224878634,0.858646778,-1.729342296,753,1,0.0,1
+20720,1,BHRC,BHRC-2,1,10.32169747,Female,Other,Hispanic or Latino,25.31545429,Right,5th Grade,Complete secondary,No/incomplete primary,-1.065558667,0.882322357,-0.522850633,-0.702726686,250,0,0.0,1
+20725,1,BHRC,BHRC-2,1,9.253935661,Female,Black,Hispanic or Latino,24.8491155,,2nd Grade,Complete secondary,No/incomplete primary,-0.673797919,-1.157981813,-1.179421669,-0.930246902,13,0,0.0,
+20726,1,BHRC,BHRC-2,1,8.079397673,Female,White,Hispanic or Latino,23.64877898,Right,1st Grade,Complete secondary,Complete secondary,1.111845117,1.042675604,0.867640902,-2.088195319,568,0,0.0,1
+20726,2,BHRC,BHRC-2,1,8.079397673,Female,White,Hispanic or Latino,23.64877898,Right,1st Grade,Complete secondary,Complete secondary,1.111845117,1.042675604,0.867640902,-2.088195319,23,0,0.0,1
+20727,2,BHRC,BHRC-2,1,9.152635181,Male,Other,Hispanic or Latino,,Right,2nd Grade,Complete secondary,Complete secondary,,,,,28,1,0.0,1
+20731,1,BHRC,BHRC-2,1,10.0752909,Female,White,Hispanic or Latino,24.88888889,Left,4th Grade,Complete secondary,Complete secondary,0.156391003,0.318795232,-0.47608119,0.347935775,392,0,0.0,0
+20731,2,BHRC,BHRC-2,1,10.0752909,Female,White,Hispanic or Latino,24.88888889,Left,4th Grade,Complete secondary,Complete secondary,0.156391003,0.318795232,-0.47608119,0.347935775,140,0,0.0,0
+20733,1,BHRC,BHRC-2,1,12.48459959,Female,White,Hispanic or Latino,27.12031558,Right,2nd Grade,No/incomplete primary,,2.299408264,-1.002210088,1.689703815,0.61985018,290,0,0.0,1
+20737,1,BHRC,BHRC-2,1,12.93908282,Male,White,Hispanic or Latino,26.06138453,Right,7th Grade,Complete secondary,,-0.224316934,0.280615887,2.749211596,-0.817411673,60,1,1.0,1
+20737,2,BHRC,BHRC-2,1,12.93908282,Male,White,Hispanic or Latino,26.06138453,Right,7th Grade,Complete secondary,,-0.224316934,0.280615887,2.749211596,-0.817411673,96,1,1.0,1
+20738,1,BHRC,BHRC-2,1,9.812457221,Female,Other,Hispanic or Latino,26.83864765,Right,3rd Grade,Complete secondary,Complete secondary,-0.799063111,-1.096894862,0.061767412,0.323888923,291,0,0.0,1
+20738,2,BHRC,BHRC-2,1,9.812457221,Female,Other,Hispanic or Latino,26.83864765,Right,3rd Grade,Complete secondary,Complete secondary,-0.799063111,-1.096894862,0.061767412,0.323888923,39,0,0.0,1
+20741,1,BHRC,BHRC-2,1,13.74948665,Male,White,Hispanic or Latino,27.6990504,Right,6th Grade,No/incomplete primary,No/incomplete primary,-0.27958099,-1.365677447,-0.706330758,-1.185513486,292,1,0.0,1
+20744,1,BHRC,BHRC-2,1,6.770704997,Female,Other,Hispanic or Latino,,Right,1st Grade,Complete primary,Complete secondary,,,,,680,0,0.0,1
+20745,1,BHRC,BHRC-2,1,12.75290897,Male,White,Hispanic or Latino,,Right,1st Grade,Complete secondary,Complete secondary,1.03815971,0.225637631,-0.852035564,-1.13926954,293,1,0.0,1
+20745,2,BHRC,BHRC-2,1,12.75290897,Male,White,Hispanic or Latino,,Right,1st Grade,Complete secondary,Complete secondary,1.03815971,0.225637631,-0.852035564,-1.13926954,706,1,0.0,1
+20746,1,BHRC,BHRC-2,1,13.27583847,Female,Other,Hispanic or Latino,,Right,7th Grade,No/incomplete primary,Complete primary,-0.387652921,0.499001738,-0.911396781,0.357184564,182,0,1.0,1
+20749,1,BHRC,BHRC-2,1,9.645448323,Male,White,Hispanic or Latino,24.50284091,Right,4th Grade,No/incomplete primary,No/incomplete primary,0.384815765,-0.172954725,1.288565895,-1.396385882,27,1,0.0,1
+20749,2,BHRC,BHRC-2,1,9.645448323,Male,White,Hispanic or Latino,24.50284091,Right,4th Grade,No/incomplete primary,No/incomplete primary,0.384815765,-0.172954725,1.288565895,-1.396385882,687,1,0.0,1
+20754,1,BHRC,BHRC-2,1,11.55099247,Male,White,Hispanic or Latino,24.74093729,Right,5th Grade,Complete secondary,Complete primary,-0.930468754,-1.034280737,-0.591205974,1.862887458,685,1,0.0,1
+20758,1,BHRC,BHRC-2,1,7.830253251,Male,Other,Hispanic or Latino,24.67721783,,1st Grade,Complete secondary,Complete secondary,-0.516602383,1.7360125,2.089042911,0.055674034,321,1,0.0,
+20760,1,BHRC,BHRC-2,1,11.04175222,Male,White,Hispanic or Latino,16.94915254,,4th Grade,Complete primary,Complete secondary,1.55027329,-0.48602535,-0.80166847,0.954656352,734,1,0.0,
+20760,2,BHRC,BHRC-2,1,11.04175222,Male,White,Hispanic or Latino,16.94915254,,4th Grade,Complete primary,Complete secondary,1.55027329,-0.48602535,-0.80166847,0.954656352,754,1,0.0,
+20765,1,BHRC,BHRC-2,1,12.98015058,Male,Other,Hispanic or Latino,,Right,5th Grade,No/incomplete primary,Complete secondary,0.02621345,-0.356215579,0.259638135,1.91283092,150,1,0.0,1
+20765,2,BHRC,BHRC-2,1,12.98015058,Male,Other,Hispanic or Latino,,Right,5th Grade,No/incomplete primary,Complete secondary,0.02621345,-0.356215579,0.259638135,1.91283092,755,1,0.0,1
+20767,1,BHRC,BHRC-2,1,10.69952088,Male,Other,Hispanic or Latino,16.52981462,Right,3rd Grade,Complete secondary,,-1.280474438,-0.876981838,0.691356076,-0.589891457,344,1,0.0,1
+20769,1,BHRC,BHRC-2,1,9.911019849,Male,White,Hispanic or Latino,19.78951446,,3rd Grade,Complete secondary,Complete secondary,0.822015848,0.010306128,-0.848437914,-0.950594239,189,1,0.0,
+20769,2,BHRC,BHRC-2,1,9.911019849,Male,White,Hispanic or Latino,19.78951446,,3rd Grade,Complete secondary,Complete secondary,0.822015848,0.010306128,-0.848437914,-0.950594239,359,1,0.0,
+20771,1,BHRC,BHRC-2,1,9.973990418,Male,White,Hispanic or Latino,22.40587695,,3rd Grade,Complete secondary,Complete secondary,0.387271946,0.737240848,0.256040485,-0.567694363,708,1,0.0,
+20771,2,BHRC,BHRC-2,1,9.973990418,Male,White,Hispanic or Latino,22.40587695,,3rd Grade,Complete secondary,Complete secondary,0.387271946,0.737240848,0.256040485,-0.567694363,221,1,0.0,
+20772,1,BHRC,BHRC-2,1,10.80903491,Male,Other,Hispanic or Latino,24.37574316,,4th Grade,Complete primary,Complete primary,0.491659606,0.147751769,0.155306299,-0.784116032,826,1,0.0,
+20773,1,BHRC,BHRC-2,1,10.10814511,Male,White,Hispanic or Latino,30.8112461,Right,3rd Grade,Complete secondary,Complete secondary,0.368850594,0.242436543,-0.305192838,-0.240287223,15,1,0.0,1
+20773,2,BHRC,BHRC-2,1,10.10814511,Male,White,Hispanic or Latino,30.8112461,Right,3rd Grade,Complete secondary,Complete secondary,0.368850594,0.242436543,-0.305192838,-0.240287223,24,1,0.0,1
+20780,1,BHRC,BHRC-2,1,9.856262834,Female,Other,Hispanic or Latino,21.45357371,Right,3rd Grade,No/incomplete primary,No/incomplete primary,-0.494496761,-1.24961224,-1.256771133,-0.617637825,369,0,0.0,1
+20783,1,BHRC,BHRC-2,1,12.18069815,Female,White,Hispanic or Latino,23.7953599,Right,4th Grade,Complete secondary,Complete secondary,0.491659606,-0.023291695,0.826267933,-0.784116032,566,0,0.0,1
+20783,2,BHRC,BHRC-2,1,12.18069815,Female,White,Hispanic or Latino,23.7953599,Right,4th Grade,Complete secondary,Complete secondary,0.491659606,-0.023291695,0.826267933,-0.784116032,12,0,0.0,1
+20793,1,BHRC,BHRC-2,1,12.73100616,Female,Other,Hispanic or Latino,,Right,5th Grade,Complete secondary,Complete tertiary,1.531851938,-0.272221021,-0.785479048,-0.367920515,756,0,0.0,1
+20795,1,BHRC,BHRC-2,1,9.467488022,Female,Other,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,No/incomplete primary,-0.961171007,0.413480006,-0.575016551,0.575455991,844,0,0.0,1
+20795,2,BHRC,BHRC-2,1,9.467488022,Female,Other,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,No/incomplete primary,-0.961171007,0.413480006,-0.575016551,0.575455991,257,0,0.0,1
+20799,1,BHRC,BHRC-2,1,10.34633812,Male,Other,Hispanic or Latino,24.1671624,,4th Grade,Complete secondary,Complete primary,-1.608374501,-0.744117719,-0.314186962,-0.432662039,757,1,0.0,
+20800,1,BHRC,BHRC-2,1,12.59958932,Male,White,Hispanic or Latino,20.0617284,Left,7th Grade,Complete primary,Complete secondary,-0.986960899,0.430278918,-0.562424778,-0.094156352,22,1,1.0,0
+20800,2,BHRC,BHRC-2,1,12.59958932,Male,White,Hispanic or Latino,20.0617284,Left,7th Grade,Complete primary,Complete secondary,-0.986960899,0.430278918,-0.562424778,-0.094156352,166,1,1.0,0
+20803,1,BHRC,BHRC-2,1,10.37645448,Male,Other,Hispanic or Latino,,Right,4th Grade,Complete secondary,,-0.769588948,0.282143061,-0.677549562,-0.240287223,412,1,0.0,1
+20806,1,BHRC,BHRC-2,1,10.15195072,Female,Black,Hispanic or Latino,21.60410478,,4th Grade,No/incomplete primary,,0.02744154,1.149577768,-0.922189729,-1.400085398,758,0,0.0,
+20806,2,BHRC,BHRC-2,1,10.15195072,Female,Black,Hispanic or Latino,21.60410478,,4th Grade,No/incomplete primary,,0.02744154,1.149577768,-0.922189729,-1.400085398,270,0,0.0,
+20811,1,BHRC,BHRC-2,1,8.752908966,Female,Other,Hispanic or Latino,23.63656893,Right,2nd Grade,Complete primary,,-0.344669766,0.367664793,0.471899456,-1.142969056,336,0,0.0,1
+20815,1,BHRC,BHRC-2,1,7.16495551,Female,White,Hispanic or Latino,17.45160799,Right,Kindergarten,Complete secondary,Complete secondary,-0.255019187,0.253126759,-0.371749354,1.324607922,212,0,,1
+20815,2,BHRC,BHRC-2,1,7.16495551,Female,White,Hispanic or Latino,17.45160799,Right,Kindergarten,Complete secondary,Complete secondary,-0.255019187,0.253126759,-0.371749354,1.324607922,278,0,,1
+20816,1,BHRC,BHRC-2,1,10.91307324,Female,White,Hispanic or Latino,20.56932966,Right,4th Grade,Complete secondary,Complete secondary,-0.679938369,1.103762555,-0.031771475,-0.926547387,652,0,0.0,1
+20818,1,BHRC,BHRC-2,1,9.631759069,Female,Other,Hispanic or Latino,35.62901745,Right,3rd Grade,No/incomplete primary,No/incomplete primary,-0.202211312,-0.759389457,-0.760295501,-1.239156464,760,0,0.0,1
+20818,2,BHRC,BHRC-2,1,9.631759069,Female,Other,Hispanic or Latino,35.62901745,Right,3rd Grade,No/incomplete primary,No/incomplete primary,-0.202211312,-0.759389457,-0.760295501,-1.239156464,809,0,0.0,1
+20826,1,BHRC,BHRC-2,1,10.05612594,Female,White,Hispanic or Latino,18.25631871,Right,4th Grade,Complete primary,No/incomplete primary,-0.628358584,0.080556122,-1.197409917,-0.959843028,761,0,0.0,1
+20826,2,BHRC,BHRC-2,1,10.05612594,Female,White,Hispanic or Latino,18.25631871,Right,4th Grade,Complete primary,No/incomplete primary,-0.628358584,0.080556122,-1.197409917,-0.959843028,41,0,0.0,1
+20827,1,BHRC,BHRC-2,1,10.85284052,Female,White,Hispanic or Latino,32.45567772,Right,3rd Grade,Complete tertiary,Complete secondary,0.896929346,0.030159388,1.072706924,0.471869551,78,0,0.0,1
+20829,3,BHRC,BHRC-2,1,9.853524983,Female,White,Hispanic or Latino,25.1486054,Right,3rd Grade,Complete tertiary,Complete secondary,0.367622504,-0.324144929,0.274028733,-1.660901255,747,0,0.0,1
+20833,1,BHRC,BHRC-2,1,9.954825462,Male,White,Hispanic or Latino,,Right,4th Grade,No/incomplete primary,,-0.113788824,-0.260003631,0.396348816,1.217321967,343,1,0.0,1
+20837,1,BHRC,BHRC-2,1,11.87679671,Female,Other,Hispanic or Latino,,Right,4th Grade,Complete secondary,,0.462185443,-0.076742777,-1.20640404,-1.734891569,19,0,0.0,1
+20839,1,BHRC,BHRC-2,1,8.364134155,Male,White,Hispanic or Latino,20.38156971,Right,1st Grade,Complete secondary,No/incomplete primary,0.460957353,0.318795232,-0.386139952,-0.314277537,644,1,0.0,1
+20839,2,BHRC,BHRC-2,1,8.364134155,Male,White,Hispanic or Latino,20.38156971,Right,1st Grade,Complete secondary,No/incomplete primary,0.460957353,0.318795232,-0.386139952,-0.314277537,1,1,0.0,1
+20840,1,BHRC,BHRC-2,1,9.084188912,Female,White,Hispanic or Latino,21.64412071,Right,3rd Grade,Complete secondary,No/incomplete primary,2.212213865,1.540534256,-0.271015168,-0.859956104,709,0,0.0,1
+20841,1,BHRC,BHRC-2,1,11.35112936,Male,White,Hispanic or Latino,23.064199,,3rd Grade,Complete secondary,Complete secondary,0.215339329,-0.421884051,1.443264824,-1.540666994,813,1,0.0,
+20844,1,BHRC,BHRC-2,1,9.141683778,Female,White,Hispanic or Latino,20.10916403,Right,2nd Grade,No/incomplete primary,,0.511309048,-1.530612216,-0.557028304,-0.919148355,294,0,0.0,1
+20844,2,BHRC,BHRC-2,1,9.141683778,Female,White,Hispanic or Latino,20.10916403,Right,2nd Grade,No/incomplete primary,,0.511309048,-1.530612216,-0.557028304,-0.919148355,694,0,0.0,1
+20846,1,BHRC,BHRC-2,1,9.593429158,Female,White,Hispanic or Latino,26.89767019,Right,3rd Grade,Complete primary,No/incomplete primary,0.12446066,0.072920253,-0.994142719,-1.472225954,847,0,0.0,1
+20846,2,BHRC,BHRC-2,1,9.593429158,Female,White,Hispanic or Latino,26.89767019,Right,3rd Grade,Complete primary,No/incomplete primary,0.12446066,0.072920253,-0.994142719,-1.472225954,408,0,0.0,1
+20848,2,BHRC,BHRC-2,1,10.38193018,Male,White,Hispanic or Latino,23.24380165,,3rd Grade,No/incomplete primary,No/incomplete primary,,,,,4,1,0.0,
+20850,1,BHRC,BHRC-2,1,8.859685147,Female,White,Hispanic or Latino,,Right,3rd Grade,No/incomplete primary,Complete secondary,-0.68730691,1.343528838,-0.724319006,0.59395357,8,0,0.0,1
+20852,1,BHRC,BHRC-2,1,10.32717317,Male,Other,Hispanic or Latino,18.46722068,,4th Grade,Complete tertiary,No/incomplete primary,0.053231433,-0.302764497,-0.573217727,0.00758033,396,1,0.0,
+20856,1,BHRC,BHRC-2,1,9.448323066,Female,White,Hispanic or Latino,20.19509221,,2nd Grade,Complete secondary,Complete primary,0.209198878,-0.41730253,1.443264824,-0.114503688,762,0,0.0,
+20856,2,BHRC,BHRC-2,1,9.448323066,Female,White,Hispanic or Latino,20.19509221,,2nd Grade,Complete secondary,Complete primary,0.209198878,-0.41730253,1.443264824,-0.114503688,819,0,0.0,
+20857,2,BHRC,BHRC-2,1,9.987679671,Male,White,Hispanic or Latino,19.35369318,Right,4th Grade,Complete secondary,,,,,,413,1,0.0,1
+20860,1,BHRC,BHRC-2,1,8.969199179,Male,White,Hispanic or Latino,25.6311675,Right,3rd Grade,Complete secondary,No/incomplete primary,-0.909591222,0.812072363,-0.601998923,-0.195893034,763,1,0.0,1
+20860,2,BHRC,BHRC-2,1,8.969199179,Male,White,Hispanic or Latino,25.6311675,Right,3rd Grade,Complete secondary,No/incomplete primary,-0.909591222,0.812072363,-0.601998923,-0.195893034,426,1,0.0,1
+20866,3,BHRC,BHRC-2,1,8.769336071,Female,White,Hispanic or Latino,,,2nd Grade,Complete primary,Complete secondary,,,,,57,0,0.0,
+20868,1,BHRC,BHRC-2,1,8.142368241,Male,Other,Hispanic or Latino,18.81214727,Right,1st Grade,Complete secondary,Complete secondary,1.719749727,0.024050692,-1.449245382,-0.071959258,395,1,0.0,1
+20870,1,BHRC,BHRC-2,1,9.106091718,Female,White,Hispanic or Latino,19.72386588,Right,3rd Grade,Complete tertiary,Complete tertiary,0.808506857,0.100409381,-0.650567191,-1.200311549,814,0,0.0,1
+20871,1,BHRC,BHRC-2,1,11.6495551,Female,White,Hispanic or Latino,19.72103697,,5th Grade,Complete tertiary,Complete secondary,0.114635939,0.767784323,-0.609194222,-1.13926954,715,0,0.0,
+20871,2,BHRC,BHRC-2,1,11.6495551,Female,White,Hispanic or Latino,19.72103697,,5th Grade,Complete tertiary,Complete secondary,0.114635939,0.767784323,-0.609194222,-1.13926954,2,0,0.0,
+20875,1,BHRC,BHRC-2,1,9.63449692,Female,Other,Hispanic or Latino,18.42653421,Right,2nd Grade,No/incomplete primary,No/incomplete primary,-1.291527249,0.634920204,-0.425714097,-0.584342184,68,0,0.0,1
+20875,2,BHRC,BHRC-2,1,9.63449692,Female,Other,Hispanic or Latino,18.42653421,Right,2nd Grade,No/incomplete primary,No/incomplete primary,-1.291527249,0.634920204,-0.425714097,-0.584342184,29,0,0.0,1
+20877,1,BHRC,BHRC-2,1,9.656399726,Male,White,Hispanic or Latino,21.79930796,Right,2nd Grade,No/incomplete primary,No/incomplete primary,1.04430016,-1.319862234,1.923551033,-0.443760587,716,1,0.0,1
+20877,2,BHRC,BHRC-2,1,9.656399726,Male,White,Hispanic or Latino,21.79930796,Right,2nd Grade,No/incomplete primary,No/incomplete primary,1.04430016,-1.319862234,1.923551033,-0.443760587,261,1,0.0,1
+20878,1,BHRC,BHRC-2,1,9.639972621,Female,White,Hispanic or Latino,30.11940191,Right,3rd Grade,Complete secondary,No/incomplete primary,0.049547162,-0.577655777,-0.940177977,-0.269883348,32,0,0.0,1
+20878,2,BHRC,BHRC-2,1,9.639972621,Female,White,Hispanic or Latino,30.11940191,Right,3rd Grade,Complete secondary,No/incomplete primary,0.049547162,-0.577655777,-0.940177977,-0.269883348,764,0,0.0,1
+20879,3,BHRC,BHRC-2,1,8.599589322,Female,White,Hispanic or Latino,27.34375,Right,2nd Grade,Complete secondary,No/incomplete primary,-0.126069725,0.529545214,0.259638135,-0.909899566,179,0,0.0,1
+20880,1,BHRC,BHRC-2,1,12.73374401,Male,Other,Hispanic or Latino,24.02380867,Right,6th Grade,No/incomplete primary,Complete primary,0.32463935,-0.502824262,-0.137902136,0.884365553,420,1,0.0,1
+20880,2,BHRC,BHRC-2,1,12.73374401,Male,Other,Hispanic or Latino,24.02380867,Right,6th Grade,No/incomplete primary,Complete primary,0.32463935,-0.502824262,-0.137902136,0.884365553,575,1,0.0,1
+20882,2,BHRC,BHRC-2,1,10.22039699,Female,White,Hispanic or Latino,,Right,4th Grade,No/incomplete primary,Complete secondary,,,,,277,0,0.0,1
+20884,1,BHRC,BHRC-2,1,6.984257358,Female,White,Hispanic or Latino,19.17416898,Right,1st Grade,Complete secondary,No/incomplete primary,0.421658469,0.117208293,-0.073144445,-0.719374507,765,0,0.0,1
+20884,2,BHRC,BHRC-2,1,6.984257358,Female,White,Hispanic or Latino,19.17416898,Right,1st Grade,Complete secondary,No/incomplete primary,0.421658469,0.117208293,-0.073144445,-0.719374507,226,0,0.0,1
+20887,1,BHRC,BHRC-2,1,6.932238193,Male,Other,Hispanic or Latino,23.60825987,,1st Grade,Complete secondary,Complete secondary,-0.438004615,-0.608199252,-0.810662594,-1.080077289,401,1,0.0,
+20887,2,BHRC,BHRC-2,1,6.932238193,Male,Other,Hispanic or Latino,23.60825987,,1st Grade,Complete secondary,Complete secondary,-0.438004615,-0.608199252,-0.810662594,-1.080077289,194,1,0.0,
+20891,1,BHRC,BHRC-2,1,8.999315537,Male,White,Hispanic or Latino,17.54151492,Right,3rd Grade,Complete secondary,,-0.576778799,-0.826585103,-0.112718589,-0.991288912,419,1,0.0,1
+20892,1,BHRC,BHRC-2,1,8.090349076,Male,White,Hispanic or Latino,24.22145329,Right,3rd Grade,No/incomplete primary,No/incomplete primary,-0.543620366,0.124844162,-1.233386412,-1.011636248,654,1,0.0,1
+20892,2,BHRC,BHRC-2,1,8.090349076,Male,White,Hispanic or Latino,24.22145329,Right,3rd Grade,No/incomplete primary,No/incomplete primary,-0.543620366,0.124844162,-1.233386412,-1.011636248,195,1,0.0,1
+20894,1,BHRC,BHRC-2,1,9.483915127,Female,Other,Hispanic or Latino,23.69146006,Right,3rd Grade,Complete secondary,Complete secondary,0.925175419,0.280615887,-1.589553713,-0.680529592,157,0,0.0,1
+20894,2,BHRC,BHRC-2,1,9.483915127,Female,Other,Hispanic or Latino,23.69146006,Right,3rd Grade,Complete secondary,Complete secondary,0.925175419,0.280615887,-1.589553713,-0.680529592,138,0,0.0,1
+20901,1,BHRC,BHRC-2,1,8.073921971,Female,Other,Hispanic or Latino,18.20987654,Right,2nd Grade,Complete secondary,No/incomplete primary,-0.418355174,0.421115875,-1.292747629,-1.093025594,252,0,0.0,1
+20905,1,BHRC,BHRC-2,1,9.00752909,Male,Other,Hispanic or Latino,18.39067451,Right,2nd Grade,No/incomplete primary,No/incomplete primary,-1.130647444,0.26534415,-0.494069437,0.636498001,319,1,0.0,1
+20905,2,BHRC,BHRC-2,1,9.00752909,Male,Other,Hispanic or Latino,18.39067451,Right,2nd Grade,No/incomplete primary,No/incomplete primary,-1.130647444,0.26534415,-0.494069437,0.636498001,766,1,0.0,1
+20909,1,BHRC,BHRC-2,1,6.71321013,Male,White,Hispanic or Latino,,Right,Kindergarten,No/incomplete primary,No/incomplete primary,-0.930468754,-1.034280737,-0.591205974,1.862887458,285,1,,1
+20909,2,BHRC,BHRC-2,1,6.71321013,Male,White,Hispanic or Latino,,Right,Kindergarten,No/incomplete primary,No/incomplete primary,-0.930468754,-1.034280737,-0.591205974,1.862887458,849,1,,1
+20911,1,BHRC,BHRC-2,1,10.73785079,Female,Other,Hispanic or Latino,25.6543724,Right,3rd Grade,No/incomplete primary,No/incomplete primary,1.190442885,1.013659302,-0.468885891,-2.36380924,249,0,0.0,1
+20915,1,BHRC,BHRC-2,1,12.46817248,Male,Other,Hispanic or Latino,,Left,5th Grade,No/incomplete primary,,1.614133976,0.444023482,1.35872006,-2.478494227,248,1,0.0,0
+20916,1,BHRC,BHRC-2,1,10.75701574,Male,Other,Hispanic or Latino,27.6816609,Left,4th Grade,No/incomplete primary,No/incomplete primary,0.349201152,0.376827836,0.871238551,-1.41488346,13,1,0.0,0
+20916,2,BHRC,BHRC-2,1,10.75701574,Male,Other,Hispanic or Latino,27.6816609,Left,4th Grade,No/incomplete primary,No/incomplete primary,0.349201152,0.376827836,0.871238551,-1.41488346,712,1,0.0,0
+20922,1,BHRC,BHRC-2,1,11.63039014,Female,Other,Hispanic or Latino,24.6097337,Right,5th Grade,Complete secondary,No/incomplete primary,0.216567419,0.447077829,0.84425618,-0.120052962,316,0,0.0,1
+20922,2,BHRC,BHRC-2,1,11.63039014,Female,Other,Hispanic or Latino,24.6097337,Right,5th Grade,Complete secondary,No/incomplete primary,0.216567419,0.447077829,0.84425618,-0.120052962,818,0,0.0,1
+20923,1,BHRC,BHRC-2,1,8.101300479,Female,Other,Hispanic or Latino,28.79295419,Right,1st Grade,Complete primary,Complete primary,0.206742698,-0.415775356,-0.163085683,-1.228057917,318,0,0.0,1
+20923,2,BHRC,BHRC-2,1,8.101300479,Female,Other,Hispanic or Latino,28.79295419,Right,1st Grade,Complete primary,Complete primary,0.206742698,-0.415775356,-0.163085683,-1.228057917,39,0,0.0,1
+20927,1,BHRC,BHRC-2,1,9.971252567,Male,White,Hispanic or Latino,22.53061224,Right,3rd Grade,No/incomplete primary,,0.149022462,-1.611552426,-0.267417518,-1.107823656,161,1,0.0,1
+20930,1,BHRC,BHRC-2,1,12.98288843,Male,Other,Hispanic or Latino,24.8015873,Right,6th Grade,Complete secondary,No/incomplete primary,0.522361859,-1.376367664,-1.254972309,0.4126773,201,1,0.0,1
+20930,2,BHRC,BHRC-2,1,12.98288843,Male,Other,Hispanic or Latino,24.8015873,Right,6th Grade,Complete secondary,No/incomplete primary,0.522361859,-1.376367664,-1.254972309,0.4126773,163,1,0.0,1
+20934,1,BHRC,BHRC-2,1,8.783025325,Female,Other,Hispanic or Latino,17.52781588,Right,2nd Grade,No/incomplete primary,Complete secondary,-1.608374501,-0.744117719,-0.314186962,-0.432662039,289,0,0.0,1
+20935,2,BHRC,BHRC-2,1,9.891854894,Male,Other,Hispanic or Latino,24.49985955,Right,3rd Grade,No/incomplete primary,No/incomplete primary,,,,,26,1,0.0,1
+20936,1,BHRC,BHRC-2,1,8.17522245,Female,White,Hispanic or Latino,22.03856749,Right,1st Grade,Complete secondary,,-0.021682065,1.92996357,-0.562424778,0.854769427,9,0,0.0,1
+20936,2,BHRC,BHRC-2,1,8.17522245,Female,White,Hispanic or Latino,22.03856749,Right,1st Grade,Complete secondary,,-0.021682065,1.92996357,-0.562424778,0.854769427,767,0,0.0,1
+20939,1,BHRC,BHRC-2,1,10.78986995,Female,Other,Hispanic or Latino,23.33546614,Right,4th Grade,Complete secondary,No/incomplete primary,0.286568556,1.613838597,-1.679494951,-1.355691209,263,0,0.0,1
+20939,2,BHRC,BHRC-2,1,10.78986995,Female,Other,Hispanic or Latino,23.33546614,Right,4th Grade,Complete secondary,No/incomplete primary,0.286568556,1.613838597,-1.679494951,-1.355691209,353,0,0.0,1
+20943,1,BHRC,BHRC-2,1,9.749486653,Female,Other,Hispanic or Latino,32.62935207,Right,3rd Grade,Complete primary,No/incomplete primary,0.926403509,-0.270693847,-0.222446899,-1.962411785,295,0,0.0,1
+20943,2,BHRC,BHRC-2,1,9.749486653,Female,Other,Hispanic or Latino,32.62935207,Right,3rd Grade,Complete primary,No/incomplete primary,0.926403509,-0.270693847,-0.222446899,-1.962411785,410,0,0.0,1
+20948,1,BHRC,BHRC-2,1,10.091718,Female,Other,Hispanic or Latino,23.72528616,Right,3rd Grade,No/incomplete primary,No/incomplete primary,1.374656403,-0.553220996,-0.639774243,-0.249536012,838,0,0.0,1
+20951,1,BHRC,BHRC-2,1,12.64887064,Female,Other,Hispanic or Latino,,Right,6th Grade,Complete primary,No/incomplete primary,-0.051156227,0.460822393,-0.537241232,0.090819433,768,0,0.0,1
+20954,1,BHRC,BHRC-2,1,8.637919233,Male,Black,Hispanic or Latino,19.52387865,Right,1st Grade,Complete secondary,Complete secondary,-0.348354037,-0.739536198,-1.328724124,-0.699027171,111,1,0.0,1
+20954,2,BHRC,BHRC-2,1,8.637919233,Male,Black,Hispanic or Latino,19.52387865,Right,1st Grade,Complete secondary,Complete secondary,-0.348354037,-0.739536198,-1.328724124,-0.699027171,45,1,0.0,1
+20962,1,BHRC,BHRC-2,1,9.483915127,Female,White,Hispanic or Latino,22.42791029,Right,3rd Grade,Complete secondary,Complete secondary,1.117985568,1.221354936,-0.402329375,-1.209560338,286,0,0.0,1
+20963,1,BHRC,BHRC-2,1,5.831622177,Male,Other,Hispanic or Latino,22.72043837,Right,2nd Grade,Complete secondary,No/incomplete primary,-1.203104761,-0.910579661,-0.461690592,0.858468943,10,1,0.0,1
+20963,2,BHRC,BHRC-2,1,5.831622177,Male,Other,Hispanic or Latino,22.72043837,Right,2nd Grade,Complete secondary,No/incomplete primary,-1.203104761,-0.910579661,-0.461690592,0.858468943,11,1,0.0,1
+20965,1,BHRC,BHRC-2,1,12.02464066,Male,White,Hispanic or Latino,,Right,5th Grade,No/incomplete primary,Complete secondary,0.704119197,-0.502824262,-0.600200098,1.446691941,296,1,0.0,1
+20965,2,BHRC,BHRC-2,1,12.02464066,Male,White,Hispanic or Latino,,Right,5th Grade,No/incomplete primary,Complete secondary,0.704119197,-0.502824262,-0.600200098,1.446691941,243,1,0.0,1
+20968,1,BHRC,BHRC-2,1,13.68651608,Male,Other,Hispanic or Latino,27.68385461,,7th Grade,Complete secondary,No/incomplete primary,1.116757477,0.824289753,0.862244428,-2.299067715,769,1,1.0,
+20974,1,BHRC,BHRC-2,1,8.429842574,Male,White,Hispanic or Latino,16.75729284,Left,2nd Grade,Complete secondary,Complete secondary,-0.569410258,0.755566933,-0.794473171,-0.547347026,317,1,0.0,0
+20974,2,BHRC,BHRC-2,1,8.429842574,Male,White,Hispanic or Latino,16.75729284,Left,2nd Grade,Complete secondary,Complete secondary,-0.569410258,0.755566933,-0.794473171,-0.547347026,770,1,0.0,0
+20978,1,BHRC,BHRC-2,1,7.154004107,Female,Other,Hispanic or Latino,20.56932966,Right,1st Grade,No/incomplete primary,No/incomplete primary,0.767979883,0.075974601,0.928800944,-0.556595816,10,0,0.0,1
+20978,2,BHRC,BHRC-2,1,7.154004107,Female,Other,Hispanic or Latino,20.56932966,Right,1st Grade,No/incomplete primary,No/incomplete primary,0.767979883,0.075974601,0.928800944,-0.556595816,665,0,0.0,1
+20980,1,BHRC,BHRC-2,1,8.183436003,Male,Other,Hispanic or Latino,25.33912513,Right,2nd Grade,Complete secondary,Complete secondary,0.044634802,-0.649432945,-0.566022428,-1.413033702,704,1,0.0,1
+20981,1,BHRC,BHRC-2,1,8.021902806,Male,White,Hispanic or Latino,17.00511322,Right,2nd Grade,No/incomplete primary,No/incomplete primary,0.32955171,0.582996296,-0.431110571,-0.210691097,173,1,0.0,1
+20981,2,BHRC,BHRC-2,1,8.021902806,Male,White,Hispanic or Latino,17.00511322,Right,2nd Grade,No/incomplete primary,No/incomplete primary,0.32955171,0.582996296,-0.431110571,-0.210691097,146,1,0.0,1
+20982,1,BHRC,BHRC-2,1,8.908966461,Female,White,Hispanic or Latino,22.1951307,Right,3rd Grade,Complete secondary,,-0.252563007,1.157213637,-1.003136843,-0.789665305,851,0,0.0,1
+20982,2,BHRC,BHRC-2,1,8.908966461,Female,White,Hispanic or Latino,22.1951307,Right,3rd Grade,Complete secondary,,-0.252563007,1.157213637,-1.003136843,-0.789665305,52,0,0.0,1
+20984,1,BHRC,BHRC-2,1,13.21013005,Female,Other,Hispanic or Latino,33.79591837,Right,6th Grade,Complete secondary,Complete secondary,1.298514815,-0.090487341,0.410739414,-0.972791333,771,0,0.0,1
+20985,1,BHRC,BHRC-2,1,10.64202601,Male,White,Hispanic or Latino,21.97133586,Right,3rd Grade,No/incomplete primary,,0.808506857,-0.79298728,-1.492417176,0.532911561,365,1,0.0,1
+20985,2,BHRC,BHRC-2,1,10.64202601,Male,White,Hispanic or Latino,21.97133586,Right,3rd Grade,No/incomplete primary,,0.808506857,-0.79298728,-1.492417176,0.532911561,675,1,0.0,1
+20989,1,BHRC,BHRC-2,1,9.171800137,Male,White,Hispanic or Latino,17.90123457,Right,2nd Grade,Complete tertiary,No/incomplete primary,-0.473619229,0.500528912,0.221862815,0.425625605,49,1,0.0,1
+20991,1,BHRC,BHRC-2,1,9.092402464,Male,White,Hispanic or Latino,28.6801111,Right,3rd Grade,Complete secondary,Complete secondary,0.782716965,-0.565438387,1.257985874,0.551409139,727,1,0.0,1
+20991,2,BHRC,BHRC-2,1,9.092402464,Male,White,Hispanic or Latino,28.6801111,Right,3rd Grade,Complete secondary,Complete secondary,0.782716965,-0.565438387,1.257985874,0.551409139,29,1,0.0,1
+20992,1,BHRC,BHRC-2,1,13.32785763,Male,White,Hispanic or Latino,33.15043439,Right,4th Grade,Complete secondary,Complete secondary,0.760611342,-0.41730253,-0.790875522,-1.692347139,85,1,0.0,1
+20995,1,BHRC,BHRC-2,1,13.14989733,Male,White,Hispanic or Latino,21.40366736,Right,7th Grade,Complete primary,,0.162531454,-0.16684603,-0.019179702,1.816643512,135,1,1.0,1
+21004,1,BHRC,BHRC-2,1,9.911019849,Male,Other,Hispanic or Latino,28.37821519,Right,3rd Grade,No/incomplete primary,No/incomplete primary,0.581310185,-1.880335011,-0.450897643,-0.408615187,200,1,0.0,1
+21004,2,BHRC,BHRC-2,1,9.911019849,Male,Other,Hispanic or Latino,28.37821519,Right,3rd Grade,No/incomplete primary,No/incomplete primary,0.581310185,-1.880335011,-0.450897643,-0.408615187,196,1,0.0,1
+21007,1,BHRC,BHRC-2,1,9.519507187,Male,White,Hispanic or Latino,,Right,2nd Grade,No/incomplete primary,Complete tertiary,-0.274668629,1.038094082,-1.368298268,-0.17369594,643,1,0.0,1
+21009,1,BHRC,BHRC-2,1,8.859685147,Male,White,Hispanic or Latino,15.95965399,Right,3rd Grade,Complete secondary,Complete secondary,-0.710640622,0.694479982,-0.709928408,-0.909899566,86,1,0.0,1
+21009,2,BHRC,BHRC-2,1,8.859685147,Male,White,Hispanic or Latino,15.95965399,Right,3rd Grade,Complete secondary,Complete secondary,-0.710640622,0.694479982,-0.709928408,-0.909899566,209,1,0.0,1
+21011,1,BHRC,BHRC-2,1,9.73853525,Male,White,Hispanic or Latino,25.32871972,Right,3rd Grade,No/incomplete primary,No/incomplete primary,0.195689887,-0.191280811,1.637537897,0.677192673,429,1,0.0,1
+21011,2,BHRC,BHRC-2,1,9.73853525,Male,White,Hispanic or Latino,25.32871972,Right,3rd Grade,No/incomplete primary,No/incomplete primary,0.195689887,-0.191280811,1.637537897,0.677192673,141,1,0.0,1
+21012,1,BHRC,BHRC-2,1,7.802874743,Female,White,Hispanic or Latino,17.00680272,Right,2nd Grade,No/incomplete primary,No/incomplete primary,0.43516746,-0.261530804,-0.528247108,1.626118453,387,0,0.0,1
+21012,2,BHRC,BHRC-2,1,7.802874743,Female,White,Hispanic or Latino,17.00680272,Right,2nd Grade,No/incomplete primary,No/incomplete primary,0.43516746,-0.261530804,-0.528247108,1.626118453,660,0,0.0,1
+21018,1,BHRC,BHRC-2,1,13.3853525,Male,Other,Hispanic or Latino,,Right,7th Grade,Complete secondary,No/incomplete primary,0.468325894,-1.808557843,-0.517454159,-1.47592547,87,1,1.0,1
+21021,1,BHRC,BHRC-2,1,10.91307324,Male,Other,Hispanic or Latino,26.2345679,Right,3rd Grade,No/incomplete primary,No/incomplete primary,0.767979883,0.046958299,-0.798070821,-1.760788179,839,1,0.0,1
+21021,2,BHRC,BHRC-2,1,10.91307324,Male,Other,Hispanic or Latino,26.2345679,Right,3rd Grade,No/incomplete primary,No/incomplete primary,0.767979883,0.046958299,-0.798070821,-1.760788179,70,1,0.0,1
+21022,1,BHRC,BHRC-2,1,9.330595483,Male,Other,Hispanic or Latino,25.01352082,,3rd Grade,Complete secondary,Complete secondary,0.056915703,0.326431101,-1.174025195,0.005730572,102,1,0.0,
+21022,2,BHRC,BHRC-2,1,9.330595483,Male,Other,Hispanic or Latino,25.01352082,,3rd Grade,Complete secondary,Complete secondary,0.056915703,0.326431101,-1.174025195,0.005730572,409,1,0.0,
+21024,1,BHRC,BHRC-2,1,9.174537988,Female,Other,Hispanic or Latino,28.15311077,Right,2nd Grade,No/incomplete primary,No/incomplete primary,1.366059772,-0.400503618,-0.630780119,1.052693518,158,0,0.0,1
+21024,2,BHRC,BHRC-2,1,9.174537988,Female,Other,Hispanic or Latino,28.15311077,Right,2nd Grade,No/incomplete primary,No/incomplete primary,1.366059772,-0.400503618,-0.630780119,1.052693518,1,0,0.0,1
+21031,1,BHRC,BHRC-2,1,8.224503765,Female,White,Hispanic or Latino,,Right,2nd Grade,Complete secondary,,0.468325894,-0.030927564,-1.821602106,0.457071489,69,0,0.0,1
+21033,1,BHRC,BHRC-2,1,7.775496235,Male,Other,Hispanic or Latino,20.47826661,Right,1st Grade,Complete primary,Complete primary,-0.957486737,0.410425659,-0.576815376,0.808525481,772,1,0.0,1
+21033,2,BHRC,BHRC-2,1,7.775496235,Male,Other,Hispanic or Latino,20.47826661,Right,1st Grade,Complete primary,Complete primary,-0.957486737,0.410425659,-0.576815376,0.808525481,572,1,0.0,1
+21039,1,BHRC,BHRC-2,1,9.80698152,Male,White,Hispanic or Latino,22.02432251,Right,3rd Grade,Complete primary,No/incomplete primary,0.413061838,0.618121293,-1.217196989,-1.448179102,25,1,0.0,1
+21039,2,BHRC,BHRC-2,1,9.80698152,Male,White,Hispanic or Latino,22.02432251,Right,3rd Grade,Complete primary,No/incomplete primary,0.413061838,0.618121293,-1.217196989,-1.448179102,92,1,0.0,1
+21041,1,BHRC,BHRC-2,1,9.314168378,Male,Other,Hispanic or Latino,,Left,2nd Grade,No/incomplete primary,,0.922719238,-1.712345895,0.80648086,-0.676830076,63,1,0.0,0
+21041,2,BHRC,BHRC-2,1,9.314168378,Male,Other,Hispanic or Latino,,Left,2nd Grade,No/incomplete primary,,0.922719238,-1.712345895,0.80648086,-0.676830076,423,1,0.0,0
+21042,1,BHRC,BHRC-2,1,8.613278576,Male,White,Hispanic or Latino,,,1st Grade,Complete primary,Complete tertiary,-1.608374501,-0.744117719,-0.314186962,-0.432662039,155,1,0.0,
+21043,1,BHRC,BHRC-2,1,11.87405886,Male,Black,Hispanic or Latino,23.51697714,Left,4th Grade,Complete secondary,No/incomplete primary,-0.326248414,-0.02940039,-0.416719973,-1.154067603,703,1,0.0,0
+21044,1,BHRC,BHRC-2,1,10.48870637,Male,White,Hispanic or Latino,,Right,4th Grade,Complete secondary,No/incomplete primary,-0.463794508,-0.66775903,0.043779164,1.489236372,9,1,0.0,1
+21044,2,BHRC,BHRC-2,1,10.48870637,Male,White,Hispanic or Latino,,Right,4th Grade,Complete secondary,No/incomplete primary,-0.463794508,-0.66775903,0.043779164,1.489236372,738,1,0.0,1
+21052,1,BHRC,BHRC-2,1,12.48733744,Male,Other,Hispanic or Latino,19.97440779,Right,6th Grade,Complete secondary,,0.654995592,-1.411492661,0.633793684,0.307241102,222,1,0.0,1
+21053,1,BHRC,BHRC-2,1,7.846680356,Female,Other,Hispanic or Latino,21.17973844,Right,2nd Grade,Complete secondary,Complete secondary,0.131829201,-0.143938423,-0.999539194,-0.053461679,799,0,0.0,1
+21055,1,BHRC,BHRC-2,1,8.098562628,Female,White,Hispanic or Latino,23.04353118,Right,1st Grade,No/incomplete primary,No/incomplete primary,-0.469934959,0.952572351,-0.197263353,0.421926089,651,0,0.0,1
+21055,2,BHRC,BHRC-2,1,8.098562628,Female,White,Hispanic or Latino,23.04353118,Right,1st Grade,No/incomplete primary,No/incomplete primary,-0.469934959,0.952572351,-0.197263353,0.421926089,2,0,0.0,1
+21056,2,BHRC,BHRC-2,1,10.05065024,Male,White,Hispanic or Latino,20.86111966,Right,4th Grade,Complete primary,,1.903963245,-0.385231881,-0.720721357,0.784478629,352,1,0.0,1
+21059,1,BHRC,BHRC-2,1,11.50718686,Male,White,Hispanic or Latino,24.34380949,Right,5th Grade,No/incomplete primary,No/incomplete primary,-1.608374501,-0.744117719,-0.314186962,-0.432662039,104,1,0.0,1
+21059,2,BHRC,BHRC-2,1,11.50718686,Male,White,Hispanic or Latino,24.34380949,Right,5th Grade,No/incomplete primary,No/incomplete primary,-1.608374501,-0.744117719,-0.314186962,-0.432662039,821,1,0.0,1
+21061,2,BHRC,BHRC-2,1,10.04791239,Female,Other,Hispanic or Latino,,Right,4th Grade,Complete primary,Complete secondary,,,,,816,0,0.0,1
+21062,1,BHRC,BHRC-2,1,7.586584531,Male,White,Hispanic or Latino,21.30681818,Right,2nd Grade,No/incomplete primary,,1.164652992,0.210365894,-0.961763874,-0.088607079,384,1,0.0,1
+21065,1,BHRC,BHRC-2,1,11.16221766,Female,White,Hispanic or Latino,,Right,4th Grade,Complete secondary,Complete primary,-0.611165323,0.508164781,-0.085736218,-0.970941575,391,0,0.0,1
+21069,1,BHRC,BHRC-2,1,9.508555784,Male,Other,Hispanic or Latino,28.30385016,Right,4th Grade,Complete primary,Complete secondary,0.255866303,-1.196161158,-1.044509812,-1.572112878,287,1,0.0,1
+21070,1,BHRC,BHRC-2,1,10.30800821,Male,White,Hispanic or Latino,24.60242361,Right,4th Grade,No/incomplete primary,No/incomplete primary,0.584994455,-0.374541664,-1.305339402,0.364583596,183,1,0.0,1
+21070,2,BHRC,BHRC-2,1,10.30800821,Male,White,Hispanic or Latino,24.60242361,Right,4th Grade,No/incomplete primary,No/incomplete primary,0.584994455,-0.374541664,-1.305339402,0.364583596,11,1,0.0,1
+21074,1,BHRC,BHRC-2,1,12.59685147,Male,Other,Hispanic or Latino,22.5981405,Right,7th Grade,No/incomplete primary,No/incomplete primary,0.565345013,-0.261530804,-0.369950529,1.537330076,297,1,1.0,1
+21074,2,BHRC,BHRC-2,1,12.59685147,Male,Other,Hispanic or Latino,22.5981405,Right,7th Grade,No/incomplete primary,No/incomplete primary,0.565345013,-0.261530804,-0.369950529,1.537330076,56,1,1.0,1
+21075,1,BHRC,BHRC-2,1,13.50581793,Female,White,Hispanic or Latino,19.95728441,Right,7th Grade,Complete primary,No/incomplete primary,-0.729061974,-0.42951992,0.007802669,-0.896951261,702,0,1.0,1
+21077,1,BHRC,BHRC-2,1,7.994524298,Female,White,Hispanic or Latino,24.77365884,Right,2nd Grade,Complete primary,Complete secondary,-1.017663153,0.712806067,-0.546235355,-0.092306594,38,0,0.0,1
+21077,2,BHRC,BHRC-2,1,7.994524298,Female,White,Hispanic or Latino,24.77365884,Right,2nd Grade,Complete primary,Complete secondary,-1.017663153,0.712806067,-0.546235355,-0.092306594,93,0,0.0,1
+21078,1,BHRC,BHRC-2,1,11.47980835,Male,White,Hispanic or Latino,21.70493866,Right,5th Grade,Complete secondary,Complete secondary,-0.027822515,0.666990854,-1.515801898,0.072321855,288,1,0.0,1
+21078,2,BHRC,BHRC-2,1,11.47980835,Male,White,Hispanic or Latino,21.70493866,Right,5th Grade,Complete secondary,Complete secondary,-0.027822515,0.666990854,-1.515801898,0.072321855,258,1,0.0,1
+21080,2,BHRC,BHRC-2,1,12.19712526,Male,Other,Hispanic or Latino,33.26465407,Right,5th Grade,Complete secondary,Complete primary,,,,,121,1,0.0,1
+21082,1,BHRC,BHRC-2,1,13.12251882,Female,Other,Hispanic or Latino,20.703125,Right,6th Grade,Complete secondary,Complete secondary,-0.205895583,0.589104991,-1.407872413,-0.042363132,147,0,0.0,1
+21083,1,BHRC,BHRC-2,1,8.887063655,Female,White,Hispanic or Latino,17.85714286,Right,3rd Grade,Complete primary,No/incomplete primary,-0.17764951,-1.073987255,-0.995941544,-0.157048119,342,0,0.0,1
+21083,2,BHRC,BHRC-2,1,8.887063655,Female,White,Hispanic or Latino,17.85714286,Right,3rd Grade,Complete primary,No/incomplete primary,-0.17764951,-1.073987255,-0.995941544,-0.157048119,700,0,0.0,1
+21084,1,BHRC,BHRC-2,1,9.07871321,Male,White,Hispanic or Latino,,Right,3rd Grade,Complete secondary,Complete secondary,1.125354108,-0.402030792,0.918007995,0.314640134,335,1,0.0,1
+21085,1,BHRC,BHRC-2,1,8.925393566,Male,White,Hispanic or Latino,24.69135802,Right,2nd Grade,No/incomplete primary,Complete secondary,0.285340466,-0.148519945,-1.116462803,1.727855135,46,1,0.0,1
+21090,1,BHRC,BHRC-2,1,10.28610541,Male,White,Hispanic or Latino,23.73866213,Right,3rd Grade,No/incomplete primary,No/incomplete primary,1.022194538,-1.891025228,-0.837644966,1.24876785,108,1,0.0,1
+21090,2,BHRC,BHRC-2,1,10.28610541,Male,White,Hispanic or Latino,23.73866213,Right,3rd Grade,No/incomplete primary,No/incomplete primary,1.022194538,-1.891025228,-0.837644966,1.24876785,36,1,0.0,1
+21092,1,BHRC,BHRC-2,1,11.63039014,Female,Other,Hispanic or Latino,16.74931129,Right,5th Grade,Complete secondary,Complete primary,-0.208351763,-0.113394948,-0.407725849,-0.728623296,840,0,0.0,1
+21093,1,BHRC,BHRC-2,1,9.782340862,Male,Other,Hispanic or Latino,20.54988662,Right,3rd Grade,No/incomplete primary,No/incomplete primary,-0.543620366,0.124844162,-1.233386412,-1.011636248,800,1,0.0,1
+21101,1,BHRC,BHRC-2,1,8.854209446,Male,Other,Hispanic or Latino,,Right,1st Grade,No/incomplete primary,No/incomplete primary,-0.293089981,-0.052307997,0.421532363,-0.049762164,430,1,0.0,1
+21106,1,BHRC,BHRC-2,1,11.93155373,Male,Other,Hispanic or Latino,17.99307958,Right,5th Grade,No/incomplete primary,No/incomplete primary,1.04184398,-1.115220947,-1.690287899,-1.929116144,386,1,0.0,1
+21106,2,BHRC,BHRC-2,1,11.93155373,Male,Other,Hispanic or Latino,17.99307958,Right,5th Grade,No/incomplete primary,No/incomplete primary,1.04184398,-1.115220947,-1.690287899,-1.929116144,726,1,0.0,1
+21108,1,BHRC,BHRC-2,1,9.815195072,Male,White,Hispanic or Latino,,Right,3rd Grade,Complete secondary,Complete secondary,-0.18378996,-1.41912853,-0.359157581,-0.856256588,59,1,0.0,1
+21110,1,BHRC,BHRC-2,1,7.934291581,Male,White,Hispanic or Latino,22.14532872,Right,1st Grade,Complete primary,No/incomplete primary,0.282884285,-0.058416692,-1.114663978,1.731554651,658,1,0.0,1
+21115,1,BHRC,BHRC-2,1,10.80903491,Female,White,Hispanic or Latino,18.62679878,Right,3rd Grade,Complete primary,,-0.041331506,-0.234041676,-0.873621461,-0.991288912,53,0,0.0,1
+21117,1,BHRC,BHRC-2,1,11.3100616,Male,White,Hispanic or Latino,,Right,5th Grade,Complete secondary,,-1.608374501,-0.744117719,-0.314186962,-0.432662039,259,1,0.0,1
+21120,1,BHRC,BHRC-2,1,10.21492129,Female,Other,Hispanic or Latino,19.72103697,Right,4th Grade,Complete secondary,Complete secondary,0.032353901,0.586050643,-0.555229479,-1.115222688,348,0,0.0,1
+21120,2,BHRC,BHRC-2,1,10.21492129,Female,Other,Hispanic or Latino,19.72103697,Right,4th Grade,Complete secondary,Complete secondary,0.032353901,0.586050643,-0.555229479,-1.115222688,2,0,0.0,1
+21125,1,BHRC,BHRC-2,1,10.53251198,Male,White,Hispanic or Latino,21.31711718,Right,3rd Grade,Complete secondary,No/incomplete primary,-0.961171007,1.137360378,-0.575016551,-0.76006918,842,1,0.0,1
+21125,2,BHRC,BHRC-2,1,10.53251198,Male,White,Hispanic or Latino,21.31711718,Right,3rd Grade,Complete secondary,No/incomplete primary,-0.961171007,1.137360378,-0.575016551,-0.76006918,55,1,0.0,1
+21133,1,BHRC,BHRC-2,1,7.460643395,Male,Other,Hispanic or Latino,18.14307851,Right,1st Grade,Complete secondary,Complete secondary,-0.304142792,-0.044672128,0.432325311,-0.741571601,58,1,0.0,1
+21133,2,BHRC,BHRC-2,1,7.460643395,Male,Other,Hispanic or Latino,18.14307851,Right,1st Grade,Complete secondary,Complete secondary,-0.304142792,-0.044672128,0.432325311,-0.741571601,82,1,0.0,1
+21134,1,BHRC,BHRC-2,1,9.722108145,Male,White,Hispanic or Latino,18.82716049,Right,3rd Grade,Complete secondary,,0.070424695,-0.151574292,-0.954568575,-0.005367975,79,1,0.0,1
+21138,2,BHRC,BHRC-2,1,7.323750856,Male,Other,Hispanic or Latino,26.98961938,Right,1st Grade,No/incomplete primary,No/incomplete primary,,,,,666,1,0.0,1
+21145,2,BHRC,BHRC-2,1,7.759069131,Male,White,Hispanic or Latino,27.33061224,Right,Kindergarten,Complete primary,,,,,,164,1,,1
+21153,2,BHRC,BHRC-2,1,10.41752225,Female,Other,Hispanic or Latino,31.640625,Right,3rd Grade,No/incomplete primary,,,,,,801,0,0.0,1
+21155,1,BHRC,BHRC-2,1,7.474332649,Male,White,Hispanic or Latino,19.67516685,Right,1st Grade,Complete tertiary,Complete primary,-1.233807014,-0.896835097,-0.449098819,0.11116677,679,1,0.0,1
+21155,2,BHRC,BHRC-2,1,7.474332649,Male,White,Hispanic or Latino,19.67516685,Right,1st Grade,Complete tertiary,Complete primary,-1.233807014,-0.896835097,-0.449098819,0.11116677,16,1,0.0,1
+21164,1,BHRC,BHRC-2,1,9.768651608,Male,Other,Hispanic or Latino,22.67573696,Right,2nd Grade,Complete secondary,,-0.568182168,-1.212960069,0.687758427,0.103767738,22,1,0.0,1
+21165,1,BHRC,BHRC-2,1,9.048596851,Female,White,Hispanic or Latino,21.61281179,Right,2nd Grade,Complete secondary,No/incomplete primary,0.742189991,-0.444791658,1.952332229,-1.969810817,697,0,0.0,1
+21166,1,BHRC,BHRC-2,1,8.761122519,Male,White,Hispanic or Latino,,Left,2nd Grade,Complete primary,Complete secondary,-1.176086778,-0.922797051,-0.474282365,0.77522984,418,1,0.0,0
+21166,2,BHRC,BHRC-2,1,8.761122519,Male,White,Hispanic or Latino,,Left,2nd Grade,Complete primary,Complete secondary,-1.176086778,-0.922797051,-0.474282365,0.77522984,36,1,0.0,0
+21171,1,BHRC,BHRC-2,1,10.30253251,Female,White,Hispanic or Latino,19.10525691,Right,3rd Grade,Complete secondary,No/incomplete primary,1.185530524,-0.200443853,-0.981550946,-0.105254899,385,0,0.0,1
+21177,1,BHRC,BHRC-2,1,6.88569473,Female,Other,Hispanic or Latino,,Right,Kindergarten,Complete secondary,Complete primary,-0.625902404,-1.182416594,0.18228867,1.356053806,804,0,,1
+21178,1,BHRC,BHRC-2,1,8.594113621,Female,White,Hispanic or Latino,17.33564014,Right,2nd Grade,No/incomplete primary,No/incomplete primary,-0.705728262,-0.519623173,-0.713526057,1.422645089,719,0,0.0,1
+21243,2,BHRC,BHRC-2,1,12.21902806,Male,White,Hispanic or Latino,,Right,5th Grade,,No/incomplete primary,,,,,54,1,0.0,1
+21272,2,BHRC,BHRC-2,1,7.79192334,Male,White,Hispanic or Latino,20.80856124,Right,2nd Grade,Complete primary,Complete secondary,,,,,315,1,0.0,1
+21313,2,BHRC,BHRC-2,1,7.359342916,Female,White,Hispanic or Latino,,,Kindergarten,No/incomplete primary,,,,,,827,0,,
+21319,2,BHRC,BHRC-2,1,7.206023272,Female,White,Hispanic or Latino,19.10034602,Right,1st Grade,Complete tertiary,Complete secondary,,,,,1,0,0.0,1
+21341,2,BHRC,BHRC-2,1,10.30527036,Male,Other,Hispanic or Latino,20.41195717,Right,4th Grade,Complete secondary,Complete secondary,,,,,812,1,0.0,1
+21362,2,BHRC,BHRC-2,1,8.881587953,Female,White,Hispanic or Latino,27.12031558,Right,1st Grade,Complete secondary,Complete secondary,,,,,370,0,0.0,1
+21424,2,BHRC,BHRC-2,1,13.33333333,Female,White,Hispanic or Latino,36.78651952,Right,,Complete secondary,No/incomplete primary,,,,,379,0,,1
+21434,2,BHRC,BHRC-2,1,9.828884326,Male,Other,Hispanic or Latino,19.88385305,,3rd Grade,No/incomplete primary,,,,,,349,1,0.0,
+21474,2,BHRC,BHRC-2,1,9.117043121,Male,White,Hispanic or Latino,21.35991456,,3rd Grade,Complete tertiary,Complete secondary,,,,,94,1,0.0,
+21510,2,BHRC,BHRC-2,1,8.010951403,Male,Other,Hispanic or Latino,18.30576947,Left,2nd Grade,No/incomplete primary,No/incomplete primary,,,,,829,1,0.0,0
+21534,2,BHRC,BHRC-2,1,8.131416838,Male,Black,Hispanic or Latino,22.67995241,Right,2nd Grade,No/incomplete primary,Complete secondary,,,,,105,1,0.0,1
+21583,2,BHRC,BHRC-2,1,7.619438741,Male,White,Hispanic or Latino,,Right,1st Grade,No/incomplete primary,Complete secondary,,,,,701,1,0.0,1
+21598,2,BHRC,BHRC-2,1,12.33675565,Female,White,Hispanic or Latino,,Right,6th Grade,Complete primary,Complete secondary,,,,,356,0,0.0,1
+21674,2,BHRC,BHRC-2,1,11.01984942,Female,White,Hispanic or Latino,18.85500365,Right,4th Grade,Complete secondary,Complete tertiary,,,,,119,0,0.0,1
+21713,2,BHRC,BHRC-2,1,7.696098563,Female,White,Hispanic or Latino,21.09375,Right,1st Grade,No/incomplete primary,,,,,,43,0,0.0,1
+21714,2,BHRC,BHRC-2,1,10.81451061,Male,White,Hispanic or Latino,,,4th Grade,Complete secondary,No/incomplete primary,,,,,411,1,0.0,
+21755,2,BHRC,BHRC-2,1,8.197125257,Female,Other,Hispanic or Latino,17.7154195,,2nd Grade,Complete secondary,,,,,,830,0,0.0,
+21773,2,BHRC,BHRC-2,1,8.10403833,Male,White,Hispanic or Latino,39.74671747,Right,2nd Grade,Complete primary,Complete primary,,,,,1,1,0.0,1
+21838,2,BHRC,BHRC-2,1,12.14510609,Male,Other,Hispanic or Latino,19.47077787,Right,6th Grade,Complete secondary,No/incomplete primary,,,,,416,1,0.0,1
+21841,2,BHRC,BHRC-2,1,8.900752909,Female,White,Hispanic or Latino,,Right,1st Grade,Complete secondary,Complete primary,,,,,831,0,0.0,1
+21857,2,BHRC,BHRC-2,1,9.305954825,Female,White,Hispanic or Latino,22.03856749,Right,3rd Grade,Complete primary,Complete secondary,,,,,824,0,0.0,1
+21858,2,BHRC,BHRC-2,1,8.016427105,Male,White,Hispanic or Latino,34.25925926,Right,2nd Grade,Complete primary,Complete secondary,,,,,126,1,0.0,1
+21913,2,BHRC,BHRC-2,1,10.95140315,Male,White,Hispanic or Latino,21.63331531,Right,4th Grade,Complete secondary,No/incomplete primary,,,,,527,1,0.0,1
+21927,2,BHRC,BHRC-2,1,11.22245038,Female,Black,Hispanic or Latino,32.44672328,,4th Grade,Complete secondary,Complete secondary,,,,,371,0,0.0,
+30000,1,BHRC,BHRC-2,1,13.26488706,Male,White,Hispanic or Latino,31.21748179,Right,4th Grade,Complete primary,Complete secondary,,,,,77,1,0.0,1
+30000,2,BHRC,BHRC-2,1,13.26488706,Male,White,Hispanic or Latino,31.21748179,Right,4th Grade,Complete primary,Complete secondary,,,,,567,1,0.0,1
