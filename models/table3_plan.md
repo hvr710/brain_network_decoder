@@ -136,4 +136,5 @@ LCM下游任务:
 "\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\AD_train.txt"
 
 
+四、教育分类（对应table3：Educational Classif.）
 
