@@ -6,8 +6,8 @@ dataset4在服务器上挂载在 mnt/ 下面；
 
 
 每个下游任务的微调逻辑：【！！！重要！！！】
-不要按照LCM那个论文里的多个fold（也就是多种split方式的逻辑），就按照固定每个数据集的split（所以你这里也不要再用原生repo里面的split实现了，直接参照我们对每个数据集已经分好的split，我在下面每个数据集下的split字段标注好了）；
-每个数据集的每个下游任务就只用这一个split，然后设置随机种子跑多次run，每个run多个epoch，最后的评价指标也按照这个逻辑重新设计，不要再用原始repo和LCM论文里面那套评价指标了，不然又要出现NAN了。
+1、用上预训练权重D:\NCClab\LCM_omni_table3_10ds\pretrain_weights_fold0/2、不要按照LCM那个论文里的多个fold（也就是多种split方式的逻辑），就按照固定每个数据集的split（所以你这里也不要再用原生repo里面的split实现了，直接参照我们对每个数据集已经分好的split，我在下面每个数据集下的split字段标注好了）；
+每个数据集的每个下游任务就只用这一个split，然后设置随机种子跑多次run，每个run多个epoch，最后的评价指标也按照这个逻辑重新设计，不要再用原始repo和LCM论文里面那套评价指标了，指标设计最好和table3对齐。不然又要出现NAN了。【特例：NKI、SALD、BHRC这三个数据集因为已经有了三套已经分好的split，所以走3-fold路线？我不知道在深度学习基座模型这个领域一般怎么设计这种，是要同时多个fold多个run多个epoch还是怎么样，而且如果有三个fold的话但是我现在只有一个预训练权重（来自LCM那篇文章），你自己根据Omni论文以及你自己的判断来设计。适不适合走3-fold，还是从那三套里面任选一套跑】
 
 
 
@@ -19,7 +19,7 @@ LCM下游任务:
   原始时间序列（.npy）： 
     "\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ABIDE\AAL"
   label标签数据（.csv）：
-    
+    "\\10.16.57.94\dataset1\ningzh\labels\age\ABIDE.csv"
   split（.txt）：
     "\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ABIDE\Schaefer2018_100_crop_split\val.txt"
     "\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ABIDE\Schaefer2018_100_crop_split\test.txt"
@@ -31,7 +31,7 @@ LCM下游任务:
    原始时间序列（.npy）：
      \\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\NKI\AAL
    label标签数据（.csv）：
-     
+   "\\10.16.57.94\dataset1\ningzh\labels\age\NKI.csv"  
    split（.txt）：
    【我发现这组师兄他们好像分了三种split?你统计确认一下，如果真是这样的话，那NKI的年龄回归就在“用这一个split，然后设置随机种子跑多次run，每个run多个epoch，”的基础上外面再套一层 3-fold????算了这个你看看Omni那篇文章他们是怎么设计的实验吧，如果他们只有一个fold/split那我们就从这三种里面选一个fold跑就好了】？？？？
 "\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\NKI\100ROI_split\test3.txt"
@@ -49,7 +49,7 @@ LCM下游任务:
     原始时间序列（.npy）：
       \\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\SALD\AAL
     label标签数据（.csv）：
-
+   "\\10.16.57.94\dataset1\ningzh\labels\age\SALD.csv"
     split（.txt）：
     【我发现这组师兄他们好像分了三种split?你统计确认一下，如果真是这样的话，那SALD的年龄回归就在“用这一个split，然后设置随机种子跑多次run，每个run多个epoch，”的基础上外面再套一层 3-fold????算了这个你看看Omni那篇文章他们是怎么设计的实验吧，如果他们只有一个fold/split那我们就从这三种里面选一个fold跑就好了】？？？？
 "\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\SALD\100ROI_split\train1.txt"
@@ -71,6 +71,7 @@ LCM下游任务:
 "\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ABCD\AAL\val"       #val:100
 "\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ABCD\AAL\test"      #test:201
    label标签数据（.csv）：
+"\\10.16.57.94\dataset1\ningzh\labels\sex\ABCD.csv"
 
 
 2、HCP：       //6 crop     ❌️（606？？？）
@@ -79,13 +80,13 @@ LCM下游任务:
 "\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\HCP\AAL\test"      #test:1211
 "\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\HCP\AAL\val"       #val:1211
    label标签数据（.csv）：
-
+"\\10.16.57.94\dataset1\ningzh\labels\sex\HCP.csv"
 
 3、BHRC：465 //单sub  ✅️（465）
     原始时间序列（.npy）：
       \\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\BHRC\AAL
     label标签数据（.csv）：
-
+"\\10.16.57.94\dataset1\ningzh\labels\sex\BHRC.csv"
     split（.txt）：
     【我发现这组师兄他们好像分了三种split?你统计确认一下，如果真是这样的话，那BHRC的性别分类就在“用这一个split，然后设置随机种子跑多次run，每个run多个epoch，”的基础上外面再套一层 3-fold????算了这个你看看Omni那篇文章他们是怎么设计的实验吧，如果他们只有一个fold/split那我们就从这三种里面选一个fold跑就好了】？？？？
 "\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\BHRC\100ROI_split\val2.txt"
@@ -104,7 +105,7 @@ LCM下游任务:
    原始时间序列（.npy）：
 \\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\PPMI\AAL
    label标签数据（.csv）：
-
+"\\10.16.57.94\dataset1\ningzh\labels\disease\PPMI.csv"
    split:参考另一个atlas底下的.npy的文件夹分类方式
 "\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\PPMI\100ROI\val"
 "\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\PPMI\100ROI\test"
@@ -117,7 +118,7 @@ LCM下游任务:
 "\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\mci\AAL"  #MCI：146
 \\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\cn\AAL    #CN：236
    label标签数据（.csv）：
-
+"\\10.16.57.94\dataset1\ningzh\labels\disease\adni_list.xlsx"
    split（.txt）：
 "\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\MCI_val.txt"
 "\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\MCI_test.txt"
@@ -129,11 +130,12 @@ LCM下游任务:
  \\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\AD1\AAL  #AD：115
  \\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\cn\AAL    #CN：236
    label标签数据（.csv）：
-
+"\\10.16.57.94\dataset1\ningzh\labels\disease\adni_list.xlsx"
    split（.txt）：
 "\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\AD_val.txt"
 "\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\AD_test.txt"
 "\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\AD_train.txt"
 
 
-
+四、教育水平分类（对应table3：Education Classif.）
+   NKI，同上

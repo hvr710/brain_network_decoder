@@ -1,0 +1,11 @@
+task_id,display_name,task_type,completed_runs,expected_runs,mse_mean_std,pearson_r_mean_std,acc_mean_std,f1_mean_std
+abide_age,ABIDE age,regression,0,3,NA,NA,,
+nki_age,NKI age,regression,0,9,NA,NA,,
+sald_age,SALD age,regression,0,9,NA,NA,,
+abcd_sex,ABCD sex,classification,0,3,,,NA,NA
+hcp_sex,HCP sex,classification,0,3,,,NA,NA
+bhrc_sex,BHRC sex,classification,0,9,,,NA,NA
+ppmi_pd_diagnosis,PPMI PD diagnosis,classification,0,3,,,NA,NA
+adni_mci,ADNI(MCI),classification,0,3,,,NA,NA
+adni_ad,ADNI(AD),classification,0,3,,,NA,NA
+nki_education,NKI education,classification,0,9,,,NA,NA

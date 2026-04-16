@@ -1,0 +1,109 @@
+{
+  "task_cfg": {
+    "model": {
+      "models": "none",
+      "decoder": true,
+      "decoder_layer": 32,
+      "atlas": "AAL_116",
+      "node_attr": "FC",
+      "adj_type": "FC",
+      "bold_winsize": 500,
+      "batch_size": 128,
+      "epochs": 200,
+      "max_patience": 50,
+      "lr": 0.0001,
+      "decay": 0.0,
+      "hiddim": 2048,
+      "nlayer": 4,
+      "nhead": 8,
+      "fc_th": 0.5,
+      "sc_th": 0.1,
+      "pretrained_dir": "pretrain_weights_fold0/none_decoder32_ppmi-abide-taowu-neurocon-hcpa-adni-hcpya_boldwin500_FCFC",
+      "load_dname": "hcpa",
+      "device": "cuda:0"
+    },
+    "runtime": {
+      "num_workers": 4,
+      "seeds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "display_name": "ABIDE age",
+    "task_type": "regression",
+    "target_key": "age",
+    "sample_level": "subject",
+    "split_format": "crop_txt_to_subject",
+    "id_rule": "abide_file_id",
+    "split_id_rule": "abide_crop_subject",
+    "fold_ids": [
+      1
+    ],
+    "data_root": "\\\\10.20.33.82\\dataset4\\DATASETS\\fmri_pretraining\\fmri_dataset\\roi\\ABIDE\\AAL",
+    "split_source": {
+      "train": "\\\\10.20.33.82\\dataset4\\DATASETS\\fmri_pretraining\\fmri_dataset\\roi\\ABIDE\\Schaefer2018_100_crop_split\\train.txt",
+      "val": "\\\\10.20.33.82\\dataset4\\DATASETS\\fmri_pretraining\\fmri_dataset\\roi\\ABIDE\\Schaefer2018_100_crop_split\\val.txt",
+      "test": "\\\\10.20.33.82\\dataset4\\DATASETS\\fmri_pretraining\\fmri_dataset\\roi\\ABIDE\\Schaefer2018_100_crop_split\\test.txt"
+    },
+    "label_source": "\\\\10.16.57.94\\dataset1\\ningzh\\labels\\age\\ABIDE.csv",
+    "label_format": "csv",
+    "label_subject_column": "FILE_ID",
+    "label_id_rule": "identity",
+    "target_column": "age",
+    "label_agg": "first_non_null",
+    "metrics": [
+      "mse",
+      "pearson_r"
+    ],
+    "model_select_metric": "val_mse",
+    "class_map": {},
+    "task_id": "abide_age"
+  },
+  "audit": {
+    "task_id": "abide_age",
+    "fold": 1,
+    "label_meta": {
+      "label_path": "\\\\10.16.57.94\\dataset1\\ningzh\\labels\\age\\ABIDE.csv",
+      "raw_rows": 871,
+      "subjects_with_label": 871,
+      "ambiguous_subjects": 0,
+      "class_names": []
+    },
+    "split_counts": {
+      "train": {
+        "samples": 522,
+        "subjects": 522
+      },
+      "val": {
+        "samples": 174,
+        "subjects": 174
+      },
+      "test": {
+        "samples": 175,
+        "subjects": 175
+      }
+    },
+    "target_counter": {},
+    "disjoint_subjects": true,
+    "disjoint_samples": true,
+    "split_audit": {
+      "missing_files": {
+        "train": 0,
+        "val": 0,
+        "test": 0
+      },
+      "missing_labels": {
+        "train": 0,
+        "val": 0,
+        "test": 0
+      },
+      "duplicate_files": {
+        "train": 0,
+        "val": 0,
+        "test": 0
+      }
+    }
+  },
+  "run_dir": "outputs\\table3_audit_check\\abide_age\\fold1\\seed1"
+}

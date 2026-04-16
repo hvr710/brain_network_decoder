@@ -1,0 +1,17 @@
+{
+  "best_epoch": 1,
+  "train_metrics": {
+    "train_loss": 556.5983276367188
+  },
+  "val_metrics": {
+    "mse": 7.246591567993164,
+    "pearson_r": 1.0
+  },
+  "test_metrics": {
+    "mse": 18.880014419555664,
+    "pearson_r": 0.9999999999999999
+  },
+  "peak_gpu_mem_mb": 22472.9,
+  "class_names": [],
+  "smoke_test": true
+}

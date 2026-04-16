@@ -1,0 +1,3 @@
+[2026-04-16 13:47:29] Prepared audit for task=abide_age fold=1 seed=1
+[2026-04-16 13:47:29] Split summary: train:1223 samples/522 subjects, val:365 samples/174 subjects, test:395 samples/175 subjects
+[2026-04-16 13:47:29] Audit only mode completed.

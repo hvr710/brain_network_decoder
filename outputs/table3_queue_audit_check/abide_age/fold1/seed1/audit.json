@@ -1,0 +1,45 @@
+{
+  "task_id": "abide_age",
+  "fold": 1,
+  "label_meta": {
+    "label_path": "\\\\10.16.57.94\\dataset1\\ningzh\\labels\\age\\ABIDE.csv",
+    "raw_rows": 871,
+    "subjects_with_label": 871,
+    "ambiguous_subjects": 0,
+    "class_names": []
+  },
+  "split_counts": {
+    "train": {
+      "samples": 1223,
+      "subjects": 522
+    },
+    "val": {
+      "samples": 365,
+      "subjects": 174
+    },
+    "test": {
+      "samples": 395,
+      "subjects": 175
+    }
+  },
+  "target_counter": {},
+  "disjoint_subjects": true,
+  "disjoint_samples": true,
+  "split_audit": {
+    "missing_files": {
+      "train": 0,
+      "val": 0,
+      "test": 0
+    },
+    "missing_labels": {
+      "train": 0,
+      "val": 0,
+      "test": 0
+    },
+    "duplicate_files": {
+      "train": 0,
+      "val": 0,
+      "test": 0
+    }
+  }
+}

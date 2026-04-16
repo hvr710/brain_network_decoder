@@ -1,0 +1,56 @@
+{
+  "task_id": "abcd_sex",
+  "fold": 1,
+  "label_meta": {
+    "label_path": "\\\\10.16.57.94\\dataset1\\ningzh\\labels\\sex\\ABCD.csv",
+    "raw_rows": 10026,
+    "subjects_with_label": 10026,
+    "ambiguous_subjects": 0,
+    "class_names": [
+      "0",
+      "1"
+    ]
+  },
+  "split_counts": {
+    "train": {
+      "samples": 699,
+      "subjects": 350
+    },
+    "val": {
+      "samples": 100,
+      "subjects": 50
+    },
+    "test": {
+      "samples": 200,
+      "subjects": 100
+    }
+  },
+  "target_counter": {
+    "train": {
+      "0": 341,
+      "1": 358
+    },
+    "val": {
+      "0": 48,
+      "1": 52
+    },
+    "test": {
+      "0": 98,
+      "1": 102
+    }
+  },
+  "disjoint_subjects": true,
+  "disjoint_samples": true,
+  "split_audit": {
+    "missing_labels": {
+      "train": 0,
+      "val": 0,
+      "test": 0
+    },
+    "invalid_file_names": {
+      "train": 0,
+      "val": 0,
+      "test": 1
+    }
+  }
+}

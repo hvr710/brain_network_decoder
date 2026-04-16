@@ -1,0 +1,6 @@
+[2026-04-16 13:47:01] Prepared audit for task=abcd_sex fold=1 seed=1
+[2026-04-16 13:47:01] Split summary: train:699 samples/350 subjects, val:100 samples/50 subjects, test:200 samples/100 subjects
+[2026-04-16 13:47:01] Audit only mode completed.
+[2026-04-16 13:49:17] Prepared audit for task=abcd_sex fold=1 seed=1
+[2026-04-16 13:49:17] Split summary: train:699 samples/350 subjects, val:100 samples/50 subjects, test:200 samples/100 subjects
+[2026-04-16 13:49:17] Audit only mode completed.

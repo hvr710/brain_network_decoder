@@ -1,0 +1,10 @@
+[2026-04-16 14:21:38] Prepared task=abide_age fold=1 seed=1
+[2026-04-16 14:21:38] Split summary: train:522 samples/522 subjects, val:174 samples/174 subjects, test:175 samples/175 subjects
+[2026-04-16 14:22:06] Prepared task=abide_age fold=1 seed=1
+[2026-04-16 14:22:06] Split summary: train:522 samples/522 subjects, val:174 samples/174 subjects, test:175 samples/175 subjects
+[2026-04-16 14:31:18] Prepared task=abide_age fold=1 seed=1
+[2026-04-16 14:31:18] Split summary: train:522 samples/522 subjects, val:174 samples/174 subjects, test:175 samples/175 subjects
+[2026-04-16 14:32:03] Epoch 1: train={"train_loss": 556.5983276367188} val={"mse": 7.246591567993164, "pearson_r": 1.0}
+[2026-04-16 14:32:11] New best checkpoint at epoch 1.
+[2026-04-16 14:32:14] Best epoch=1
+[2026-04-16 14:32:14] Test metrics={"mse": 18.880014419555664, "pearson_r": 0.9999999999999999}

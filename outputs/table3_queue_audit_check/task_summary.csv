@@ -1,0 +1,55 @@
+task_id,display_name,fold,seed,run_dir,run_state
+abide_age,ABIDE age,1,1,outputs\table3_queue_audit_check\abide_age\fold1\seed1,completed
+abide_age,ABIDE age,1,2,outputs\table3_queue_audit_check\abide_age\fold1\seed2,missing
+abide_age,ABIDE age,1,3,outputs\table3_queue_audit_check\abide_age\fold1\seed3,missing
+nki_age,NKI age,1,1,outputs\table3_queue_audit_check\nki_age\fold1\seed1,missing
+nki_age,NKI age,1,2,outputs\table3_queue_audit_check\nki_age\fold1\seed2,missing
+nki_age,NKI age,1,3,outputs\table3_queue_audit_check\nki_age\fold1\seed3,missing
+nki_age,NKI age,2,1,outputs\table3_queue_audit_check\nki_age\fold2\seed1,missing
+nki_age,NKI age,2,2,outputs\table3_queue_audit_check\nki_age\fold2\seed2,missing
+nki_age,NKI age,2,3,outputs\table3_queue_audit_check\nki_age\fold2\seed3,missing
+nki_age,NKI age,3,1,outputs\table3_queue_audit_check\nki_age\fold3\seed1,missing
+nki_age,NKI age,3,2,outputs\table3_queue_audit_check\nki_age\fold3\seed2,missing
+nki_age,NKI age,3,3,outputs\table3_queue_audit_check\nki_age\fold3\seed3,missing
+sald_age,SALD age,1,1,outputs\table3_queue_audit_check\sald_age\fold1\seed1,missing
+sald_age,SALD age,1,2,outputs\table3_queue_audit_check\sald_age\fold1\seed2,missing
+sald_age,SALD age,1,3,outputs\table3_queue_audit_check\sald_age\fold1\seed3,missing
+sald_age,SALD age,2,1,outputs\table3_queue_audit_check\sald_age\fold2\seed1,missing
+sald_age,SALD age,2,2,outputs\table3_queue_audit_check\sald_age\fold2\seed2,missing
+sald_age,SALD age,2,3,outputs\table3_queue_audit_check\sald_age\fold2\seed3,missing
+sald_age,SALD age,3,1,outputs\table3_queue_audit_check\sald_age\fold3\seed1,missing
+sald_age,SALD age,3,2,outputs\table3_queue_audit_check\sald_age\fold3\seed2,missing
+sald_age,SALD age,3,3,outputs\table3_queue_audit_check\sald_age\fold3\seed3,missing
+abcd_sex,ABCD sex,1,1,outputs\table3_queue_audit_check\abcd_sex\fold1\seed1,missing
+abcd_sex,ABCD sex,1,2,outputs\table3_queue_audit_check\abcd_sex\fold1\seed2,missing
+abcd_sex,ABCD sex,1,3,outputs\table3_queue_audit_check\abcd_sex\fold1\seed3,missing
+hcp_sex,HCP sex,1,1,outputs\table3_queue_audit_check\hcp_sex\fold1\seed1,missing
+hcp_sex,HCP sex,1,2,outputs\table3_queue_audit_check\hcp_sex\fold1\seed2,missing
+hcp_sex,HCP sex,1,3,outputs\table3_queue_audit_check\hcp_sex\fold1\seed3,missing
+bhrc_sex,BHRC sex,1,1,outputs\table3_queue_audit_check\bhrc_sex\fold1\seed1,missing
+bhrc_sex,BHRC sex,1,2,outputs\table3_queue_audit_check\bhrc_sex\fold1\seed2,missing
+bhrc_sex,BHRC sex,1,3,outputs\table3_queue_audit_check\bhrc_sex\fold1\seed3,missing
+bhrc_sex,BHRC sex,2,1,outputs\table3_queue_audit_check\bhrc_sex\fold2\seed1,missing
+bhrc_sex,BHRC sex,2,2,outputs\table3_queue_audit_check\bhrc_sex\fold2\seed2,missing
+bhrc_sex,BHRC sex,2,3,outputs\table3_queue_audit_check\bhrc_sex\fold2\seed3,missing
+bhrc_sex,BHRC sex,3,1,outputs\table3_queue_audit_check\bhrc_sex\fold3\seed1,missing
+bhrc_sex,BHRC sex,3,2,outputs\table3_queue_audit_check\bhrc_sex\fold3\seed2,missing
+bhrc_sex,BHRC sex,3,3,outputs\table3_queue_audit_check\bhrc_sex\fold3\seed3,missing
+ppmi_pd_diagnosis,PPMI PD diagnosis,1,1,outputs\table3_queue_audit_check\ppmi_pd_diagnosis\fold1\seed1,missing
+ppmi_pd_diagnosis,PPMI PD diagnosis,1,2,outputs\table3_queue_audit_check\ppmi_pd_diagnosis\fold1\seed2,missing
+ppmi_pd_diagnosis,PPMI PD diagnosis,1,3,outputs\table3_queue_audit_check\ppmi_pd_diagnosis\fold1\seed3,missing
+adni_mci,ADNI(MCI),1,1,outputs\table3_queue_audit_check\adni_mci\fold1\seed1,missing
+adni_mci,ADNI(MCI),1,2,outputs\table3_queue_audit_check\adni_mci\fold1\seed2,missing
+adni_mci,ADNI(MCI),1,3,outputs\table3_queue_audit_check\adni_mci\fold1\seed3,missing
+adni_ad,ADNI(AD),1,1,outputs\table3_queue_audit_check\adni_ad\fold1\seed1,missing
+adni_ad,ADNI(AD),1,2,outputs\table3_queue_audit_check\adni_ad\fold1\seed2,missing
+adni_ad,ADNI(AD),1,3,outputs\table3_queue_audit_check\adni_ad\fold1\seed3,missing
+nki_education,NKI education,1,1,outputs\table3_queue_audit_check\nki_education\fold1\seed1,missing
+nki_education,NKI education,1,2,outputs\table3_queue_audit_check\nki_education\fold1\seed2,missing
+nki_education,NKI education,1,3,outputs\table3_queue_audit_check\nki_education\fold1\seed3,missing
+nki_education,NKI education,2,1,outputs\table3_queue_audit_check\nki_education\fold2\seed1,missing
+nki_education,NKI education,2,2,outputs\table3_queue_audit_check\nki_education\fold2\seed2,missing
+nki_education,NKI education,2,3,outputs\table3_queue_audit_check\nki_education\fold2\seed3,missing
+nki_education,NKI education,3,1,outputs\table3_queue_audit_check\nki_education\fold3\seed1,missing
+nki_education,NKI education,3,2,outputs\table3_queue_audit_check\nki_education\fold3\seed2,missing
+nki_education,NKI education,3,3,outputs\table3_queue_audit_check\nki_education\fold3\seed3,missing
