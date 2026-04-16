@@ -461,7 +461,8 @@ class Table3Dataset(Dataset):
                 "age": age,
                 "adj_fc": adj[None],
                 "adj_sc": adj[None],
-                "sample_index": torch.tensor(index, dtype=torch.long),
+                # Avoid PyG auto-increment on batch collate for keys containing "index".
+                "sample_idx": torch.tensor(index, dtype=torch.long),
             }
             data = Data.from_dict(payload)
             if self.transform is not None:

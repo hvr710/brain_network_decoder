@@ -189,6 +189,21 @@ def compute_metrics(task_cfg: Dict[str, Any], y_true: List[Any], y_pred: List[An
     }
 
 
+def _sample_meta_from_index(loader: Any, sample_index: int) -> Dict[str, Any]:
+    dataset = getattr(loader, "dataset", None)
+    samples = getattr(dataset, "samples", None)
+    if samples is None:
+        return {"sample_id": None, "subject_id": None, "split": None}
+    if 0 <= int(sample_index) < len(samples):
+        sample = samples[int(sample_index)]
+        return {
+            "sample_id": getattr(sample, "sample_id", None),
+            "subject_id": getattr(sample, "subject_id", None),
+            "split": getattr(sample, "split", None),
+        }
+    return {"sample_id": None, "subject_id": None, "split": None}
+
+
 def selection_value(task_cfg: Dict[str, Any], metrics: Dict[str, float]) -> Tuple[float, float]:
     key = task_cfg["model_select_metric"]
     if key == "val_f1":
@@ -265,18 +280,22 @@ def evaluate(
             reduced = reduce_outputs(outputs[task_cfg["target_key"]], task_cfg["target_key"], mode="eval")
             target = get_target_tensor(batch, task_cfg["target_key"], device)
 
-            sample_indices = batch.sample_index.view(-1).detach().cpu().tolist()
+            if hasattr(batch, "sample_idx"):
+                sample_indices = batch.sample_idx.view(-1).detach().cpu().tolist()
+            else:
+                # Backward compatibility for old cached/batched payloads.
+                sample_indices = batch.sample_index.view(-1).detach().cpu().tolist()
             if task_cfg["task_type"] == "classification":
                 probs = torch.softmax(reduced, dim=-1)
                 pred_labels = probs.argmax(dim=-1)
                 y_true.extend(target.detach().cpu().tolist())
                 y_pred.extend(pred_labels.detach().cpu().tolist())
                 for row_idx, sample_index in enumerate(sample_indices):
-                    sample = loader.dataset.samples[int(sample_index)]
+                    sample_meta = _sample_meta_from_index(loader, int(sample_index))
                     row = {
-                        "sample_id": sample.sample_id,
-                        "subject_id": sample.subject_id,
-                        "split": sample.split,
+                        "sample_id": sample_meta["sample_id"],
+                        "subject_id": sample_meta["subject_id"],
+                        "split": sample_meta["split"],
                         "y_true": int(target[row_idx].detach().cpu().item()),
                         "y_pred": int(pred_labels[row_idx].detach().cpu().item()),
                     }
@@ -288,12 +307,12 @@ def evaluate(
                 y_true.extend(target.detach().cpu().tolist())
                 y_pred.extend(pred_values.detach().cpu().tolist())
                 for row_idx, sample_index in enumerate(sample_indices):
-                    sample = loader.dataset.samples[int(sample_index)]
+                    sample_meta = _sample_meta_from_index(loader, int(sample_index))
                     records.append(
                         {
-                            "sample_id": sample.sample_id,
-                            "subject_id": sample.subject_id,
-                            "split": sample.split,
+                            "sample_id": sample_meta["sample_id"],
+                            "subject_id": sample_meta["subject_id"],
+                            "split": sample_meta["split"],
                             "y_true": float(target[row_idx].detach().cpu().item()),
                             "y_pred": float(pred_values[row_idx].detach().cpu().item()),
                         }
@@ -344,6 +363,11 @@ def build_model_and_head(task_cfg: Dict[str, Any], audit: Dict[str, Any]) -> Tup
 
     if task_cfg["target_key"] == "y":
         task_nclass = len(audit["label_meta"]["class_names"])
+        if task_nclass <= 0:
+            raise ValueError(
+                f"Task {task_cfg['task_id']} resolved zero classes from labels; "
+                "please check class_map/label_filters/label_source."
+            )
         classifier = BNDecoder(
             model_cfg["hiddim"],
             nclass=pretrain_nclass,
@@ -440,6 +464,13 @@ def main() -> None:
             transform=transform,
             num_workers=runtime_cfg.get("num_workers", 0),
         )
+        split_counts = audit.get("split_counts", {})
+        empty_splits = [split for split in ("train", "val", "test") if split_counts.get(split, {}).get("samples", 0) <= 0]
+        if empty_splits:
+            raise ValueError(
+                f"Empty splits for task={args.task_id}, fold={args.fold}: {empty_splits}. "
+                "Please check split files and label joins."
+            )
         write_json(str(Path(run_dir) / "audit.json"), audit)
 
         resolved_payload = {
