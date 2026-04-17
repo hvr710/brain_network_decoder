@@ -22,7 +22,25 @@ def format_mean_std(values: List[float]) -> str:
     if not values:
         return "NA"
     series = pd.Series(values, dtype=float)
-    return f"{series.mean():.4f}±{series.std(ddof=0):.4f}"
+    return f"{series.mean():.4f} +/- {series.std(ddof=0):.4f}"
+
+
+def resolve_task_root(output_root: Path, task_id: str) -> Path:
+    direct_root = output_root / task_id
+    if direct_root.exists():
+        return direct_root
+
+    if output_root.name == task_id or output_root.name.startswith(f"{task_id}_"):
+        nested_root = output_root / task_id
+        return nested_root if nested_root.exists() else output_root
+
+    candidates = [path for path in output_root.glob(f"{task_id}_*") if path.is_dir()]
+    if candidates:
+        latest = max(candidates, key=lambda path: (path.stat().st_mtime, path.name))
+        nested_root = latest / task_id
+        return nested_root if nested_root.exists() else latest
+
+    return direct_root
 
 
 def main() -> None:
@@ -37,17 +55,19 @@ def main() -> None:
         seeds = runtime_cfg.get("seeds", [1, 2, 3])
         folds = task_cfg["fold_ids"]
         expected_runs = len(seeds) * len(folds)
+        task_root = resolve_task_root(output_root, task_id)
         metrics_found = {key: [] for key in metric_columns(task_cfg)}
         completed_runs = 0
 
         for fold in folds:
             for seed in seeds:
-                run_dir = output_root / task_id / f"fold{fold}" / f"seed{seed}"
+                run_dir = task_root / f"fold{fold}" / f"seed{seed}"
                 metrics_path = run_dir / "best_metrics.json"
                 state_path = run_dir / "run_state.json"
                 row = {
                     "task_id": task_id,
                     "display_name": task_cfg.get("display_name", task_id),
+                    "task_root": str(task_root),
                     "fold": fold,
                     "seed": seed,
                     "run_dir": str(run_dir),
@@ -72,6 +92,7 @@ def main() -> None:
             "task_id": task_id,
             "display_name": task_cfg.get("display_name", task_id),
             "task_type": task_cfg["task_type"],
+            "task_root": str(task_root),
             "completed_runs": completed_runs,
             "expected_runs": expected_runs,
         }
