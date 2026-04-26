@@ -73,7 +73,7 @@ def normalize_sample_id(name: str, rule: str) -> str:
             raise ValueError(f"Cannot parse PPMI subject from: {name}")
         return str(int(match.group(1)))
     if rule == "adni_subject_code":
-        match = re.search(r"([0-9]{3}S[0-9]{4})", stem)
+        match = re.search(r"([0-9]{3}S[0-9]{4}[0-9]?)", stem)
         if not match:
             raise ValueError(f"Cannot parse ADNI subject code from: {name}")
         return match.group(1)

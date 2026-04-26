@@ -1,0 +1,162 @@
+models:
+  - name: Brain-LM
+    values:
+      abide_age:
+        table3_mse: {mean: 0.907, std: 0.007}
+        table3_r: {mean: 0.239, std: 0.023}
+      nki_age:
+        table3_mse: {mean: 0.503, std: 0.015}
+        table3_r: {mean: 0.678, std: 0.014}
+      sald_age:
+        table3_mse: {mean: 0.677, std: 0.055}
+        table3_r: {mean: 0.634, std: 0.061}
+      abcd_sex:
+        table3_acc: {mean: 59.24, std: 1.03}
+        table3_f1: {mean: 58.74, std: 0.70}
+      hcp_sex:
+        table3_acc: {mean: 62.71, std: 4.43}
+        table3_f1: {mean: 61.74, std: 4.72}
+      bhrc_sex:
+        table3_acc: {mean: 57.09, std: 1.33}
+        table3_f1: {mean: 54.69, std: 1.03}
+      ppmi_pd_diagnosis:
+        table3_acc: {mean: 54.86, std: 1.20}
+        table3_f1: {mean: 49.03, std: 2.64}
+      adni_mci:
+        table3_acc: {mean: 64.53, std: 2.01}
+        table3_f1: {mean: 61.35, std: 0.66}
+      adni_ad:
+        table3_acc: {mean: 80.96, std: 0.46}
+        table3_f1: {mean: 72.43, std: 0.64}
+      nki_education:
+        table3_acc: {mean: 60.46, std: 0.73}
+        table3_f1: {mean: 58.93, std: 0.70}
+
+  - name: Brain-JEPA
+    values:
+      abide_age:
+        table3_mse: {mean: 0.982, std: 0.066}
+        table3_r: {mean: 0.166, std: 0.017}
+      nki_age:
+        table3_mse: {mean: 1.030, std: 0.080}
+        table3_r: {mean: 0.330, std: 0.030}
+      sald_age:
+        table3_mse: {mean: 1.130, std: 0.108}
+        table3_r: {mean: 0.299, std: 0.060}
+      hcp_sex:
+        table3_acc: {mean: 69.97, std: 2.73}
+        table3_f1: {mean: 69.17, std: 3.55}
+      bhrc_sex:
+        table3_acc: {mean: 58.16, std: 6.10}
+        table3_f1: {mean: 56.16, std: 6.05}
+      ppmi_pd_diagnosis:
+        table3_acc: {mean: 47.91, std: 3.61}
+        table3_f1: {mean: 48.60, std: 2.42}
+      adni_mci:
+        table3_acc: {mean: 64.53, std: 0.60}
+        table3_f1: {mean: 55.17, std: 0.66}
+      adni_ad:
+        table3_acc: {mean: 80.23, std: 0.80}
+        table3_f1: {mean: 73.26, std: 1.03}
+      nki_education:
+        table3_acc: {mean: 49.21, std: 2.15}
+        table3_f1: {mean: 48.73, std: 1.62}
+
+  - name: BrainMass
+    values:
+      abide_age:
+        table3_mse: {mean: 0.695, std: 0.038}
+        table3_r: {mean: 0.500, std: 0.044}
+      nki_age:
+        table3_mse: {mean: 0.600, std: 0.062}
+        table3_r: {mean: 0.620, std: 0.036}
+      sald_age:
+        table3_mse: {mean: 0.704, std: 0.080}
+        table3_r: {mean: 0.626, std: 0.062}
+      abcd_sex:
+        table3_acc: {mean: 57.92, std: 1.19}
+        table3_f1: {mean: 57.86, std: 1.18}
+      hcp_sex:
+        table3_acc: {mean: 67.65, std: 1.02}
+        table3_f1: {mean: 66.93, std: 1.78}
+      bhrc_sex:
+        table3_acc: {mean: 62.76, std: 1.50}
+        table3_f1: {mean: 61.05, std: 1.22}
+      ppmi_pd_diagnosis:
+        table3_acc: {mean: 58.68, std: 4.21}
+        table3_f1: {mean: 51.95, std: 2.23}
+      adni_mci:
+        table3_acc: {mean: 62.39, std: 0.60}
+        table3_f1: {mean: 61.35, std: 0.60}
+      adni_ad:
+        table3_acc: {mean: 73.45, std: 3.91}
+        table3_f1: {mean: 62.10, std: 0.70}
+      nki_education:
+        table3_acc: {mean: 62.36, std: 1.24}
+        table3_f1: {mean: 61.98, std: 0.88}
+
+  - name: SwiFT
+    values:
+      abide_age:
+        table3_mse: {mean: 0.524, std: 0.010}
+        table3_r: {mean: 0.704, std: 0.011}
+      nki_age:
+        table3_mse: {mean: 0.127, std: 0.004}
+        table3_r: {mean: 0.946, std: 0.002}
+      sald_age:
+        table3_mse: {mean: 0.164, std: 0.080}
+        table3_r: {mean: 0.926, std: 0.003}
+      abcd_sex:
+        table3_acc: {mean: 66.67, std: 3.51}
+        table3_f1: {mean: 68.69, std: 0.44}
+      hcp_sex:
+        table3_acc: {mean: 90.75, std: 4.38}
+        table3_f1: {mean: 90.76, std: 4.37}
+      bhrc_sex:
+        table3_acc: {mean: 70.21, std: 0.02}
+        table3_f1: {mean: 69.56, std: 0.02}
+      ppmi_pd_diagnosis:
+        table3_acc: {mean: 61.55, std: 2.52}
+        table3_f1: {mean: 58.23, std: 4.20}
+      adni_mci:
+        table3_acc: {mean: 65.38, std: 1.29}
+        table3_f1: {mean: 72.54, std: 0.16}
+      adni_ad:
+        table3_acc: {mean: 74.90, std: 1.88}
+        table3_f1: {mean: 80.76, std: 0.33}
+      nki_education:
+        table3_acc: {mean: 78.54, std: 4.87}
+        table3_f1: {mean: 79.08, std: 3.85}
+
+  - name: NeuroSTORM
+    values:
+      abide_age:
+        table3_mse: {mean: 0.537, std: 0.016}
+        table3_r: {mean: 0.648, std: 0.013}
+      nki_age:
+        table3_mse: {mean: 0.152, std: 0.033}
+        table3_r: {mean: 0.835, std: 0.035}
+      sald_age:
+        table3_mse: {mean: 0.194, std: 0.019}
+        table3_r: {mean: 0.892, std: 0.010}
+      abcd_sex:
+        table3_acc: {mean: 76.51, std: 1.88}
+        table3_f1: {mean: 76.24, std: 1.70}
+      hcp_sex:
+        table3_acc: {mean: 94.17, std: 2.65}
+        table3_f1: {mean: 94.17, std: 2.15}
+      bhrc_sex:
+        table3_acc: {mean: 73.02, std: 2.19}
+        table3_f1: {mean: 72.49, std: 1.96}
+      ppmi_pd_diagnosis:
+        table3_acc: {mean: 68.25, std: 1.18}
+        table3_f1: {mean: 65.18, std: 2.55}
+      adni_mci:
+        table3_acc: {mean: 66.67, std: 1.06}
+        table3_f1: {mean: 62.17, std: 8.93}
+      adni_ad:
+        table3_acc: {mean: 84.26, std: 0.80}
+        table3_f1: {mean: 83.91, std: 0.75}
+      nki_education:
+        table3_acc: {mean: 89.35, std: 4.72}
+        table3_f1: {mean: 89.34, std: 4.49}

@@ -9,9 +9,9 @@ defaults:
     bold_winsize: 500
     batch_size: 128
     epochs: 200
-    max_patience: 50
+    max_patience: 25
     lr: 0.0001
-    decay: 0.0
+    decay: 0.0001
     hiddim: 2048
     nlayer: 4
     nhead: 8
@@ -28,6 +28,9 @@ tasks:
     display_name: ABIDE age
     task_type: regression
     target_key: age
+    model:
+      epochs: 120
+      max_patience: 18
     sample_level: subject
     split_format: crop_txt_to_subject
     id_rule: abide_file_id
@@ -56,13 +59,17 @@ tasks:
     split_format: txt_basename
     id_rule: nki_subject
     split_id_rule: nki_subject
-    fold_ids: [1, 2, 3]
+    model:
+      epochs: 120
+      max_patience: 18
+    fold_ids: [1]
     data_root: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\NKI\AAL'
     split_source:
       fold1:
         train: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\NKI\100ROI_split\train1.txt'
         val: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\NKI\100ROI_split\val1.txt'
         test: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\NKI\100ROI_split\test1.txt'
+        
       fold2:
         train: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\NKI\100ROI_split\train2.txt'
         val: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\NKI\100ROI_split\val2.txt'
@@ -76,7 +83,7 @@ tasks:
     label_subject_column: Subject
     label_id_rule: identity
     target_column: age
-    label_agg: min
+    label_agg: mean
     metrics: [mse, pearson_r]
     model_select_metric: val_mse
     class_map: {}
@@ -89,7 +96,10 @@ tasks:
     split_format: txt_basename
     id_rule: numeric_stem
     split_id_rule: numeric_stem
-    fold_ids: [1, 2, 3]
+    model:
+      epochs: 120
+      max_patience: 18
+    fold_ids: [1]
     data_root: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\SALD\AAL'
     split_source:
       fold1:
@@ -118,6 +128,9 @@ tasks:
     display_name: ABCD sex
     task_type: classification
     target_key: sex
+    model:
+      epochs: 70
+      max_patience: 12
     sample_level: file
     split_format: directory_files
     id_rule: abcd_subject
@@ -141,6 +154,9 @@ tasks:
     display_name: HCP sex
     task_type: classification
     target_key: sex
+    model:
+      epochs: 70
+      max_patience: 12
     sample_level: file
     split_format: directory_files
     id_rule: hcp_subject
@@ -164,11 +180,14 @@ tasks:
     display_name: BHRC sex
     task_type: classification
     target_key: sex
+    model:
+      epochs: 60
+      max_patience: 10
     sample_level: subject
     split_format: txt_basename
     id_rule: sub_numeric
     split_id_rule: sub_numeric
-    fold_ids: [1, 2, 3]
+    fold_ids: [1]
     data_root: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\BHRC\AAL'
     split_source:
       fold1:
@@ -197,6 +216,9 @@ tasks:
     display_name: PPMI PD diagnosis
     task_type: classification
     target_key: y
+    model:
+      epochs: 60
+      max_patience: 10
     sample_level: subject
     split_format: ref_dir_subject
     id_rule: ppmi_subject
@@ -221,18 +243,21 @@ tasks:
     display_name: ADNI(MCI)
     task_type: classification
     target_key: y
+    model:
+      epochs: 60
+      max_patience: 10
     sample_level: subject
     split_format: txt_subject_codes
     id_rule: adni_subject_code
-    split_id_rule: identity
+    split_id_rule: adni_subject_code
     fold_ids: [1]
     data_root:
-      cn: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\cn\AAL'
-      mci: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\mci\AAL'
+      cn: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI\AAL\CN'
+      mci: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI\AAL\MCI'
     split_source:
-      train: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\MCI_train.txt'
-      val: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\MCI_val.txt'
-      test: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\MCI_test.txt'
+      train: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI\AAL\MCI_train_abs_AAL.txt'
+      val: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI\AAL\MCI_val_abs_AAL.txt'
+      test: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI\AAL\MCI_test_abs_AAL.txt'
     label_source: '\\10.16.57.94\dataset1\ningzh\labels\disease\adni_list.xlsx'
     label_format: xlsx
     label_subject_column: Name
@@ -249,18 +274,21 @@ tasks:
     display_name: ADNI(AD)
     task_type: classification
     target_key: y
+    model:
+      epochs: 60
+      max_patience: 10
     sample_level: subject
     split_format: txt_subject_codes
     id_rule: adni_subject_code
-    split_id_rule: identity
+    split_id_rule: adni_subject_code
     fold_ids: [1]
     data_root:
-      cn: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\cn\AAL'
-      ad: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\AD1\AAL'
+      cn: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI\AAL\CN'
+      ad: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI\AAL\AD'
     split_source:
-      train: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\AD_train.txt'
-      val: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\AD_val.txt'
-      test: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI(ALL)\Pretraining_OUTPUT\AD_test.txt'
+      train: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI\AAL\AD_train_abs_AAL.txt'
+      val: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI\AAL\AD_val_abs_AAL.txt'
+      test: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\ADNI\AAL\AD_test_abs_AAL.txt'
     label_source: '\\10.16.57.94\dataset1\ningzh\labels\disease\adni_list.xlsx'
     label_format: xlsx
     label_subject_column: Name
@@ -277,11 +305,14 @@ tasks:
     display_name: NKI education
     task_type: classification
     target_key: y
+    model:
+      epochs: 60
+      max_patience: 10
     sample_level: subject
     split_format: txt_basename
     id_rule: nki_subject
     split_id_rule: nki_subject
-    fold_ids: [1, 2, 3]
+    fold_ids: [1]
     data_root: '\\10.20.33.82\dataset4\DATASETS\fmri_pretraining\fmri_dataset\roi\NKI\AAL'
     split_source:
       fold1:

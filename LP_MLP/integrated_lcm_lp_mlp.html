@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LCM Fine-tuning vs LP vs MLP — Integrated Table 3-style Comparison</title>
+<style>
+  :root{
+    --border:#222;
+    --text:#111;
+    --muted:#5a5a5a;
+    --bg:#ffffff;
+    --card:#fafafa;
+    --best:#dff3e4;
+    --best-border:#2e7d32;
+    --header:#f1f3f5;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:28px;
+    font-family: "Times New Roman", Georgia, serif;
+    color:var(--text);
+    background:var(--bg);
+  }
+  h1{
+    text-align:center;
+    margin:0 0 8px 0;
+    font-size:30px;
+  }
+  .subtitle{
+    text-align:center;
+    color:var(--muted);
+    font-size:17px;
+    margin-bottom:22px;
+  }
+  .notes{
+    max-width:1200px;
+    margin:0 auto 24px auto;
+    padding:14px 18px;
+    border:1px solid var(--border);
+    background:#fcfcfc;
+    line-height:1.5;
+    font-size:16px;
+  }
+  .legend{
+    display:inline-block;
+    margin-left:6px;
+    padding:1px 8px;
+    border:1px solid var(--best-border);
+    background:var(--best);
+    border-radius:4px;
+    font-weight:700;
+  }
+  .section-title{
+    max-width:1200px;
+    margin:26px auto 12px auto;
+    font-size:24px;
+    border-bottom:2px solid var(--border);
+    padding-bottom:6px;
+  }
+  .grid{
+    max-width:1200px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap:18px;
+  }
+  .task-card{
+    border:1.4px solid var(--border);
+    background:var(--card);
+    break-inside:avoid;
+  }
+  .task-head{
+    padding:12px 14px 10px 14px;
+    border-bottom:1px solid var(--border);
+    background:var(--header);
+  }
+  .task-title{
+    font-size:20px;
+    font-weight:700;
+    margin:0;
+  }
+  .task-sub{
+    margin-top:3px;
+    color:var(--muted);
+    font-size:15px;
+    font-style:italic;
+  }
+  table{
+    width:100%;
+    border-collapse:collapse;
+    table-layout:fixed;
+    background:white;
+  }
+  th, td{
+    border:1px solid var(--border);
+    padding:8px 10px;
+    text-align:center;
+    font-size:16px;
+    vertical-align:middle;
+  }
+  th{
+    background:#f8f8f8;
+  }
+  td.model{
+    text-align:left;
+    font-weight:700;
+    width:32%;
+  }
+  td.best{
+    background:var(--best);
+    font-weight:700;
+    border-color:var(--best-border);
+  }
+  .foot{
+    max-width:1200px;
+    margin:20px auto 0 auto;
+    color:var(--muted);
+    font-size:15px;
+    line-height:1.45;
+  }
+  @media (max-width: 980px){
+    .grid{ grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+  <h1>Integrated Table 3-style Comparison</h1>
+  <div class="subtitle">LCM fine-tuning, Linear Probe (LP), and MLP Probe arranged task by task.</div>
+
+  <div class="notes">
+    <div><strong>Display rule.</strong> Each task is shown as a 3-row block: <strong>LCM fine-tuning</strong>, <strong>LP</strong>, and <strong>MLP</strong>.</div>
+    <div><strong>Metric direction.</strong> For regression tasks, <strong>MSE ↓</strong> means lower is better and <strong>R ↑</strong> means higher is better. For classification tasks, <strong>ACC ↑</strong> and <strong>F1 ↑</strong> mean higher is better.</div>
+    <div><strong>Highlight rule.</strong> The best value within each task/metric among the three rows is marked with <span class="legend">best</span>.</div>
+  </div>
+
+  <div class="section-title">Part 1</div>
+  <div class="grid">
+    <div class="task-card">
+      <div class="task-head">
+        <div class="task-title">ABIDE</div>
+        <div class="task-sub">Age Regression</div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Model</th><th>MSE ↓</th><th>R ↑</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="model">LCM (fine-tuning)</td><td class="best">0.770 ± 0.000</td><td class="best">0.552 ± 0.000</td></tr>
+          <tr><td class="model">LP</td><td>1.407 ± 0.094</td><td>0.355 ± 0.022</td></tr>
+          <tr><td class="model">MLP</td><td>0.826 ± 0.068</td><td>0.412 ± 0.026</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="task-card">
+      <div class="task-head">
+        <div class="task-title">NKI</div>
+        <div class="task-sub">Age Regression</div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Model</th><th>MSE ↓</th><th>R ↑</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="model">LCM (fine-tuning)</td><td class="best">0.429 ± 0.034</td><td class="best">0.728 ± 0.022</td></tr>
+          <tr><td class="model">LP</td><td>0.888 ± 0.064</td><td>0.516 ± 0.043</td></tr>
+          <tr><td class="model">MLP</td><td>0.740 ± 0.077</td><td>0.531 ± 0.055</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="task-card">
+      <div class="task-head">
+        <div class="task-title">SALD</div>
+        <div class="task-sub">Age Regression</div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Model</th><th>MSE ↓</th><th>R ↑</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="model">LCM (fine-tuning)</td><td class="best">0.646 ± 0.052</td><td class="best">0.654 ± 0.037</td></tr>
+          <tr><td class="model">LP</td><td>1.012 ± 0.072</td><td>0.521 ± 0.030</td></tr>
+          <tr><td class="model">MLP</td><td>0.759 ± 0.059</td><td>0.532 ± 0.053</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="task-card">
+      <div class="task-head">
+        <div class="task-title">ABCD</div>
+        <div class="task-sub">Sex Classification</div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Model</th><th>ACC ↑</th><th>F1 ↑</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="model">LCM (fine-tuning)</td><td>53.33 ± 3.09</td><td>53.06 ± 3.32</td></tr>
+          <tr><td class="model">LP</td><td class="best">53.47 ± 1.86</td><td class="best">53.49 ± 1.82</td></tr>
+          <tr><td class="model">MLP</td><td>50.53 ± 4.51</td><td>50.51 ± 4.52</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="task-card">
+      <div class="task-head">
+        <div class="task-title">HCP</div>
+        <div class="task-sub">Sex Classification</div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Model</th><th>ACC ↑</th><th>F1 ↑</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="model">LCM (fine-tuning)</td><td>67.80 ± 1.42</td><td>67.43 ± 1.60</td></tr>
+          <tr><td class="model">LP</td><td class="best">71.19 ± 1.67</td><td class="best">71.15 ± 1.68</td></tr>
+          <tr><td class="model">MLP</td><td>66.46 ± 2.28</td><td>66.43 ± 2.26</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section-title">Part 2</div>
+  <div class="grid">
+    <div class="task-card">
+      <div class="task-head">
+        <div class="task-title">BHRC</div>
+        <div class="task-sub">Sex Classification</div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Model</th><th>ACC ↑</th><th>F1 ↑</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="model">LCM (fine-tuning)</td><td>60.52 ± 3.67</td><td>60.30 ± 3.29</td></tr>
+          <tr><td class="model">LP</td><td>61.14 ± 5.06</td><td>60.83 ± 5.17</td></tr>
+          <tr><td class="model">MLP</td><td class="best">64.00 ± 7.31</td><td class="best">63.99 ± 7.11</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="task-card">
+      <div class="task-head">
+        <div class="task-title">PPMI</div>
+        <div class="task-sub">PD Diagnosis</div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Model</th><th>ACC ↑</th><th>F1 ↑</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="model">LCM (fine-tuning)</td><td>56.60 ± 3.54</td><td>54.44 ± 1.67</td></tr>
+          <tr><td class="model">LP</td><td>59.44 ± 5.44</td><td>59.70 ± 5.83</td></tr>
+          <tr><td class="model">MLP</td><td class="best">65.28 ± 2.91</td><td class="best">59.77 ± 5.19</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="task-card">
+      <div class="task-head">
+        <div class="task-title">ADNI (MCI)</div>
+        <div class="task-sub">Diagnosis Classification</div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Model</th><th>ACC ↑</th><th>F1 ↑</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="model">LCM (fine-tuning)</td><td class="best">62.39 ± 5.37</td><td class="best">61.30 ± 4.76</td></tr>
+          <tr><td class="model">LP</td><td>58.97 ± 1.69</td><td>59.03 ± 1.69</td></tr>
+          <tr><td class="model">MLP</td><td>51.72 ± 8.93</td><td>48.54 ± 8.31</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="task-card">
+      <div class="task-head">
+        <div class="task-title">ADNI (AD)</div>
+        <div class="task-sub">Diagnosis Classification</div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Model</th><th>ACC ↑</th><th>F1 ↑</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="model">LCM (fine-tuning)</td><td class="best">95.71 ± 1.17</td><td class="best">95.63 ± 1.22</td></tr>
+          <tr><td class="model">LP</td><td>93.08 ± 2.61</td><td>92.93 ± 2.74</td></tr>
+          <tr><td class="model">MLP</td><td>93.46 ± 2.61</td><td>93.26 ± 2.75</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="task-card">
+      <div class="task-head">
+        <div class="task-title">NKI</div>
+        <div class="task-sub">Education Classification</div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Model</th><th>ACC ↑</th><th>F1 ↑</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="model">LCM (fine-tuning)</td><td>58.97 ± 3.77</td><td>57.97 ± 3.15</td></tr>
+          <tr><td class="model">LP</td><td class="best">61.13 ± 3.07</td><td class="best">60.60 ± 3.37</td></tr>
+          <tr><td class="model">MLP</td><td>60.75 ± 3.85</td><td>59.91 ± 4.05</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div><strong>Abbreviations.</strong> LP = Linear Probe; MLP = MLP Probe.</div>
+    <div><strong>Source note.</strong> LCM fine-tuning values were taken from the provided LCM baseline HTML; LP/MLP values were taken from the provided LP/MLP comparison HTML.</div>
+  </div>
+</body>
+</html>

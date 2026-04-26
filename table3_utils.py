@@ -14,6 +14,7 @@ import yaml
 
 UNC_TO_MNT = {
     "dataset1": ("\\\\10.16.57.94\\dataset1", "/mnt/dataset1"),
+    "dataset3": ("\\\\10.16.93.90\\dataset3", "/mnt/dataset3"),
     "dataset4": ("\\\\10.20.33.82\\dataset4", "/mnt/dataset4"),
 }
 
@@ -237,7 +238,7 @@ def release_gpu_lock(lock_path: Optional[str]) -> None:
         pass
 
 
-def estimate_required_mem_mb(outputs_root: str, task_id: str, default_mb: int = 12000) -> int:
+def estimate_required_mem_mb(outputs_root: str, task_id: str, default_mb: int = 32000) -> int:
     task_dir = Path(outputs_root) / task_id
     if not task_dir.exists():
         return default_mb
@@ -254,7 +255,8 @@ def estimate_required_mem_mb(outputs_root: str, task_id: str, default_mb: int = 
 
     if not peaks:
         return default_mb
-    return int(math.ceil(max(peaks) * 1.25))
+    historical_peak = max(peaks)
+    return max(default_mb, int(math.ceil(historical_peak * 1.05)))
 
 
 def choose_gpu(
