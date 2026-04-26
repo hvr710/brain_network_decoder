@@ -123,6 +123,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--seed", type=int, required=True)
     parser.add_argument("--device", type=str, default="cuda:0")
     parser.add_argument("--output_root", type=str, default="outputs")
+    parser.add_argument("--task_dir_name", type=str, default=None)
+    parser.add_argument("--task_dir_suffix", type=str, default=None)
     parser.add_argument("--gpu_lock_file", type=str, default=None)
     parser.add_argument("--batch_size", type=int, default=None)
     parser.add_argument("--grad_accum_steps", type=int, default=1)
@@ -463,6 +465,19 @@ def build_run_diagnostics(
     }
 
 
+def epoch_history_frame(epoch_history: List[Dict[str, Any]]) -> pd.DataFrame:
+    rows: List[Dict[str, Any]] = []
+    for item in epoch_history:
+        row = {
+            "epoch": item.get("epoch"),
+            "train_loss": item.get("train_loss"),
+        }
+        for key, value in item.get("val_metrics", {}).items():
+            row[f"val_{key}"] = value
+        rows.append(row)
+    return pd.DataFrame.from_records(rows)
+
+
 def infer_checkpoint_paths(pretrained_dir: str, load_dname: str = "hcpa") -> Tuple[str, str]:
     pretrained_root = Path(resolve_path(pretrained_dir))
     if not pretrained_root.exists():
@@ -567,13 +582,91 @@ def resolve_task_cfg(args: argparse.Namespace) -> Dict[str, Any]:
     return task_cfg
 
 
+def _format_examples(values: Any, limit: int = 8) -> str:
+    if not values:
+        return "[]"
+    if not isinstance(values, list):
+        values = [values]
+    shown = [str(value) for value in values[:limit]]
+    suffix = ", ..." if len(values) > limit else ""
+    return "[" + ", ".join(shown) + suffix + "]"
+
+
+def log_audit_summary(logger: RunLogger, audit: Dict[str, Any]) -> None:
+    logger.log(
+        "Split summary: "
+        + ", ".join(
+            f"{split}:{info['samples']} samples/{info['subjects']} subjects"
+            for split, info in audit["split_counts"].items()
+        )
+    )
+
+    split_audit = audit.get("split_audit", {})
+    source_members = split_audit.get("source_members", {})
+    if source_members:
+        logger.log(
+            "Source split members: "
+            + ", ".join(
+                f"{split}:raw={info['raw_members']},unique_subjects={info['unique_subjects']}"
+                for split, info in source_members.items()
+            )
+        )
+    source_files = split_audit.get("source_files", {})
+    if source_files:
+        logger.log(
+            "Source split files: "
+            + ", ".join(
+                f"{split}:raw={info['raw_files']},valid_names={info['valid_file_names']},"
+                f"unique_subjects={info['unique_subjects_before_label_join']}"
+                for split, info in source_files.items()
+            )
+        )
+
+    warning_specs = [
+        ("missing_files", "missing_files_examples"),
+        ("missing_labels", "missing_labels_examples"),
+        ("missing_labels", "missing_label_file_examples"),
+        ("missing_labels", "missing_label_subject_examples"),
+        ("invalid_file_names", "invalid_file_name_examples"),
+        ("duplicate_files", "duplicate_file_subject_examples"),
+    ]
+    emitted = set()
+    for count_key, examples_key in warning_specs:
+        counts = split_audit.get(count_key, {})
+        if examples_key not in split_audit:
+            continue
+        examples_by_split = split_audit.get(examples_key, {})
+        for split, count in counts.items():
+            try:
+                count_value = int(count)
+            except (TypeError, ValueError):
+                continue
+            if count_value <= 0:
+                continue
+            dedupe_key = (count_key, examples_key, split)
+            if dedupe_key in emitted:
+                continue
+            emitted.add(dedupe_key)
+            logger.log(
+                f"Audit warning: {split} {count_key}={count_value}; "
+                f"{examples_key}={_format_examples(examples_by_split.get(split, []))}"
+            )
+
+
 def main() -> None:
     args = parse_args()
     task_cfg = resolve_task_cfg(args)
     if args.fold not in task_cfg["fold_ids"]:
         raise ValueError(f"Fold {args.fold} not configured for task {args.task_id}")
 
-    run_dir = task_run_dir(args.output_root, args.task_id, args.fold, args.seed)
+    run_dir = task_run_dir(
+        args.output_root,
+        args.task_id,
+        args.fold,
+        args.seed,
+        task_dir_name_override=args.task_dir_name,
+        task_dir_suffix=args.task_dir_suffix,
+    )
     Path(run_dir).mkdir(parents=True, exist_ok=True)
     logger = RunLogger(run_dir)
     update_run_state(run_dir, "running", task_id=args.task_id, fold=args.fold, seed=args.seed, pid=os.getpid())
@@ -597,13 +690,7 @@ def main() -> None:
             }
             write_json(str(Path(run_dir) / "config.json"), resolved_payload)
             logger.log(f"Prepared audit for task={args.task_id} fold={args.fold} seed={args.seed}")
-            logger.log(
-                "Split summary: "
-                + ", ".join(
-                    f"{split}:{info['samples']} samples/{info['subjects']} subjects"
-                    for split, info in audit["split_counts"].items()
-                )
-            )
+            log_audit_summary(logger, audit)
             logger.log("Audit only mode completed.")
             update_run_state(run_dir, "completed", audit_only=True)
             return
@@ -640,13 +727,7 @@ def main() -> None:
         }
         write_json(str(Path(run_dir) / "config.json"), resolved_payload)
         logger.log(f"Prepared task={args.task_id} fold={args.fold} seed={args.seed}")
-        logger.log(
-            "Split summary: "
-            + ", ".join(
-                f"{split}:{info['samples']} samples/{info['subjects']} subjects"
-                for split, info in audit["split_counts"].items()
-            )
-        )
+        log_audit_summary(logger, audit)
 
         model, classifier = build_model_and_head(task_cfg, audit)
         model = model.to(device)
@@ -753,6 +834,7 @@ def main() -> None:
         best_payload["train_target_std"] = task_cfg.get("train_target_std")
         best_payload.update(run_diagnostics)
         write_json(str(Path(run_dir) / "best_metrics.json"), best_payload)
+        epoch_history_frame(epoch_history).to_csv(str(Path(run_dir) / "epoch_history.csv"), index=False)
         test_predictions.to_csv(str(Path(run_dir) / "test_predictions.csv"), index=False)
 
         logger.log(f"Best epoch={best_payload['best_epoch']}")

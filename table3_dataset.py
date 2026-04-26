@@ -21,6 +21,9 @@ except ModuleNotFoundError:
 from table3_utils import canonical_label_key, resolve_path
 
 
+AUDIT_DETAIL_LIMIT = 25
+
+
 @dataclass
 class SampleRecord:
     sample_id: str
@@ -35,6 +38,10 @@ def _safe_float(value: Any) -> float:
     if isinstance(value, (float, int)):
         return float(value)
     return float(str(value).strip())
+
+
+def _preview(values: Iterable[Any], limit: int = AUDIT_DETAIL_LIMIT) -> List[str]:
+    return [str(value) for value in list(values)[:limit]]
 
 
 def normalize_sample_id(name: str, rule: str) -> str:
@@ -247,13 +254,27 @@ def _build_records_for_subject_task(
     data_index = _scan_data_index(task_cfg)
 
     records: Dict[str, List[SampleRecord]] = {}
-    audit = {"missing_files": {}, "missing_labels": {}, "duplicate_files": {}}
+    audit = {
+        "source_members": {},
+        "missing_files": {},
+        "missing_files_examples": {},
+        "missing_labels": {},
+        "missing_labels_examples": {},
+        "duplicate_files": {},
+        "duplicate_file_subject_examples": {},
+    }
     for split_name, subject_ids in split_members.items():
         records[split_name] = []
         missing_files = []
         missing_labels = []
         duplicate_files = 0
+        duplicate_file_subjects = []
         unique_subject_ids = list(dict.fromkeys(subject_ids))
+        audit["source_members"][split_name] = {
+            "raw_members": len(subject_ids),
+            "unique_subjects": len(unique_subject_ids),
+            "duplicates_removed": len(subject_ids) - len(unique_subject_ids),
+        }
         for subject_id in unique_subject_ids:
             candidates = data_index.get(subject_id, [])
             if not candidates:
@@ -261,6 +282,7 @@ def _build_records_for_subject_task(
                 continue
             if len(candidates) > 1:
                 duplicate_files += len(candidates) - 1
+                duplicate_file_subjects.append(subject_id)
             if subject_id not in label_lookup:
                 missing_labels.append(subject_id)
                 continue
@@ -276,8 +298,11 @@ def _build_records_for_subject_task(
                 )
             )
         audit["missing_files"][split_name] = len(missing_files)
+        audit["missing_files_examples"][split_name] = _preview(missing_files)
         audit["missing_labels"][split_name] = len(missing_labels)
+        audit["missing_labels_examples"][split_name] = _preview(missing_labels)
         audit["duplicate_files"][split_name] = duplicate_files
+        audit["duplicate_file_subject_examples"][split_name] = _preview(duplicate_file_subjects)
     return records, audit
 
 
@@ -288,19 +313,30 @@ def _build_records_for_file_task(
 ) -> Tuple[Dict[str, List[SampleRecord]], Dict[str, Any]]:
     split_members = _load_split_members(task_cfg, fold)
     records: Dict[str, List[SampleRecord]] = {}
-    audit = {"missing_labels": {}, "invalid_file_names": {}}
+    audit = {
+        "source_files": {},
+        "missing_labels": {},
+        "missing_label_file_examples": {},
+        "missing_label_subject_examples": {},
+        "invalid_file_names": {},
+        "invalid_file_name_examples": {},
+    }
     for split_name, file_paths in split_members.items():
         records[split_name] = []
         missing_labels = []
+        missing_label_subjects = []
         invalid_file_names = []
+        parsed_subjects = []
         for file_path in file_paths:
             try:
                 subject_id = normalize_sample_id(Path(file_path).name, task_cfg["id_rule"])
             except ValueError:
                 invalid_file_names.append(Path(file_path).name)
                 continue
+            parsed_subjects.append(subject_id)
             if subject_id not in label_lookup:
                 missing_labels.append(Path(file_path).name)
+                missing_label_subjects.append(subject_id)
                 continue
             file_path = resolve_path(file_path)
             records[split_name].append(
@@ -313,8 +349,17 @@ def _build_records_for_file_task(
                     target=label_lookup[subject_id],
                 )
             )
+        audit["source_files"][split_name] = {
+            "raw_files": len(file_paths),
+            "valid_file_names": len(parsed_subjects),
+            "unique_subjects_before_label_join": len(set(parsed_subjects)),
+            "unique_subjects_after_label_join": len({record.subject_id for record in records[split_name]}),
+        }
         audit["missing_labels"][split_name] = len(missing_labels)
+        audit["missing_label_file_examples"][split_name] = _preview(missing_labels)
+        audit["missing_label_subject_examples"][split_name] = _preview(dict.fromkeys(missing_label_subjects))
         audit["invalid_file_names"][split_name] = len(invalid_file_names)
+        audit["invalid_file_name_examples"][split_name] = _preview(invalid_file_names)
     return records, audit
 
 

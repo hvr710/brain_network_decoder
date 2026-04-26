@@ -18,6 +18,18 @@ UNC_TO_MNT = {
     "dataset4": ("\\\\10.20.33.82\\dataset4", "/mnt/dataset4"),
 }
 
+A800_DATA_ROOTS = {
+    "dataset1": "TABLE3_DATASET1_ROOT",
+    "dataset3": "TABLE3_DATASET3_ROOT",
+    "dataset4": "TABLE3_DATASET4_ROOT",
+}
+
+A800_DEFAULT_ROOTS = {
+    "dataset1": "/vePFS-0x0d/nzh/data/dataset1",
+    "dataset3": "/vePFS-0x0d/nzh/data/dataset3",
+    "dataset4": "/vePFS-0x0d/nzh/data/dataset4",
+}
+
 
 def deep_merge(base: Dict[str, Any], override: Dict[str, Any]) -> Dict[str, Any]:
     merged = dict(base)
@@ -79,12 +91,19 @@ def resolve_path(path: str) -> str:
     if os.path.exists(normalized):
         return normalized
 
-    for _, (unc_root, mnt_root) in UNC_TO_MNT.items():
+    for dataset_name, (unc_root, mnt_root) in UNC_TO_MNT.items():
+        local_root = os.environ.get(A800_DATA_ROOTS[dataset_name], A800_DEFAULT_ROOTS[dataset_name])
         if path.startswith(unc_root):
+            local_candidate = path.replace(unc_root, local_root).replace("\\", "/")
+            if os.path.exists(local_candidate):
+                return local_candidate
             posix_candidate = path.replace(unc_root, mnt_root).replace("\\", "/")
             if os.path.exists(posix_candidate):
                 return posix_candidate
         if path.startswith(mnt_root):
+            local_candidate = path.replace(mnt_root, local_root).replace("/", os.sep)
+            if os.path.exists(local_candidate):
+                return local_candidate
             unc_candidate = path.replace(mnt_root, unc_root).replace("/", "\\")
             if os.path.exists(unc_candidate):
                 return unc_candidate
@@ -111,8 +130,29 @@ def now_ts() -> str:
     return time.strftime("%Y-%m-%d %H:%M:%S")
 
 
-def task_run_dir(outputs_root: str, task_id: str, fold: int, seed: int) -> str:
-    return str(Path(outputs_root) / task_id / f"fold{fold}" / f"seed{seed}")
+def task_dir_name(task_id: str, task_dir_name_override: Optional[str] = None, task_dir_suffix: Optional[str] = None) -> str:
+    if task_dir_name_override:
+        return task_dir_name_override
+    if task_dir_suffix:
+        return f"{task_id}_{task_dir_suffix}"
+    return task_id
+
+
+def task_run_dir(
+    outputs_root: str,
+    task_id: str,
+    fold: int,
+    seed: int,
+    *,
+    task_dir_name_override: Optional[str] = None,
+    task_dir_suffix: Optional[str] = None,
+) -> str:
+    return str(
+        Path(outputs_root)
+        / task_dir_name(task_id, task_dir_name_override, task_dir_suffix)
+        / f"fold{fold}"
+        / f"seed{seed}"
+    )
 
 
 def update_run_state(run_dir: str, state: str, **extra: Any) -> None:

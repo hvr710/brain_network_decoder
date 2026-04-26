@@ -43,7 +43,7 @@ python finetune_table3.py \
   --config our_plan/table3_tasks.yaml \
   --task_id adni_mci \
   --fold 1 \
-  --seed 1 \
+  --seed 4 \
   --device cpu \
   --audit_only \
   --output_root outputs/$RUN_TAG
@@ -55,7 +55,7 @@ python finetune_table3.py \
   --config our_plan/table3_tasks.yaml \
   --task_id adni_ad \
   --fold 1 \
-  --seed 1 \
+  --seed 4 \
   --device cpu \
   --audit_only \
   --output_root outputs/$RUN_TAG
@@ -64,8 +64,8 @@ python finetune_table3.py \
 看这两个文件是否正常：
 
 ```bash
-cat outputs/$RUN_TAG/adni_mci/fold1/seed1/audit.json
-cat outputs/$RUN_TAG/adni_ad/fold1/seed1/audit.json
+cat outputs/$RUN_TAG/adni_mci/fold1/seed4/audit.json
+cat outputs/$RUN_TAG/adni_ad/fold1/seed4/audit.json
 ```
 
 重点看：
@@ -90,7 +90,7 @@ python launch_table3_queue.py \
   --config our_plan/table3_tasks.yaml \
   --task_ids all \
   --folds 1 \
-  --seeds 1,2,3 \
+  --seeds 4,44,444 \
   --device $GPU_DEVICE \
   --output_root outputs/$RUN_TAG
 ```
@@ -120,7 +120,7 @@ python launch_table3_queue.py \
   --config our_plan/table3_tasks.yaml \
   --task_ids abide_age,nki_age,sald_age \
   --folds 1 \
-  --seeds 1,2,3 \
+  --seeds 4,44,444 \
   --device cuda:0 \
   --batch_size 4 \
   --grad_accum_steps 8 \
@@ -140,7 +140,7 @@ python launch_table3_queue.py \
   --config our_plan/table3_tasks.yaml \
   --task_ids abcd_sex,hcp_sex,bhrc_sex \
   --folds 1 \
-  --seeds 1,2,3 \
+  --seeds 4,44,444 \
   --device cuda:5 \
   --batch_size 4 \
   --grad_accum_steps 8 \
@@ -160,7 +160,7 @@ python launch_table3_queue.py \
   --config our_plan/table3_tasks.yaml \
   --task_ids ppmi_pd_diagnosis,adni_mci,adni_ad,nki_education \
   --folds 1 \
-  --seeds 1,2,3 \
+  --seeds 4,44,444 \
   --device cuda:4 \
   --batch_size 2 \
   --grad_accum_steps 16 \
@@ -173,13 +173,13 @@ tmux attach -t ds_rem_cls
 ### 5.1 看队列调度日志
 ```bash
 find outputs/$RUN_TAG -name launcher_stdout.log | sort
-tail -f outputs/$RUN_TAG/abide_age/fold1/seed1/launcher_stdout.log
+tail -f outputs/$RUN_TAG/abide_age/fold1/seed4/launcher_stdout.log
 ```
 
 ### 5.2 看训练日志
 ```bash
-tail -f outputs/$RUN_TAG/abide_age/fold1/seed1/train.log
-tail -f outputs/$RUN_TAG/adni_mci/fold1/seed1/train.log
+tail -f outputs/$RUN_TAG/abide_age/fold1/seed4/train.log
+tail -f outputs/$RUN_TAG/adni_mci/fold1/seed4/train.log
 ```
 
 ### 5.3 看运行状态
@@ -238,7 +238,7 @@ outputs/$RUN_TAG/table3_with_paper_baselines.html
 另外这次还有两个固定约束：
 
 - 以前那几个 3-fold 任务，现在都只跑 `fold1`
-- seeds 还是 `1,2,3`
+- seeds 还是 `4,44,444`
 
 ## 9. 只重跑下游里的 ADNI(MCI) 和 ADNI(AD)
 
@@ -256,7 +256,7 @@ python finetune_table3.py \
   --config our_plan/table3_tasks.yaml \
   --task_id adni_mci \
   --fold 1 \
-  --seed 1 \
+  --seed 4 \
   --device cpu \
   --audit_only \
   --output_root outputs/$RUN_TAG
@@ -265,7 +265,7 @@ python finetune_table3.py \
   --config our_plan/table3_tasks.yaml \
   --task_id adni_ad \
   --fold 1 \
-  --seed 1 \
+  --seed 4 \
   --device cpu \
   --audit_only \
   --output_root outputs/$RUN_TAG
@@ -284,7 +284,7 @@ python launch_table3_queue.py \
   --config our_plan/table3_tasks.yaml \
   --task_ids adni_mci,adni_ad \
   --folds 1 \
-  --seeds 1,2,3 \
+  --seeds 4,44,444 \
   --device $GPU_DEVICE \
   --output_root outputs/$RUN_TAG
 ```

@@ -23,6 +23,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--device", type=str, required=True)
     parser.add_argument("--output_root", type=str, default="outputs")
     parser.add_argument("--run_name", type=str, default=None)
+    parser.add_argument("--task_dir_suffix", type=str, default=None)
     parser.add_argument("--seeds", type=str, default="all")
     parser.add_argument("--batch_size", type=int, default=None)
     parser.add_argument("--epochs", type=int, default=None)
@@ -45,7 +46,7 @@ def expand_group_jobs(args: argparse.Namespace, group_root: Path) -> List[Dict[s
     for task_id in GROUP_TASKS[args.group]:
         task_cfg = load_task_config(args.config, task_id)
         runtime_cfg = task_cfg.get("runtime", {})
-        seeds = runtime_cfg.get("seeds", [1, 2, 3]) if selected_seeds is None else selected_seeds
+        seeds = runtime_cfg.get("seeds", [4, 44, 444]) if selected_seeds is None else selected_seeds
         for fold in task_cfg["fold_ids"]:
             for seed in seeds:
                 jobs.append(
@@ -53,7 +54,13 @@ def expand_group_jobs(args: argparse.Namespace, group_root: Path) -> List[Dict[s
                         "task_id": task_id,
                         "fold": fold,
                         "seed": seed,
-                        "run_dir": task_run_dir(str(group_root), task_id, fold, seed),
+                        "run_dir": task_run_dir(
+                            str(group_root),
+                            task_id,
+                            fold,
+                            seed,
+                            task_dir_suffix=args.task_dir_suffix,
+                        ),
                     }
                 )
     return jobs
@@ -102,6 +109,8 @@ def run_job(script_dir: Path, args: argparse.Namespace, group_root: Path, job: D
         "--output_root",
         str(group_root),
     ]
+    if args.task_dir_suffix:
+        command.extend(["--task_dir_suffix", args.task_dir_suffix])
     if args.smoke_test:
         command.append("--smoke_test")
     if args.audit_only:

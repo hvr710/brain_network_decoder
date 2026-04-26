@@ -145,6 +145,9 @@ def resolve_task_root(output_root: Path, task_id: str) -> Path:
         return nested_root if nested_root.exists() else latest
 
     recursive_candidates = [path for path in output_root.rglob(task_id) if path.is_dir() and path.name == task_id]
+    recursive_candidates.extend(
+        path for path in output_root.rglob(f"{task_id}_*") if path.is_dir()
+    )
     if recursive_candidates:
         return max(recursive_candidates, key=lambda path: (path.stat().st_mtime, path.name))
 
@@ -324,7 +327,7 @@ def main() -> None:
     for task_id in list_task_ids(args.config):
         task_cfg = load_task_config(args.config, task_id)
         runtime_cfg = task_cfg.get("runtime", {})
-        seeds = runtime_cfg.get("seeds", [1, 2, 3])
+        seeds = runtime_cfg.get("seeds", [4, 44, 444])
         folds = task_cfg["fold_ids"]
         expected_runs = len(seeds) * len(folds)
         task_root = resolve_task_root(output_root, task_id)

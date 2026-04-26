@@ -21,7 +21,7 @@ defaults:
     load_dname: hcpa
   runtime:
     num_workers: 4
-    seeds: [1, 2, 3]
+    seeds: [4, 44, 444]
 
 tasks:
   abide_age:

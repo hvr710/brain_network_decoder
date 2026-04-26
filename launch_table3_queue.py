@@ -28,6 +28,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Queue Table 3 jobs with auto GPU selection")
     parser.add_argument("--config", type=str, default="our_plan/table3_tasks.yaml")
     parser.add_argument("--output_root", type=str, default="outputs")
+    parser.add_argument("--task_dir_suffix", type=str, default=None)
     parser.add_argument("--task_ids", type=str, default="all")
     parser.add_argument("--folds", type=str, default="all")
     parser.add_argument("--seeds", type=str, default="all")
@@ -64,7 +65,7 @@ def expand_jobs(args: argparse.Namespace) -> List[Dict[str, Any]]:
         task_cfg = load_task_config(args.config, task_id)
         runtime_cfg = task_cfg.get("runtime", {})
         folds = task_cfg["fold_ids"] if selected_folds is None else [fold for fold in selected_folds if fold in task_cfg["fold_ids"]]
-        seeds = runtime_cfg.get("seeds", [1, 2, 3]) if selected_seeds is None else selected_seeds
+        seeds = runtime_cfg.get("seeds", [4, 44, 444]) if selected_seeds is None else selected_seeds
         for fold in folds:
             for seed in seeds:
                 jobs.append(
@@ -131,7 +132,13 @@ def main() -> None:
 
         if pending_jobs:
             job = pending_jobs[0]
-            run_dir = task_run_dir(args.output_root, job["task_id"], job["fold"], job["seed"])
+            run_dir = task_run_dir(
+                args.output_root,
+                job["task_id"],
+                job["fold"],
+                job["seed"],
+                task_dir_suffix=args.task_dir_suffix,
+            )
             Path(run_dir).mkdir(parents=True, exist_ok=True)
             update_run_state(run_dir, "queued", task_id=job["task_id"], fold=job["fold"], seed=job["seed"])
 
@@ -200,6 +207,8 @@ def main() -> None:
                 "--output_root",
                 args.output_root,
             ]
+            if args.task_dir_suffix:
+                command.extend(["--task_dir_suffix", args.task_dir_suffix])
             if args.batch_size is not None:
                 command.extend(["--batch_size", str(args.batch_size)])
             if args.grad_accum_steps != 1:
