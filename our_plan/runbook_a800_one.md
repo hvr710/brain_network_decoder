@@ -16,17 +16,53 @@
 - 输出目录：`outputs/one_$RUN_TS/<group>_$RUN_TS/<task_id>_$RUN_TS/fold1/seed{4,44,444}/`
 - 每个 seed 的 `best_metrics.json`、`test_predictions.csv`、`epoch_history.csv`、checkpoint 都保留在各自 seed 目录里，不只保留均值方差。
 
-## 0. 最省心执行方式：每一步都进 tmux
+## 0. 最省心执行方式：第 1 步在源服务器推数据，第 2-4 步在 HuoShan 跑
 
-如果你会断网，就按下面 4 个脚本分段放进 tmux。每一步都可以单独跑，第一步复制会比较久，适合挂着睡。
+关键纠正：
 
-先拿到 repo 后，进入 repo：
+- HuoShan 自己通常**看不到** `dataset1/dataset4` 这些 NAS 路径。
+- 所以第 1 步不能在 HuoShan 上直接 `rsync /mnt/dataset4 ...`。
+- 正确做法是：
+  - 先在 **HuoShan** 上从 GitHub 拉 repo。
+  - 再到 **能看到 `/mnt/dataset1`、`/mnt/dataset4`、`/mnt/dataset3` 的源/NCC 服务器** 上，把数据通过 SSH/rsync 推到 HuoShan。
+  - 第 2-4 步再回到 HuoShan 执行。
+
+### 0.0 先在 HuoShan 上拿 repo
+
+```bash
+mkdir -p /vePFS-0x0d/nzh/repo
+cd /vePFS-0x0d/nzh/repo
+
+git clone --depth 1 --filter=blob:none --no-checkout \
+  -b omni_table3_10ds \
+  https://github.com/hvr710/brain_network_decoder.git
+
+cd brain_network_decoder
+git sparse-checkout init --no-cone
+cat > .git/info/sparse-checkout <<'EOF'
+/*
+!outputs/
+!LP_MLP/outputs/
+!data_old_outputs/
+!pretrain_weights_fold0/
+EOF
+git checkout omni_table3_10ds
+
+chmod +x scripts/a800_*.sh scripts/bootstrap_a800_envs.sh
+```
+
+### 0.1 在源/NCC 服务器上，把 NAS 数据推到 HuoShan
+
+下面这一步要在**能看到 `/mnt/dataset1` 和 `/mnt/dataset4` 的那台源服务器**上执行，不是在 HuoShan 上执行。
+
+进入同一个 repo 后，先按实际情况设置 HuoShan SSH 地址：
 
 ```bash
 cd /mnt/dataset3/nzh/lcm_ds/brain_network_decoder
+export HUOSHAN_HOST=root@di-20260417182420-kz6q9
 ```
 
-如果源路径不是默认的 `/mnt/dataset1`、`/mnt/dataset4`、`/mnt/dataset3/nzh/lcm_ds/brain_network_decoder`，先手动改这几个变量：
+如果源路径不是默认的 `/mnt/dataset1`、`/mnt/dataset4`、`/mnt/dataset3/nzh/lcm_ds/brain_network_decoder`，先改：
 
 ```bash
 export SRC_REPO=/mnt/dataset3/nzh/lcm_ds/brain_network_decoder
@@ -38,7 +74,7 @@ export SRC_DATASET4=/mnt/dataset4
 ### 0.1 复制 repo、权重、数据、label、split
 
 ```bash
-bash scripts/a800_run_step_in_tmux.sh prep_1 scripts/a800_01_prepare_repo_data.sh
+bash scripts/a800_run_step_in_tmux.sh prep_1 scripts/a800_01_push_nas_to_huoshan.sh
 ```
 
 重新连回复制 tmux：
@@ -47,7 +83,7 @@ bash scripts/a800_run_step_in_tmux.sh prep_1 scripts/a800_01_prepare_repo_data.s
 tmux attach -t prep_1
 ```
 
-这一步完成后，后续都用本地副本。先恢复变量：
+这一步完成后，回到 HuoShan，后续都用火山本地副本。先恢复变量：
 
 ```bash
 source /vePFS-0x0d/nzh/run_table3_one.env
