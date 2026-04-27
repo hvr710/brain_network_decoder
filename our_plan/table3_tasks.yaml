@@ -38,9 +38,9 @@ tasks:
     fold_ids: [1]
     data_root: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/ABIDE/AAL'
     split_source:
-      train: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/ABIDE/Schaefer2018_100_crop_split/train.txt'
-      val: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/ABIDE/Schaefer2018_100_crop_split/val.txt'
-      test: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/ABIDE/Schaefer2018_100_crop_split/test.txt'
+      train: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/ABIDE/train.txt'
+      val: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/ABIDE/val.txt'
+      test: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/ABIDE/test.txt'
     label_source: '/vePFS-0x0d/nzh/data/dataset1/ningzh/labels/age/ABIDE.csv'
     label_format: csv
     label_subject_column: FILE_ID
@@ -66,9 +66,9 @@ tasks:
     data_root: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/NKI/AAL'
     split_source:
       fold1:
-        train: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/NKI/100ROI_split/train1.txt'
-        val: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/NKI/100ROI_split/val1.txt'
-        test: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/NKI/100ROI_split/test1.txt'
+        train: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/NKI/train.txt'
+        val: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/NKI/val.txt'
+        test: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/NKI/test.txt'
         
       fold2:
         train: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/NKI/100ROI_split/train2.txt'
@@ -103,9 +103,9 @@ tasks:
     data_root: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/SALD/AAL'
     split_source:
       fold1:
-        train: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/SALD/100ROI_split/train1.txt'
-        val: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/SALD/100ROI_split/val1.txt'
-        test: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/SALD/100ROI_split/test1.txt'
+        train: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/SALD/train.txt'
+        val: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/SALD/val.txt'
+        test: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/SALD/test.txt'
       fold2:
         train: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/SALD/100ROI_split/train2.txt'
         val: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/SALD/100ROI_split/val2.txt'
@@ -191,9 +191,9 @@ tasks:
     data_root: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/BHRC/AAL'
     split_source:
       fold1:
-        train: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/BHRC/100ROI_split/train1.txt'
-        val: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/BHRC/100ROI_split/val1.txt'
-        test: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/BHRC/100ROI_split/test1.txt'
+        train: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/BHRC/train1.txt'
+        val: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/BHRC/val1.txt'
+        test: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/BHRC/test1.txt'
       fold2:
         train: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/BHRC/100ROI_split/train2.txt'
         val: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/BHRC/100ROI_split/val2.txt'
@@ -316,9 +316,9 @@ tasks:
     data_root: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/NKI/AAL'
     split_source:
       fold1:
-        train: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/NKI/100ROI_split/train1.txt'
-        val: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/NKI/100ROI_split/val1.txt'
-        test: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/NKI/100ROI_split/test1.txt'
+        train: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/NKI/train.txt'
+        val: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/NKI/val.txt'
+        test: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/NKI/test.txt'
       fold2:
         train: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/NKI/100ROI_split/train2.txt'
         val: '/vePFS-0x0d/nzh/data/dataset4/DATASETS/fmri_pretraining/fmri_dataset/roi/NKI/100ROI_split/val2.txt'
