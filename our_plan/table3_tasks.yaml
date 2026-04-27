@@ -95,7 +95,7 @@ tasks:
     sample_level: subject
     split_format: txt_basename
     id_rule: numeric_stem
-    split_id_rule: numeric_stem
+    split_id_rule: numeric_crop_subject
     model:
       epochs: 120
       max_patience: 18

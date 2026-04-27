@@ -62,6 +62,13 @@ def normalize_sample_id(name: str, rule: str) -> str:
         if not digits:
             raise ValueError(f"Cannot parse numeric stem from: {name}")
         return str(int(digits))
+    if rule == "numeric_crop_subject":
+        digits = re.sub(r"\D", "", stem)
+        if not digits:
+            raise ValueError(f"Cannot parse numeric crop subject from: {name}")
+        if len(digits) >= 7:
+            digits = digits[:-1]
+        return str(int(digits))
     if rule == "sub_numeric":
         match = re.search(r"sub-(\d+)", stem)
         if not match:
