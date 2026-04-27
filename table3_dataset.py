@@ -45,7 +45,7 @@ def _preview(values: Iterable[Any], limit: int = AUDIT_DETAIL_LIMIT) -> List[str
 
 
 def normalize_sample_id(name: str, rule: str) -> str:
-    basename = Path(str(name)).name
+    basename = Path(str(name).replace("\\", "/")).name
     stem = Path(basename).stem
     if rule == "abide_file_id":
         return stem.split("_func_minimal")[0]

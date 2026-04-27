@@ -87,27 +87,27 @@ def canonical_label_key(value: Any) -> str:
 def resolve_path(path: str) -> str:
     if not path:
         return path
-    normalized = path.replace("\\\\", "\\\\").replace("/", os.sep)
+    raw_path = str(path)
+    normalized = raw_path.replace("\\", os.sep).replace("/", os.sep)
     if os.path.exists(normalized):
         return normalized
+    if os.path.exists(raw_path):
+        return raw_path
 
     for dataset_name, (unc_root, mnt_root) in UNC_TO_MNT.items():
         local_root = os.environ.get(A800_DATA_ROOTS[dataset_name], A800_DEFAULT_ROOTS[dataset_name])
-        if path.startswith(unc_root):
-            local_candidate = path.replace(unc_root, local_root).replace("\\", "/")
-            if os.path.exists(local_candidate):
-                return local_candidate
-            posix_candidate = path.replace(unc_root, mnt_root).replace("\\", "/")
-            if os.path.exists(posix_candidate):
-                return posix_candidate
-        if path.startswith(mnt_root):
-            local_candidate = path.replace(mnt_root, local_root).replace("/", os.sep)
-            if os.path.exists(local_candidate):
-                return local_candidate
-            unc_candidate = path.replace(mnt_root, unc_root).replace("/", "\\")
-            if os.path.exists(unc_candidate):
-                return unc_candidate
-    return path
+        path_key = raw_path.replace("\\", "/").lstrip("/")
+        unc_key = unc_root.replace("\\", "/").lstrip("/")
+        mnt_key = mnt_root.replace("\\", "/").lstrip("/")
+        for source_key in (unc_key, mnt_key):
+            if path_key == source_key or path_key.startswith(source_key + "/"):
+                suffix = path_key[len(source_key):].lstrip("/")
+                local_candidate = str(Path(local_root) / suffix)
+                if os.path.exists(local_root):
+                    return local_candidate
+                if os.path.exists(local_candidate):
+                    return local_candidate
+    return raw_path
 
 
 def ensure_dir(path: str) -> str:
