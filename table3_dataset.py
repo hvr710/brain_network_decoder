@@ -108,6 +108,37 @@ def _aggregate_values(values: Iterable[Any], agg: str) -> Any:
     raise KeyError(f"Unknown label aggregation: {agg}")
 
 
+def _fill_derived_target_values(frame: pd.DataFrame, task_cfg: Dict[str, Any]) -> pd.DataFrame:
+    target_column = task_cfg["target_column"]
+
+    if target_column == "education_group" and "participant_education" in frame.columns:
+        education_group_map = {
+            "Kindergarten": 0,
+            "1st Grade": 0,
+            "2nd Grade": 0,
+            "3rd Grade": 0,
+            "4th Grade": 0,
+            "5th Grade": 0,
+            "6th Grade": 0,
+            "7th Grade": 1,
+            "8th Grade": 1,
+            "9th Grade": 1,
+            "10th Grade": 1,
+            "11th Grade": 1,
+            "12th Grade": 1,
+            "High School Diploma": 1,
+            "Some College": 1,
+            "Bachelor's Degree": 2,
+            "Graduate Degree": 2,
+        }
+        frame = frame.copy()
+        frame[target_column] = frame[target_column].fillna(
+            frame["participant_education"].map(education_group_map)
+        )
+
+    return frame
+
+
 def _build_label_lookup(task_cfg: Dict[str, Any]) -> Tuple[Dict[str, Any], Dict[str, Any]]:
     label_path = resolve_path(task_cfg["label_source"])
     label_format = task_cfg.get("label_format", "csv")
@@ -123,6 +154,8 @@ def _build_label_lookup(task_cfg: Dict[str, Any]) -> Tuple[Dict[str, Any], Dict[
     label_id_rule = task_cfg.get("label_id_rule", task_cfg["id_rule"])
     label_agg = task_cfg.get("label_agg", "first_non_null")
     label_filters = task_cfg.get("label_filters", {})
+
+    frame = _fill_derived_target_values(frame, task_cfg)
 
     for column, allowed in label_filters.items():
         frame = frame[frame[column].isin(allowed)]
