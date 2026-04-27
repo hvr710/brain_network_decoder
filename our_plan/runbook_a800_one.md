@@ -16,15 +16,15 @@
 - 输出目录：`outputs/one_$RUN_TS/<group>_$RUN_TS/<task_id>_$RUN_TS/fold1/seed{4,44,444}/`
 - 每个 seed 的 `best_metrics.json`、`test_predictions.csv`、`epoch_history.csv`、checkpoint 都保留在各自 seed 目录里，不只保留均值方差。
 
-## 0. 最省心执行方式：第 1 步在源服务器推数据，第 2-4 步在 HuoShan 跑
+## 0. 最省心执行方式：本地 Windows 传 NAS 到 HuoShan，第 2-4 步在 HuoShan 跑
 
 关键纠正：
 
 - HuoShan 自己通常**看不到** `dataset1/dataset4` 这些 NAS 路径。
-- 所以第 1 步不能在 HuoShan 上直接 `rsync /mnt/dataset4 ...`。
-- 正确做法是：
+- 你当前网络里，只有**本地 Windows** 既能访问 NAS 映射盘/UNC，又能 ssh 到 HuoShan。
+- 所以最稳妥的做法是：
   - 先在 **HuoShan** 上从 GitHub 拉 repo。
-  - 再到 **能看到 `/mnt/dataset1`、`/mnt/dataset4`、`/mnt/dataset3` 的源/NCC 服务器** 上，把数据通过 SSH/rsync 推到 HuoShan。
+  - 再在 **本地 Windows PowerShell** 上，把 NAS 数据通过 `scp` 传到 HuoShan。
   - 第 2-4 步再回到 HuoShan 执行。
 
 ### 0.0 先在 HuoShan 上拿 repo
@@ -51,37 +51,29 @@ git checkout omni_table3_10ds
 chmod +x scripts/a800_*.sh scripts/bootstrap_a800_envs.sh
 ```
 
-### 0.1 在源/NCC 服务器上，把 NAS 数据推到 HuoShan
+### 0.1 在本地 Windows 上，把 NAS 数据传到 HuoShan
 
-下面这一步要在**能看到 `/mnt/dataset1` 和 `/mnt/dataset4` 的那台源服务器**上执行，不是在 HuoShan 上执行。
+推荐直接在本地 PowerShell 里运行下面这个脚本。默认用 UNC 路径，不用 `/mnt/...`。
 
-进入同一个 repo 后，先按实际情况设置 HuoShan SSH 地址：
+如果你本地 `ssh/config` 里已经有 `Host HuoShan2`，就直接：
 
-```bash
-cd /mnt/dataset3/nzh/lcm_ds/brain_network_decoder
-export HUOSHAN_HOST=root@di-20260417182420-kz6q9
+```powershell
+cd \\10.16.93.90\dataset3\nzh\lcm_ds\brain_network_decoder
+powershell -ExecutionPolicy Bypass -File .\scripts\a800_01_copy_from_windows_to_huoshan.ps1
 ```
 
-如果源路径不是默认的 `/mnt/dataset1`、`/mnt/dataset4`、`/mnt/dataset3/nzh/lcm_ds/brain_network_decoder`，先改：
+如果你想显式写源路径，也可以：
 
-```bash
-export SRC_REPO=/mnt/dataset3/nzh/lcm_ds/brain_network_decoder
-export SRC_PRETRAIN=/mnt/dataset3/nzh/lcm_ds/brain_network_decoder/pretrain_weights_fold0
-export SRC_DATASET1=/mnt/dataset1
-export SRC_DATASET4=/mnt/dataset4
+```powershell
+cd \\10.16.93.90\dataset3\nzh\lcm_ds\brain_network_decoder
+powershell -ExecutionPolicy Bypass -File .\scripts\a800_01_copy_from_windows_to_huoshan.ps1 `
+  -RemoteHost HuoShan2 `
+  -SrcRepo "\\10.16.93.90\dataset3\nzh\lcm_ds\brain_network_decoder" `
+  -SrcDataset1 "\\10.16.57.94\dataset1" `
+  -SrcDataset4 "\\10.20.33.82\dataset4"
 ```
 
-### 0.1 复制 repo、权重、数据、label、split
-
-```bash
-bash scripts/a800_run_step_in_tmux.sh prep_1 scripts/a800_01_push_nas_to_huoshan.sh
-```
-
-重新连回复制 tmux：
-
-```bash
-tmux attach -t prep_1
-```
+如果需要顺手把 repo 也从本地复制到 HuoShan，再加 `-CopyRepo`，但通常不需要，因为 HuoShan 已经 `git clone` 过了。
 
 这一步完成后，回到 HuoShan，后续都用火山本地副本。先恢复变量：
 
