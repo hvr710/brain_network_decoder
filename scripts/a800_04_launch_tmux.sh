@@ -7,6 +7,7 @@ set -euo pipefail
 
 ROOT="${A800_ROOT:-/vePFS-0x0d/nzh}"
 ENV_FILE="${ROOT}/run_table3_one.env"
+LOG_DIR="${ROOT}/tmux_logs"
 
 if [[ -f "${ENV_FILE}" ]]; then
   # shellcheck disable=SC1090
@@ -22,11 +23,14 @@ DISEASE_GPU="${DISEASE_GPU:-cuda:2}"
 BATCH_SIZE="${BATCH_SIZE:-64}"
 GRAD_ACCUM_STEPS="${GRAD_ACCUM_STEPS:-1}"
 
+mkdir -p "${LOG_DIR}"
+
 start_session() {
   local session="$1"
   local gpu="$2"
   local task_ids="$3"
   local group="$4"
+  local log_file="${LOG_DIR}/${session}.log"
 
   if tmux has-session -t "${session}" 2>/dev/null; then
     echo "tmux session already exists: ${session}" >&2
@@ -35,10 +39,14 @@ start_session() {
   fi
 
   tmux new-session -d -s "${session}" "
-source ${ENV_FILE}
-source /root/miniconda3/etc/profile.d/conda.sh 2>/dev/null || source ${ROOT}/miniconda3/etc/profile.d/conda.sh
-conda activate ${ROOT}/envs/lcm
-cd ${REPO_DST}
+set -euo pipefail
+exec > >(tee -a '${log_file}') 2>&1
+echo '=== Session ${session} started at '\"\$(date '+%F %T')\"' ==='
+set +e
+source ${ENV_FILE} &&
+{ source /root/miniconda3/etc/profile.d/conda.sh 2>/dev/null || source ${ROOT}/miniconda3/etc/profile.d/conda.sh; } &&
+conda activate ${ROOT}/envs/lcm &&
+cd ${REPO_DST} &&
 python launch_table3_queue.py \
   --config our_plan/table3_tasks.yaml \
   --task_ids ${task_ids} \
@@ -49,8 +57,20 @@ python launch_table3_queue.py \
   --grad_accum_steps ${GRAD_ACCUM_STEPS} \
   --output_root ${ONE_ROOT}/${group}_${RUN_TS} \
   --task_dir_suffix ${RUN_TS}
+rc=\$?
+set -e
+echo
+if [[ \$rc -eq 0 ]]; then
+  echo '=== Session ${session} completed successfully ==='
+else
+  echo '=== Session ${session} failed with exit code' \$rc '==='
+fi
+echo 'Log file: ${log_file}'
+echo 'Session is staying open. Type exit when you are done inspecting it.'
+exec bash
 "
   echo "Started ${session} on ${gpu}: ${task_ids}"
+  echo "Log file: ${log_file}"
 }
 
 echo "==> Launching tmux sessions with RUN_TS=${RUN_TS}"

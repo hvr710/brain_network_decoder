@@ -33,14 +33,24 @@ if [[ ! -d "${LCM_ENV}" ]]; then
 fi
 conda activate "${LCM_ENV}"
 python -m pip install --upgrade pip
-conda install -y -c pytorch -c nvidia pytorch==2.4.0 torchvision torchaudio pytorch-cuda=12.1
+
+# Use official pip CUDA wheels for torch to avoid libtorch/oneAPI symbol issues
+# that showed up with the conda install path on HuoShan A800.
+python -m pip uninstall -y torch torchvision torchaudio || true
+conda remove -y pytorch torchvision torchaudio pytorch-cuda || true
+
+python -m pip install --no-cache-dir \
+  torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 \
+  --index-url https://download.pytorch.org/whl/cu121
+
 python -m pip install \
   pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv \
   -f https://data.pyg.org/whl/torch-2.4.0+cu121.html
 python -m pip install \
   torch-geometric==2.5.3 \
   numpy pandas scipy scikit-learn pyyaml openpyxl tqdm \
-  einops timm omegaconf hydra-core networkx matplotlib seaborn
+  einops timm omegaconf hydra-core networkx matplotlib seaborn \
+  requests idna
 conda deactivate
 
 if [[ ! -d "${BSEM_ENV}" ]]; then

@@ -23,14 +23,26 @@ if [[ "${SCRIPT_PATH}" != /* ]]; then
   SCRIPT_PATH="${START_DIR}/${SCRIPT_PATH}"
 fi
 
+if [[ $# -gt 0 ]]; then
+  printf -v SCRIPT_ARGS_Q '%q ' "$@"
+else
+  SCRIPT_ARGS_Q=""
+fi
+
 if tmux has-session -t "${SESSION}" 2>/dev/null; then
   echo "tmux session already exists: ${SESSION}" >&2
   echo "Attach with: tmux attach -t ${SESSION}" >&2
   exit 1
 fi
 
+LOG_DIR="${ROOT}/tmux_logs"
+mkdir -p "${LOG_DIR}"
+LOG_FILE="${LOG_DIR}/${SESSION}.log"
+
 tmux new-session -d -s "${SESSION}" -c "${START_DIR}" "
 set -euo pipefail
+mkdir -p '${LOG_DIR}'
+exec > >(tee -a '${LOG_FILE}') 2>&1
 export A800_ROOT='${A800_ROOT:-}'
 export REPO_DST='${REPO_DST:-}'
 export DATA_DST='${DATA_DST:-}'
@@ -54,8 +66,20 @@ fi
 if [[ -n \${REPO_DST:-} && -d \${REPO_DST:-} ]]; then
   cd \${REPO_DST}
 fi
-bash '${SCRIPT_PATH}' $*
+echo '=== Session ${SESSION} started at '\"\$(date '+%F %T')\"' ==='
+rc=0
+bash '${SCRIPT_PATH}' ${SCRIPT_ARGS_Q} || rc=\$?
+echo
+if [[ \$rc -eq 0 ]]; then
+  echo '=== Session ${SESSION} completed successfully ==='
+else
+  echo '=== Session ${SESSION} failed with exit code' \$rc '==='
+fi
+echo 'Log file: ${LOG_FILE}'
+echo 'Session is staying open. Type exit when you are done inspecting it.'
+exec bash
 "
 
 echo "Started tmux session: ${SESSION}"
 echo "Attach with: tmux attach -t ${SESSION}"
+echo "Log file: ${LOG_FILE}"

@@ -19,8 +19,13 @@ bash scripts/bootstrap_a800_envs.sh
 source /root/miniconda3/etc/profile.d/conda.sh 2>/dev/null || source "${ROOT}/miniconda3/etc/profile.d/conda.sh"
 conda activate "${ROOT}/envs/lcm"
 
-python -c "import torch, torch_geometric, torch_scatter; print(torch.__version__); print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0))"
+python -c "import torch, torch_geometric, torch_scatter, timm, yaml, requests, omegaconf, hydra; print(torch.__version__); print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0)); print('LCM_IMPORT_OK')"
 python -m py_compile finetune_table3.py table3_dataset.py table3_utils.py launch_table3_queue.py summarize_table3.py
+conda deactivate
+
+conda activate "${ROOT}/envs/bsem"
+python -c "import numpy, pandas, scipy, sklearn, yaml, tqdm, openpyxl; print('BSEM_IMPORT_OK')"
+conda deactivate
 
 echo "==> Step 2 done. Next:"
 echo "source ${ENV_FILE}"
