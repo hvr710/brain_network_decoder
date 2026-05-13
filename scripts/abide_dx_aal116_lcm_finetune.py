@@ -66,7 +66,13 @@ def parse_args():
     parser.add_argument("--weight_dir", type=str, default=str(DEFAULT_WEIGHT_DIR))
     parser.add_argument("--bb_name", type=str, default=DEFAULT_BB_NAME)
     parser.add_argument("--head_name", type=str, default=DEFAULT_HEAD_NAME)
-    parser.add_argument("--best_metric", choices=["val_loss", "val_macro_f1"], default="val_loss")
+    parser.add_argument(
+        "--best_metric",
+        choices=["val_loss", "val_weighted_f1", "val_macro_f1"],
+        default="val_weighted_f1",
+    )
+    parser.add_argument("--early_stop_patience", type=int, default=12)
+    parser.add_argument("--min_epochs", type=int, default=10)
     return parser.parse_args()
 
 
@@ -132,7 +138,9 @@ def is_better(current: Dict, best: Dict, metric_name: str) -> bool:
         return True
     if metric_name == "val_loss":
         return current["loss"] < best["loss"]
-    return current["macro_f1"] > best["macro_f1"]
+    if metric_name == "val_macro_f1":
+        return current["macro_f1"] > best["macro_f1"]
+    return current["weighted_f1"] > best["weighted_f1"]
 
 
 def save_checkpoint(path: Path, model, classifier, config: Dict, epoch: int, val_metrics: Dict) -> None:
@@ -206,6 +214,7 @@ def run_one_seed(run_idx: int, seed: int, records_by_name: Dict[str, List], args
     best_epoch = 0
     best_path = run_dir / "best_checkpoint.pt"
     train_log = []
+    patience_left = args.early_stop_patience
 
     for epoch in range(1, args.epochs + 1):
         train_metrics = train_one_epoch(
@@ -230,11 +239,21 @@ def run_one_seed(run_idx: int, seed: int, records_by_name: Dict[str, List], args
             best_val = val_metrics
             best_epoch = epoch
             save_checkpoint(best_path, model, classifier, config, epoch, val_metrics)
+            patience_left = args.early_stop_patience
+        else:
+            patience_left -= 1
         print(
             f"seed={seed} epoch={epoch}/{args.epochs} "
             f"train_loss={train_metrics['loss']:.4f} val_loss={val_metrics['loss']:.4f} "
-            f"val_acc={val_metrics['accuracy']:.4f} val_macro_f1={val_metrics['macro_f1']:.4f}"
+            f"val_acc={val_metrics['accuracy']:.4f} val_f1={val_metrics['weighted_f1']:.4f} "
+            f"best_epoch={best_epoch} patience_left={patience_left}"
         )
+        if epoch >= args.min_epochs and patience_left <= 0:
+            print(
+                f"seed={seed} early stop at epoch={epoch} "
+                f"(best_epoch={best_epoch}, best_metric={args.best_metric})"
+            )
+            break
 
     write_csv_rows(run_dir / "train_log.csv", train_log)
     ckpt = load_checkpoint(best_path, model, classifier, device)
